@@ -75,9 +75,9 @@ module MD2Indesign
         level = node[:parent][:level]
         type  = node[:parent][:type]
         if node[:close]
-          "<#{type}#{level}>#{node[:value]}"
+          "<ParaStyle:#{type}#{level}>#{node[:value]}"
         else
-          "<#{type}#{level}>#{node[:value]}\n"
+          "<ParaStyle:#{type}#{level}>#{node[:value]}\n"
         end
       end
 
