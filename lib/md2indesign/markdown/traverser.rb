@@ -84,21 +84,13 @@ module MD2Indesign
             acc
           }
 
-          node[:children] = children.map{|child|
-            # tel children to parent <blockquote> reference
-            child[:parent] = node
-            child
-          }
+          node[:children] = children
         end
 
         if node[:type] == :ul or node[:type] == :ol
           # add the <ul>/<ol> nested level
           # first level is 1
           node[:level] = 1 if node[:level].nil?
-          node[:children].map {|child|
-            # tel parent <ul>/<ol> reference to child <li>
-            child[:parent] = node if child[:type] == :li
-          }
         end
 
         if node[:type] == :li
