@@ -27,12 +27,12 @@ module MD2Indesign
         result
       end
 
-      def traverse(ast)
-        enter(ast)
-        ast[:children] = ast[:children]&.map {|child|
+      def traverse(node)
+        enter(node)
+        node[:children] = node[:children]&.map {|child|
           traverse(child)
         }
-        leave(ast)
+        leave(node)
       end
 
       def enter(node)
@@ -43,7 +43,7 @@ module MD2Indesign
           # html element has tag name in :value
           # but :value should have processed children
           # so move tagname from :value to :tag
-          node[:tag] = node[:value]
+          node[:tag]   = node[:value]
           node[:value] = ""
         end
 
@@ -79,7 +79,7 @@ module MD2Indesign
           # first level is 1
           node[:level] = 1 if node[:level].nil?
           node[:children].map {|child|
-            # tel <li> to parent <ul>/<ol> reference
+            # tel parent <ul>/<ol> reference to child <li>
             child[:parent] = node if child[:type] == :li
           }
         end
@@ -100,7 +100,7 @@ module MD2Indesign
             node[:close] = false
           end
 
-          # li has nested <ul>/<ol> 
+          # li has nested <ul>/<ol>
           # increment level of <li>'s parent
           node[:children].map {|child|
             if child[:type] == :ul or child[:type] == :ol
@@ -131,7 +131,7 @@ module MD2Indesign
 
           # indent while building will break codeblock indent
           # so remove codeblock with hash and escape to @codes
-          # after builed has done, replace hash & @codes 
+          # after builed has done, replace hash & @codes
           hash = code.hash.to_s
           node[:value] = "// #{hash}" # place hash of code as value
           node[:code]  = code         # but add codeblock as-is to :code proparty
