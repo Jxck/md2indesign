@@ -11,6 +11,7 @@ module MD2Indesign
       end
 
       def start(ast)
+        ast[:parent] = nil
         # traverse whole of AST
         result = traverse(ast)
 
@@ -30,6 +31,22 @@ module MD2Indesign
       def traverse(node)
         enter(node)
         node[:children] = node[:children]&.map {|child|
+
+          #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+          # cyclic reference for plugin
+          #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+          child[:parent] = node
+
+          # hide :parent when output
+          class <<child
+            def inspect
+              self.reject{|k,v| k == :parent}.inspect
+            end
+            def to_s
+              self.reject{|k,v| k == :parent}.to_s
+            end
+          end
+
           traverse(child)
         }
         leave(node)
