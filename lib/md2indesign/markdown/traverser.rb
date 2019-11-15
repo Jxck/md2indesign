@@ -4,10 +4,18 @@ module MD2Indesign
     class Traverser
       attr_reader :codes
 
-      def initialize(format, dir)
+      def default_plugin
+        {
+          :enter => lambda {|node| node}, # call after  enter
+          :leave => lambda {|node| node}, # call before leave
+        }
+      end
+
+      def initialize(format, dir, plugin=default_plugin)
         @codes  = {} # escape codeblock here
         @format = format
         @dir    = dir
+        @plugin = plugin
       end
 
       def start(ast)
@@ -30,8 +38,9 @@ module MD2Indesign
 
       def traverse(node)
         enter(node)
-        node[:children] = node[:children]&.map {|child|
+        @plugin[:enter].call(node) # call plugin
 
+        node[:children] = node[:children]&.map {|child|
           #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
           # cyclic reference for plugin
           #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -46,9 +55,10 @@ module MD2Indesign
               self.reject{|k,v| k == :parent}.to_s
             end
           end
-
           traverse(child)
         }
+
+        @plugin[:leave].call(node) # call plugin
         leave(node)
       end
 
