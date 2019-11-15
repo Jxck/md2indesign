@@ -36,6 +36,8 @@ module MD2Indesign
           hellip: "&hellip;",
           mdash:  "&mdash;",
           ndash:  "&ndash;",
+          laquo:  "&laquo;",
+          raquo:  "&raquo;",
         }[node[:value]]
       end
 
