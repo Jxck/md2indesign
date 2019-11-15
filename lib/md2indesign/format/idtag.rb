@@ -180,6 +180,10 @@ module MD2Indesign
       def hr(node=nil)
         "<ParaStyle:hr>\n"
       end
+      def span(node)
+        # only join children
+        node[:children].join("")
+      end
       def a(node)
         # TODO:
         throw :TODO
