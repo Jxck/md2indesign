@@ -4,13 +4,22 @@ module MD2Indesign
     class Traverser
       attr_reader :codes
 
-      def initialize(format, dir)
+      def default_plugin
+        {
+          :enter => lambda {|node| node}, # call after  enter
+          :leave => lambda {|node| node}, # call before leave
+        }
+      end
+
+      def initialize(format, dir, plugin=default_plugin)
         @codes  = {} # escape codeblock here
         @format = format
         @dir    = dir
+        @plugin = plugin
       end
 
       def start(ast)
+        ast[:parent] = nil
         # traverse whole of AST
         result = traverse(ast)
 
@@ -29,9 +38,27 @@ module MD2Indesign
 
       def traverse(node)
         enter(node)
+        @plugin[:enter].call(node) # call plugin
+
         node[:children] = node[:children]&.map {|child|
+          #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+          # cyclic reference for plugin
+          #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+          child[:parent] = node
+
+          # hide :parent when output
+          class <<child
+            def inspect
+              self.reject{|k,v| k == :parent}.inspect
+            end
+            def to_s
+              self.reject{|k,v| k == :parent}.to_s
+            end
+          end
           traverse(child)
         }
+
+        @plugin[:leave].call(node) # call plugin
         leave(node)
       end
 
@@ -67,21 +94,13 @@ module MD2Indesign
             acc
           }
 
-          node[:children] = children.map{|child|
-            # tel children to parent <blockquote> reference
-            child[:parent] = node
-            child
-          }
+          node[:children] = children
         end
 
         if node[:type] == :ul or node[:type] == :ol
           # add the <ul>/<ol> nested level
           # first level is 1
           node[:level] = 1 if node[:level].nil?
-          node[:children].map {|child|
-            # tel parent <ul>/<ol> reference to child <li>
-            child[:parent] = node if child[:type] == :li
-          }
         end
 
         if node[:type] == :li

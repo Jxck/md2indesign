@@ -222,6 +222,10 @@ module MD2Indesign
       def hr(_node)
         "<hr>\n"
       end
+      def span(node)
+        # only join children
+        node[:children].join("")
+      end
       def a(node)
         %(<a href="#{node[:attr]['href']}">#{node[:value]}</a>)
       end
