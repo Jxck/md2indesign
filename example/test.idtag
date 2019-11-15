@@ -245,4 +245,5 @@
 <ParaStyle:code-js:code/script.js>  <CharStyle:BoldGray>console<CharStyle:><CharStyle:Punctuation>.<CharStyle:><CharStyle:BoldGray>log<CharStyle:><CharStyle:Punctuation>(<CharStyle:><CharStyle:BoldGray>e<CharStyle:><CharStyle:Punctuation>)<CharStyle:>
 <ParaStyle:code-js:code/script.js><CharStyle:Punctuation>})<CharStyle:>
 <ParaStyle:code-js:code/script.js>
-<ParaStyle:code-js:code/script.js><CharStyle:BoldBlack>export<CharStyle:> <CharStyle:BoldGray>module<CharStyle:><CharStyle:Punctuation>;<CharStyle:>
+<ParaStyle:code-js:code/script.js><CharStyle:BoldBlack>export<CharStyle:> <CharStyle:BoldGray>module<CharStyle:><CharStyle:Punctuation>;<CharStyle:><ParaStyle:h3>special text
+<ParaStyle:p>' & " \< \> "single quote in 'double' quote" ... --- -- \<\< \>\>

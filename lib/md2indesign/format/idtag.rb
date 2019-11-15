@@ -10,16 +10,16 @@ module MD2Indesign
       end
 
       def text(node)
-        node[:value] == "\n" ? "" : node[:value]
+        node[:value] == "\n" ? "" : hsc(node[:value])
       end
 
       def smart_quote(node)
         ## TODO: fix for indesign
         {
-          lsquo: %(‘),
-          rsquo: %(’),
-          ldquo: %(“),
-          rdquo: %(”),
+          lsquo: %('),
+          rsquo: %('),
+          ldquo: %("),
+          rdquo: %("),
         }[node[:value]]
       end
 
@@ -29,10 +29,10 @@ module MD2Indesign
           hellip:      "...",
           mdash:       "---",
           ndash:       "--",
-          laquo:       "<<",
-          raquo:       ">>",
-          laquo_space: "<< ",
-          raquo_space: " >>",
+          laquo:       "\\<\\<",
+          raquo:       "\\>\\>",
+          laquo_space: "\\<\\< ",
+          raquo_space: " \\>\\>",
         }[node[:value]]
       end
 
@@ -191,6 +191,13 @@ module MD2Indesign
       def img(node)
         # TODO:
         throw :TODO
+      end
+
+      private
+      def hsc(str)
+        str
+          .gsub("<", "\\<")
+          .gsub(">", "\\>")
       end
     end
   end
