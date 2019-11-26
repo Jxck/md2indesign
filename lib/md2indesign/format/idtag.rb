@@ -185,8 +185,9 @@ module MD2Indesign
         node[:children].join("")
       end
       def a(node)
-        # TODO:
-        throw :TODO
+        href  = node[:attr][:href]
+        value = node[:value]
+        "<CharStyle:link>#{value}<CharStyle:><CharStyle:href>#{href}<CharStyle:>"
       end
       def img(node)
         # TODO:

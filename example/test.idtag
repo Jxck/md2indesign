@@ -44,6 +44,8 @@
 <ParaStyle:blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 <ParaStyle:blockquote>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 <ParaStyle:blockquote>--- https://en.wikipedia.org/wiki/Lorem_ipsum
+<ParaStyle:h2>link
+<ParaStyle:p><CharStyle:link>Example Domain<CharStyle:><CharStyle:href><CharStyle:>
 <ParaStyle:h2>hr
 <ParaStyle:hr>
 <ParaStyle:h2>Codeblock
