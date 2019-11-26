@@ -79,6 +79,13 @@ eve
 [Example Domain](https://example.com)
 
 
+## html
+
+<div>outputs as is</div>
+
+<div id="attribute" disabled>value</div>
+
+
 ## hr
 
 ---

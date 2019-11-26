@@ -109,7 +109,7 @@ module MD2Indesign
       ## output as-is
       def html_element(node)
         # join attributes if exists
-        attrs = node.attr&.map {|key, value|
+        attrs = node[:attr]&.map {|key, value|
           next key if value == ""
           %(#{key}="#{value}")
         }
@@ -117,7 +117,7 @@ module MD2Indesign
         attr = attrs.nil? ? "" : " " + attrs.join(" ")
 
         # TODO: fixup line break
-        "<#{node.tag}#{attr}>#{node[:value]}</#{node.tag}>\n"
+        "<#{node[:tag]}#{attr}>#{node[:value]}</#{node[:tag]}>\n"
       end
 
       ### table
