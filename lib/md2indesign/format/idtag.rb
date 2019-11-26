@@ -84,7 +84,7 @@ module MD2Indesign
       def codeblock(node)
         lang = node[:attr] && node[:attr]["class"].sub("language-", "")
         code = code_format(node).split("\n").map{|line| "<ParaStyle:code-#{lang}>#{line}"}.join("\n")
-        code
+        "#{code}\n"
       end
 
       def codespan(node)

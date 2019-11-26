@@ -48,11 +48,14 @@
 <ParaStyle:hr>
 <ParaStyle:h2>Codeblock
 <ParaStyle:h3>text block
+<ParaStyle:code-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+<ParaStyle:code-text>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 <ParaStyle:h3>programing block
 <ParaStyle:h4>javascript
 <ParaStyle:code-js><CharStyle:BoldBlack>function<CharStyle:> <CharStyle:BoldGray>hoo<CharStyle:><CharStyle:Punctuation>(<CharStyle:><CharStyle:BoldGray>x<CharStyle:><CharStyle:Punctuation>)<CharStyle:> <CharStyle:Punctuation>{<CharStyle:>
 <ParaStyle:code-js>  <CharStyle:BoldGray>console<CharStyle:><CharStyle:Punctuation>.<CharStyle:><CharStyle:BoldGray>log<CharStyle:><CharStyle:Punctuation>(<CharStyle:><CharStyle:BoldGray>x<CharStyle:><CharStyle:Punctuation>)<CharStyle:>
-<ParaStyle:code-js><CharStyle:Punctuation>}<CharStyle:><ParaStyle:h4>makefile
+<ParaStyle:code-js><CharStyle:Punctuation>}<CharStyle:>
+<ParaStyle:h4>makefile
 <ParaStyle:code-make:code/Makefile><CharStyle:RegularSilverItalic># Makefile
 <ParaStyle:code-make:code/Makefile><CharStyle:><CharStyle:BoldBlack>.PHONY<CharStyle:><CharStyle:RegularDark>:<CharStyle:> <CharStyle:BoldGray>all<CharStyle:>
 <ParaStyle:code-make:code/Makefile><CharStyle:BoldBlack>all<CharStyle:><CharStyle:RegularDark>:<CharStyle:> <CharStyle:BoldGray>main<CharStyle:>
@@ -65,7 +68,8 @@
 <ParaStyle:code-make:code/Makefile>
 <ParaStyle:code-make:code/Makefile><CharStyle:BoldBlack>.PHONY<CharStyle:><CharStyle:RegularDark>:<CharStyle:> <CharStyle:BoldGray>clean<CharStyle:>
 <ParaStyle:code-make:code/Makefile><CharStyle:BoldBlack>clean<CharStyle:><CharStyle:RegularDark>:<CharStyle:>
-<ParaStyle:code-make:code/Makefile>	<CharStyle:BoldGray>rm<CharStyle:> <CharStyle:BoldBlack>-rf<CharStyle:> main main.o<ParaStyle:h4>http
+<ParaStyle:code-make:code/Makefile>	<CharStyle:BoldGray>rm<CharStyle:> <CharStyle:BoldBlack>-rf<CharStyle:> main main.o
+<ParaStyle:h4>http
 <ParaStyle:code-http:code/http>GET / HTTP/1.1
 <ParaStyle:code-http:code/http>Host: example.com
 <ParaStyle:code-http:code/http>Connection: keep-alive
@@ -75,7 +79,8 @@
 <ParaStyle:code-http:code/http>User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36
 <ParaStyle:code-http:code/http>Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
 <ParaStyle:code-http:code/http>Accept-Encoding: gzip, deflate
-<ParaStyle:code-http:code/http>Accept-Language: ja,en-US;q=0.9,en;q=0.8<ParaStyle:h4>noginx.conf
+<ParaStyle:code-http:code/http>Accept-Language: ja,en-US;q=0.9,en;q=0.8
+<ParaStyle:h4>noginx.conf
 <ParaStyle:code-conf:code/nginx.conf><CharStyle:RegularSilverItalic># https://www.nginx.com/resources/wiki/start/topics/examples/full/
 <ParaStyle:code-conf:code/nginx.conf><CharStyle:><CharStyle:BoldGray>user<CharStyle:>       <CharStyle:BoldGray>www<CharStyle:> <CharStyle:BoldGray>www<CharStyle:>;  <CharStyle:RegularSilverItalic>## Default: nobody
 <ParaStyle:code-conf:code/nginx.conf><CharStyle:><CharStyle:BoldGray>worker_processes<CharStyle:>  <CharStyle:RegularDark>5<CharStyle:>;  <CharStyle:RegularSilverItalic>## Default: 1
@@ -145,7 +150,8 @@
 <ParaStyle:code-conf:code/nginx.conf>    <CharStyle:BoldGray>location<CharStyle:> / {
 <ParaStyle:code-conf:code/nginx.conf>      <CharStyle:BoldGray>proxy_pass<CharStyle:>      <CharStyle:BoldGray>http<CharStyle:>://<CharStyle:BoldGray>big_server_com<CharStyle:>;
 <ParaStyle:code-conf:code/nginx.conf>    }
-<ParaStyle:code-conf:code/nginx.conf>  }<ParaStyle:h4>go
+<ParaStyle:code-conf:code/nginx.conf>  }
+<ParaStyle:h4>go
 <ParaStyle:code-go:code/sample.go><CharStyle:BoldBlack>package<CharStyle:> <CharStyle:BoldGray>main<CharStyle:>
 <ParaStyle:code-go:code/sample.go>
 <ParaStyle:code-go:code/sample.go><CharStyle:BoldBlack>import<CharStyle:> <CharStyle:RegularSilverItalic>"fmt"<CharStyle:>
@@ -153,7 +159,8 @@
 <ParaStyle:code-go:code/sample.go><CharStyle:BoldBlack>func<CharStyle:> <CharStyle:BoldGray>main<CharStyle:><CharStyle:Punctuation>()<CharStyle:> <CharStyle:Punctuation>{<CharStyle:>
 <ParaStyle:code-go:code/sample.go>	<CharStyle:RegularSilverItalic>// this is sample code<CharStyle:>
 <ParaStyle:code-go:code/sample.go>	<CharStyle:BoldGray>fmt<CharStyle:><CharStyle:RegularDark>.<CharStyle:><CharStyle:BoldGray>Println<CharStyle:><CharStyle:Punctuation>(<CharStyle:><CharStyle:RegularSilverItalic>"Hello World"<CharStyle:><CharStyle:Punctuation>)<CharStyle:>
-<ParaStyle:code-go:code/sample.go><CharStyle:Punctuation>}<CharStyle:><ParaStyle:h4>java
+<ParaStyle:code-go:code/sample.go><CharStyle:Punctuation>}<CharStyle:>
+<ParaStyle:h4>java
 <ParaStyle:code-java:code/sample.java><CharStyle:BoldBlack>public<CharStyle:> <CharStyle:BoldBlack>class<CharStyle:> <CharStyle:BoldGray>HelloWorld<CharStyle:> <CharStyle:RegularDark>{<CharStyle:>
 <ParaStyle:code-java:code/sample.java>  <CharStyle:BoldBlack>public<CharStyle:> <CharStyle:BoldBlack>static<CharStyle:> <CharStyle:BoldBlack>void<CharStyle:> <CharStyle:BoldGray>main<CharStyle:><CharStyle:RegularDark>(<CharStyle:><CharStyle:BoldGray>String<CharStyle:><CharStyle:RegularDark>[]<CharStyle:> <CharStyle:BoldGray>args<CharStyle:><CharStyle:RegularDark>)<CharStyle:> <CharStyle:RegularDark>{<CharStyle:>
 <ParaStyle:code-java:code/sample.java>    <CharStyle:BoldGray>System<CharStyle:><CharStyle:RegularDark>.<CharStyle:><CharStyle:BoldGray>out<CharStyle:><CharStyle:RegularDark>.<CharStyle:><CharStyle:BoldGray>printf<CharStyle:><CharStyle:RegularDark>(<CharStyle:><CharStyle:RegularSilverItalic>"Hello World"<CharStyle:><CharStyle:RegularDark>);<CharStyle:>
@@ -163,7 +170,8 @@
 <ParaStyle:code-java:code/sample.java>    <CharStyle:BoldBlack>int<CharStyle:> <CharStyle:BoldGray>z<CharStyle:> <CharStyle:RegularDark>=<CharStyle:> <CharStyle:BoldGray>x<CharStyle:> <CharStyle:RegularDark>+<CharStyle:> <CharStyle:BoldGray>y<CharStyle:><CharStyle:RegularDark>;<CharStyle:>
 <ParaStyle:code-java:code/sample.java>    <CharStyle:BoldBlack>return<CharStyle:> <CharStyle:BoldGray>z<CharStyle:><CharStyle:RegularDark>;<CharStyle:>
 <ParaStyle:code-java:code/sample.java>  <CharStyle:RegularDark>}<CharStyle:>
-<ParaStyle:code-java:code/sample.java><CharStyle:RegularDark>}<CharStyle:><ParaStyle:h4>html
+<ParaStyle:code-java:code/sample.java><CharStyle:RegularDark>}<CharStyle:>
+<ParaStyle:h4>html
 <ParaStyle:code-html:code/sample.html><CharStyle:RegularSilverItalic><!DOCTYPE html><CharStyle:>
 <ParaStyle:code-html:code/sample.html><CharStyle:BoldBlack><meta<CharStyle:> <CharStyle:BoldGray>charset=<CharStyle:><CharStyle:RegularSilverItalic>utf-8<CharStyle:><CharStyle:BoldBlack>><CharStyle:>
 <ParaStyle:code-html:code/sample.html><CharStyle:BoldBlack><meta<CharStyle:> <CharStyle:BoldGray>name=<CharStyle:><CharStyle:RegularSilverItalic>viewport<CharStyle:> <CharStyle:BoldGray>content=<CharStyle:><CharStyle:RegularSilverItalic>"width=device-width,initial-scale=1"<CharStyle:><CharStyle:BoldBlack>><CharStyle:>
@@ -185,7 +193,8 @@
 <ParaStyle:code-html:code/sample.html>    <CharStyle:BoldBlack><input<CharStyle:> <CharStyle:BoldGray>type=<CharStyle:><CharStyle:RegularSilverItalic>password<CharStyle:> <CharStyle:BoldGray>name=<CharStyle:><CharStyle:RegularSilverItalic>password<CharStyle:><CharStyle:BoldBlack>><CharStyle:>
 <ParaStyle:code-html:code/sample.html>    <CharStyle:BoldBlack><button<CharStyle:> <CharStyle:BoldGray>type=<CharStyle:><CharStyle:RegularSilverItalic>submit<CharStyle:><CharStyle:BoldBlack>><CharStyle:>ok<CharStyle:BoldBlack></button><CharStyle:>
 <ParaStyle:code-html:code/sample.html>  <CharStyle:BoldBlack></form><CharStyle:>
-<ParaStyle:code-html:code/sample.html><CharStyle:BoldBlack></div><CharStyle:><ParaStyle:h4>css
+<ParaStyle:code-html:code/sample.html><CharStyle:BoldBlack></div><CharStyle:>
+<ParaStyle:h4>css
 <ParaStyle:code-css:code/style.css><CharStyle:RegularSilverItalic>/** markdown like css **/<CharStyle:>
 <ParaStyle:code-css:code/style.css><CharStyle:BoldBlack>strong<CharStyle:><CharStyle:BoldGray>::before<CharStyle:><CharStyle:RegularDark>,<CharStyle:>
 <ParaStyle:code-css:code/style.css><CharStyle:BoldBlack>strong<CharStyle:><CharStyle:BoldGray>::after<CharStyle:> <CharStyle:Punctuation>{<CharStyle:>
@@ -215,7 +224,8 @@
 <ParaStyle:code-css:code/style.css>  <CharStyle:BoldBlack>border-radius<CharStyle:><CharStyle:Punctuation>:<CharStyle:> <CharStyle:RegularDark>4px<CharStyle:><CharStyle:Punctuation>;<CharStyle:>
 <ParaStyle:code-css:code/style.css>  <CharStyle:BoldBlack>padding<CharStyle:><CharStyle:Punctuation>:<CharStyle:> <CharStyle:RegularDark>0.4em<CharStyle:> <CharStyle:RegularDark>1em<CharStyle:><CharStyle:Punctuation>;<CharStyle:>
 <ParaStyle:code-css:code/style.css>  <CharStyle:BoldBlack>margin<CharStyle:><CharStyle:Punctuation>:<CharStyle:> <CharStyle:RegularDark>0<CharStyle:><CharStyle:Punctuation>;<CharStyle:>
-<ParaStyle:code-css:code/style.css><CharStyle:Punctuation>}<CharStyle:><ParaStyle:h4>js
+<ParaStyle:code-css:code/style.css><CharStyle:Punctuation>}<CharStyle:>
+<ParaStyle:h4>js
 <ParaStyle:code-js:code/script.js><CharStyle:BoldBlack>import<CharStyle:> <CharStyle:BoldGray>file<CharStyle:> <CharStyle:BoldBlack>from<CharStyle:> <CharStyle:BoldGray>fs<CharStyle:>
 <ParaStyle:code-js:code/script.js>
 <ParaStyle:code-js:code/script.js><CharStyle:BoldBlack>function<CharStyle:> <CharStyle:BoldGray>callback<CharStyle:><CharStyle:Punctuation>(<CharStyle:><CharStyle:BoldGray>err<CharStyle:><CharStyle:Punctuation>,<CharStyle:> <CharStyle:BoldGray>file<CharStyle:><CharStyle:Punctuation>)<CharStyle:> <CharStyle:Punctuation>{<CharStyle:>
@@ -245,5 +255,6 @@
 <ParaStyle:code-js:code/script.js>  <CharStyle:BoldGray>console<CharStyle:><CharStyle:Punctuation>.<CharStyle:><CharStyle:BoldGray>log<CharStyle:><CharStyle:Punctuation>(<CharStyle:><CharStyle:BoldGray>e<CharStyle:><CharStyle:Punctuation>)<CharStyle:>
 <ParaStyle:code-js:code/script.js><CharStyle:Punctuation>})<CharStyle:>
 <ParaStyle:code-js:code/script.js>
-<ParaStyle:code-js:code/script.js><CharStyle:BoldBlack>export<CharStyle:> <CharStyle:BoldGray>module<CharStyle:><CharStyle:Punctuation>;<CharStyle:><ParaStyle:h3>special text
+<ParaStyle:code-js:code/script.js><CharStyle:BoldBlack>export<CharStyle:> <CharStyle:BoldGray>module<CharStyle:><CharStyle:Punctuation>;<CharStyle:>
+<ParaStyle:h3>special text
 <ParaStyle:p>' & " \< \> "single quote in 'double' quote" ... --- -- \<\< \>\>
