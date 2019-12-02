@@ -6,6 +6,7 @@ module MD2Indesign
       end
 
       def span(token, val)
+        val = escape(val)
         return val if token == Rouge::Token::Tokens::Text
 
         classes = token.qualname.split(".")
@@ -23,6 +24,13 @@ module MD2Indesign
         return ("BoldGray"           ) if classes.include?("Name")
         return ("BoldBlack"          ) if classes.include?("Keyword")
         classes.join(" ")
+      end
+      private
+      def escape(str)
+        str
+          .gsub('\\', '\\\\')
+          .gsub('<', '\\<')
+          .gsub('>', '\\>')
       end
     end
   end
