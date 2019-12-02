@@ -190,8 +190,11 @@ module MD2Indesign
         "<CharStyle:link>#{value}<CharStyle:><CharStyle:href>#{href}<CharStyle:>"
       end
       def img(node)
-        # TODO:
-        throw :TODO
+        attr  = node[:attr]
+        src   = attr["src"]
+        alt   = attr["alt"]
+        title = attr["title"]
+        "<CharStyle:imgSrc>#{src}<CharStyle:><CharStyle:imgTitle>#{title}<CharStyle:><CharStyle:imgAlt>#{alt}<CharStyle:>"
       end
 
       private

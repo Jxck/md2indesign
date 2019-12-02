@@ -79,6 +79,11 @@ eve
 [Example Domain](https://example.com)
 
 
+## img
+
+![sample image](./sample.png 'this is sample image')
+
+
 ## html
 
 <div>outputs as is</div>
