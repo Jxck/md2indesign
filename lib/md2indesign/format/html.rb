@@ -19,7 +19,7 @@ module MD2Indesign
       end
 
       def text(node)
-        hsc(node[:value])
+        escape(node[:value])
       end
 
       def smart_quote(node)
@@ -97,7 +97,7 @@ module MD2Indesign
       end
 
       def codespan(node)
-        %(<code translate="no">#{hsc(node[:value])}</code>)
+        %(<code translate="no">#{escape(node[:value])}</code>)
       end
 
       def code_format(arg)
@@ -112,9 +112,9 @@ module MD2Indesign
           formatted
         when "color"
           # TODO
-          hsc(code)
+          escape(code)
         when "none"
-          hsc(code)
+          escape(code)
         end
       end
 
@@ -242,7 +242,7 @@ module MD2Indesign
       end
 
       private
-      def hsc(str)
+      def escape(str)
         CGI.escape_html(str)
       end
     end

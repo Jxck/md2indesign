@@ -10,7 +10,7 @@ module MD2Indesign
       end
 
       def text(node)
-        hsc(node[:value])
+        escape(node[:value])
       end
 
       def smart_quote(node)
@@ -80,7 +80,7 @@ module MD2Indesign
       end
 
       def codespan(node)
-        %(<CharStyle:code>#{node[:value]}<CharStyle:>)
+        %(<CharStyle:code>#{escape(node[:value])}<CharStyle:>)
       end
 
       def code_format(arg)
@@ -94,7 +94,7 @@ module MD2Indesign
           formatted = formatter.format(lexer.new.lex(code))
           formatted
         when "none"
-          code
+          escape(code)
         end
       end
 
@@ -193,10 +193,11 @@ module MD2Indesign
       end
 
       private
-      def hsc(str)
+      def escape(str)
         str
-          .gsub("<", "\\<")
-          .gsub(">", "\\>")
+          .gsub('\\', '\\\\')
+          .gsub('<', '\\<')
+          .gsub('>', '\\>')
       end
     end
   end
