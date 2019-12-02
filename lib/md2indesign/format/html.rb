@@ -19,7 +19,7 @@ module MD2Indesign
       end
 
       def text(node)
-        node[:value] == "\n" ? "" : hsc(node[:value])
+        hsc(node[:value])
       end
 
       def smart_quote(node)
@@ -120,13 +120,19 @@ module MD2Indesign
 
       ## output as-is
       def html_element(node)
+        # gather attributes if exists
         attrs = node[:attr]&.map {|key, value|
           next key if value == ""
           %(#{key}="#{value}")
         }
 
+        # join attributes if exists
         attr = attrs.nil? ? "" : " " + attrs.join(" ")
-        "<#{node[:tag]}#{attr}>#{node[:value]}</#{node[:tag]}>\n"
+
+        # don't break line inside html element
+        tail = (node[:parent][:type] == :html_element) ? "" : "\n"
+
+        "<#{node[:tag]}#{attr}>#{node[:value]}</#{node[:tag]}>#{tail}"
       end
 
 

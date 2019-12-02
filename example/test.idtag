@@ -51,6 +51,11 @@
 <ParaStyle:h2>html
 <div>outputs as is</div>
 <div id="attribute" disabled>value</div>
+<dl>
+  <li>aaa</li>
+  <li class="second">bbb</li>
+  <li disabled>ccc</li>
+</dl>
 <ParaStyle:h2>hr
 <ParaStyle:hr>
 <ParaStyle:h2>Codeblock

@@ -90,6 +90,12 @@ eve
 
 <div id="attribute" disabled>value</div>
 
+<dl>
+  <li>aaa</li>
+  <li class="second">bbb</li>
+  <li disabled>ccc</li>
+</dl>
+
 
 ## hr
 
