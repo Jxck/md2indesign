@@ -171,7 +171,7 @@ module MD2Indesign
         "<CharStyle:em>#{node[:value]}<CharStyle:>"
       end
       def br(node=nil)
-        "<ParaStyle:br>"
+        "<ParaStyle:br>\n"
       end
       def hr(node=nil)
         "<ParaStyle:hr>\n"
