@@ -64,23 +64,23 @@
 <ParaStyle:code-text>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 <ParaStyle:h3>programing block
 <ParaStyle:h4>javascript
-<ParaStyle:code-js><CharStyle:BoldBlack>function<CharStyle:> <CharStyle:BoldGray>hoo<CharStyle:><CharStyle:Punctuation>(<CharStyle:><CharStyle:BoldGray>x<CharStyle:><CharStyle:Punctuation>)<CharStyle:> <CharStyle:Punctuation>{<CharStyle:>
-<ParaStyle:code-js>  <CharStyle:BoldGray>console<CharStyle:><CharStyle:Punctuation>.<CharStyle:><CharStyle:BoldGray>log<CharStyle:><CharStyle:Punctuation>(<CharStyle:><CharStyle:BoldGray>x<CharStyle:><CharStyle:Punctuation>)<CharStyle:>
-<ParaStyle:code-js><CharStyle:Punctuation>}<CharStyle:>
+<ParaStyle:code-js><CharStyle:CodeBold>function<CharStyle:> <CharStyle:CodeMedium>hoo<CharStyle:><CharStyle:CodeOther>(<CharStyle:><CharStyle:CodeMedium>x<CharStyle:><CharStyle:CodeOther>)<CharStyle:> <CharStyle:CodeOther>{<CharStyle:>
+<ParaStyle:code-js>  <CharStyle:CodeMedium>console<CharStyle:><CharStyle:CodeOther>.<CharStyle:><CharStyle:CodeMedium>log<CharStyle:><CharStyle:CodeOther>(<CharStyle:><CharStyle:CodeMedium>x<CharStyle:><CharStyle:CodeOther>)<CharStyle:>
+<ParaStyle:code-js><CharStyle:CodeOther>}<CharStyle:>
 <ParaStyle:h4>makefile
-<ParaStyle:code-make:code/Makefile><CharStyle:RegularSilverItalic># Makefile
-<ParaStyle:code-make:code/Makefile><CharStyle:><CharStyle:BoldBlack>.PHONY<CharStyle:><CharStyle:RegularDark>:<CharStyle:> <CharStyle:BoldGray>all<CharStyle:>
-<ParaStyle:code-make:code/Makefile><CharStyle:BoldBlack>all<CharStyle:><CharStyle:RegularDark>:<CharStyle:> <CharStyle:BoldGray>main<CharStyle:>
+<ParaStyle:code-make:code/Makefile><CharStyle:CodeItalic># Makefile
+<ParaStyle:code-make:code/Makefile><CharStyle:><CharStyle:CodeBold>.PHONY<CharStyle:><CharStyle:CodePale>:<CharStyle:> <CharStyle:CodeMedium>all<CharStyle:>
+<ParaStyle:code-make:code/Makefile><CharStyle:CodeBold>all<CharStyle:><CharStyle:CodePale>:<CharStyle:> <CharStyle:CodeMedium>main<CharStyle:>
 <ParaStyle:code-make:code/Makefile>
-<ParaStyle:code-make:code/Makefile><CharStyle:BoldBlack>main<CharStyle:><CharStyle:RegularDark>:<CharStyle:> <CharStyle:BoldGray>main.o<CharStyle:>
-<ParaStyle:code-make:code/Makefile>	gcc <CharStyle:BoldBlack>-o<CharStyle:> main main.o
+<ParaStyle:code-make:code/Makefile><CharStyle:CodeBold>main<CharStyle:><CharStyle:CodePale>:<CharStyle:> <CharStyle:CodeMedium>main.o<CharStyle:>
+<ParaStyle:code-make:code/Makefile>	gcc <CharStyle:CodeBold>-o<CharStyle:> main main.o
 <ParaStyle:code-make:code/Makefile>
-<ParaStyle:code-make:code/Makefile><CharStyle:BoldBlack>main.o<CharStyle:><CharStyle:RegularDark>:<CharStyle:> <CharStyle:BoldGray>main.c<CharStyle:>
-<ParaStyle:code-make:code/Makefile>	gcc <CharStyle:BoldBlack>-c<CharStyle:> main.c
+<ParaStyle:code-make:code/Makefile><CharStyle:CodeBold>main.o<CharStyle:><CharStyle:CodePale>:<CharStyle:> <CharStyle:CodeMedium>main.c<CharStyle:>
+<ParaStyle:code-make:code/Makefile>	gcc <CharStyle:CodeBold>-c<CharStyle:> main.c
 <ParaStyle:code-make:code/Makefile>
-<ParaStyle:code-make:code/Makefile><CharStyle:BoldBlack>.PHONY<CharStyle:><CharStyle:RegularDark>:<CharStyle:> <CharStyle:BoldGray>clean<CharStyle:>
-<ParaStyle:code-make:code/Makefile><CharStyle:BoldBlack>clean<CharStyle:><CharStyle:RegularDark>:<CharStyle:>
-<ParaStyle:code-make:code/Makefile>	<CharStyle:BoldGray>rm<CharStyle:> <CharStyle:BoldBlack>-rf<CharStyle:> main main.o
+<ParaStyle:code-make:code/Makefile><CharStyle:CodeBold>.PHONY<CharStyle:><CharStyle:CodePale>:<CharStyle:> <CharStyle:CodeMedium>clean<CharStyle:>
+<ParaStyle:code-make:code/Makefile><CharStyle:CodeBold>clean<CharStyle:><CharStyle:CodePale>:<CharStyle:>
+<ParaStyle:code-make:code/Makefile>	<CharStyle:CodeMedium>rm<CharStyle:> <CharStyle:CodeBold>-rf<CharStyle:> main main.o
 <ParaStyle:h4>http
 <ParaStyle:code-http:code/http>GET / HTTP/1.1
 <ParaStyle:code-http:code/http>Host: example.com
@@ -93,180 +93,180 @@
 <ParaStyle:code-http:code/http>Accept-Encoding: gzip, deflate
 <ParaStyle:code-http:code/http>Accept-Language: ja,en-US;q=0.9,en;q=0.8
 <ParaStyle:h4>noginx.conf
-<ParaStyle:code-conf:code/nginx.conf><CharStyle:RegularSilverItalic># https://www.nginx.com/resources/wiki/start/topics/examples/full/
-<ParaStyle:code-conf:code/nginx.conf><CharStyle:><CharStyle:BoldGray>user<CharStyle:>       <CharStyle:BoldGray>www<CharStyle:> <CharStyle:BoldGray>www<CharStyle:>;  <CharStyle:RegularSilverItalic>## Default: nobody
-<ParaStyle:code-conf:code/nginx.conf><CharStyle:><CharStyle:BoldGray>worker_processes<CharStyle:>  <CharStyle:RegularDark>5<CharStyle:>;  <CharStyle:RegularSilverItalic>## Default: 1
-<ParaStyle:code-conf:code/nginx.conf><CharStyle:><CharStyle:BoldGray>error_log<CharStyle:>  <CharStyle:BoldGray>logs<CharStyle:>/<CharStyle:BoldGray>error<CharStyle:>.<CharStyle:BoldGray>log<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf><CharStyle:BoldGray>pid<CharStyle:>        <CharStyle:BoldGray>logs<CharStyle:>/<CharStyle:BoldGray>nginx<CharStyle:>.<CharStyle:BoldGray>pid<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf><CharStyle:BoldGray>worker_rlimit_nofile<CharStyle:> <CharStyle:RegularDark>8192<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf><CharStyle:CodeItalic># https://www.nginx.com/resources/wiki/start/topics/examples/full/
+<ParaStyle:code-conf:code/nginx.conf><CharStyle:><CharStyle:CodeMedium>user<CharStyle:>       <CharStyle:CodeMedium>www<CharStyle:> <CharStyle:CodeMedium>www<CharStyle:>;  <CharStyle:CodeItalic>## Default: nobody
+<ParaStyle:code-conf:code/nginx.conf><CharStyle:><CharStyle:CodeMedium>worker_processes<CharStyle:>  <CharStyle:CodePale>5<CharStyle:>;  <CharStyle:CodeItalic>## Default: 1
+<ParaStyle:code-conf:code/nginx.conf><CharStyle:><CharStyle:CodeMedium>error_log<CharStyle:>  <CharStyle:CodeMedium>logs<CharStyle:>/<CharStyle:CodeMedium>error<CharStyle:>.<CharStyle:CodeMedium>log<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf><CharStyle:CodeMedium>pid<CharStyle:>        <CharStyle:CodeMedium>logs<CharStyle:>/<CharStyle:CodeMedium>nginx<CharStyle:>.<CharStyle:CodeMedium>pid<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf><CharStyle:CodeMedium>worker_rlimit_nofile<CharStyle:> <CharStyle:CodePale>8192<CharStyle:>;
 <ParaStyle:code-conf:code/nginx.conf>
-<ParaStyle:code-conf:code/nginx.conf><CharStyle:BoldGray>events<CharStyle:> {
-<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:BoldGray>worker_connections<CharStyle:>  <CharStyle:RegularDark>4096<CharStyle:>;  <CharStyle:RegularSilverItalic>## Default: 1024
+<ParaStyle:code-conf:code/nginx.conf><CharStyle:CodeMedium>events<CharStyle:> {
+<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:CodeMedium>worker_connections<CharStyle:>  <CharStyle:CodePale>4096<CharStyle:>;  <CharStyle:CodeItalic>## Default: 1024
 <ParaStyle:code-conf:code/nginx.conf><CharStyle:>}
 <ParaStyle:code-conf:code/nginx.conf>
-<ParaStyle:code-conf:code/nginx.conf><CharStyle:BoldGray>http<CharStyle:> {
-<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:BoldGray>include<CharStyle:>    <CharStyle:BoldGray>conf<CharStyle:>/<CharStyle:BoldGray>mime<CharStyle:>.<CharStyle:BoldGray>types<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:BoldGray>include<CharStyle:>    /<CharStyle:BoldGray>etc<CharStyle:>/<CharStyle:BoldGray>nginx<CharStyle:>/<CharStyle:BoldGray>proxy<CharStyle:>.<CharStyle:BoldGray>conf<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:BoldGray>include<CharStyle:>    /<CharStyle:BoldGray>etc<CharStyle:>/<CharStyle:BoldGray>nginx<CharStyle:>/<CharStyle:BoldGray>fastcgi<CharStyle:>.<CharStyle:BoldGray>conf<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:BoldGray>index<CharStyle:>    <CharStyle:BoldGray>index<CharStyle:>.<CharStyle:BoldGray>html<CharStyle:> <CharStyle:BoldGray>index<CharStyle:>.<CharStyle:BoldGray>htm<CharStyle:> <CharStyle:BoldGray>index<CharStyle:>.<CharStyle:BoldGray>php<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf><CharStyle:CodeMedium>http<CharStyle:> {
+<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:CodeMedium>include<CharStyle:>    <CharStyle:CodeMedium>conf<CharStyle:>/<CharStyle:CodeMedium>mime<CharStyle:>.<CharStyle:CodeMedium>types<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:CodeMedium>include<CharStyle:>    /<CharStyle:CodeMedium>etc<CharStyle:>/<CharStyle:CodeMedium>nginx<CharStyle:>/<CharStyle:CodeMedium>proxy<CharStyle:>.<CharStyle:CodeMedium>conf<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:CodeMedium>include<CharStyle:>    /<CharStyle:CodeMedium>etc<CharStyle:>/<CharStyle:CodeMedium>nginx<CharStyle:>/<CharStyle:CodeMedium>fastcgi<CharStyle:>.<CharStyle:CodeMedium>conf<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:CodeMedium>index<CharStyle:>    <CharStyle:CodeMedium>index<CharStyle:>.<CharStyle:CodeMedium>html<CharStyle:> <CharStyle:CodeMedium>index<CharStyle:>.<CharStyle:CodeMedium>htm<CharStyle:> <CharStyle:CodeMedium>index<CharStyle:>.<CharStyle:CodeMedium>php<CharStyle:>;
 <ParaStyle:code-conf:code/nginx.conf>
-<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:BoldGray>default_type<CharStyle:> <CharStyle:BoldGray>application<CharStyle:>/<CharStyle:BoldGray>octet<CharStyle:>-<CharStyle:BoldGray>stream<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:BoldGray>log_format<CharStyle:>   <CharStyle:BoldGray>main<CharStyle:> <CharStyle:RegularSilverItalic>'$remote_addr - $remote_user [$time_local]  $status '<CharStyle:>
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:RegularSilverItalic>'"$request" $body_bytes_sent "$http_referer" '<CharStyle:>
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:RegularSilverItalic>'"$http_user_agent" "$http_x_forwarded_for"'<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:BoldGray>access_log<CharStyle:>   <CharStyle:BoldGray>logs<CharStyle:>/<CharStyle:BoldGray>access<CharStyle:>.<CharStyle:BoldGray>log<CharStyle:>  <CharStyle:BoldGray>main<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:BoldGray>sendfile<CharStyle:>     <CharStyle:BoldGray>on<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:BoldGray>tcp_nopush<CharStyle:>   <CharStyle:BoldGray>on<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:BoldGray>server_names_hash_bucket_size<CharStyle:> <CharStyle:RegularDark>128<CharStyle:>; <CharStyle:RegularSilverItalic># this seems to be required for some vhosts
+<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:CodeMedium>default_type<CharStyle:> <CharStyle:CodeMedium>application<CharStyle:>/<CharStyle:CodeMedium>octet<CharStyle:>-<CharStyle:CodeMedium>stream<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:CodeMedium>log_format<CharStyle:>   <CharStyle:CodeMedium>main<CharStyle:> <CharStyle:CodeItalic>'$remote_addr - $remote_user [$time_local]  $status '<CharStyle:>
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeItalic>'"$request" $body_bytes_sent "$http_referer" '<CharStyle:>
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeItalic>'"$http_user_agent" "$http_x_forwarded_for"'<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:CodeMedium>access_log<CharStyle:>   <CharStyle:CodeMedium>logs<CharStyle:>/<CharStyle:CodeMedium>access<CharStyle:>.<CharStyle:CodeMedium>log<CharStyle:>  <CharStyle:CodeMedium>main<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:CodeMedium>sendfile<CharStyle:>     <CharStyle:CodeMedium>on<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:CodeMedium>tcp_nopush<CharStyle:>   <CharStyle:CodeMedium>on<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:CodeMedium>server_names_hash_bucket_size<CharStyle:> <CharStyle:CodePale>128<CharStyle:>; <CharStyle:CodeItalic># this seems to be required for some vhosts
 <ParaStyle:code-conf:code/nginx.conf><CharStyle:>
-<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:BoldGray>server<CharStyle:> { <CharStyle:RegularSilverItalic># php/fastcgi
-<ParaStyle:code-conf:code/nginx.conf><CharStyle:>    <CharStyle:BoldGray>listen<CharStyle:>       <CharStyle:RegularDark>80<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:BoldGray>server_name<CharStyle:>  <CharStyle:BoldGray>domain1<CharStyle:>.<CharStyle:BoldGray>com<CharStyle:> <CharStyle:BoldGray>www<CharStyle:>.<CharStyle:BoldGray>domain1<CharStyle:>.<CharStyle:BoldGray>com<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:BoldGray>access_log<CharStyle:>   <CharStyle:BoldGray>logs<CharStyle:>/<CharStyle:BoldGray>domain1<CharStyle:>.<CharStyle:BoldGray>access<CharStyle:>.<CharStyle:BoldGray>log<CharStyle:>  <CharStyle:BoldGray>main<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:BoldGray>root<CharStyle:>         <CharStyle:BoldGray>html<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:CodeMedium>server<CharStyle:> { <CharStyle:CodeItalic># php/fastcgi
+<ParaStyle:code-conf:code/nginx.conf><CharStyle:>    <CharStyle:CodeMedium>listen<CharStyle:>       <CharStyle:CodePale>80<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeMedium>server_name<CharStyle:>  <CharStyle:CodeMedium>domain1<CharStyle:>.<CharStyle:CodeMedium>com<CharStyle:> <CharStyle:CodeMedium>www<CharStyle:>.<CharStyle:CodeMedium>domain1<CharStyle:>.<CharStyle:CodeMedium>com<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeMedium>access_log<CharStyle:>   <CharStyle:CodeMedium>logs<CharStyle:>/<CharStyle:CodeMedium>domain1<CharStyle:>.<CharStyle:CodeMedium>access<CharStyle:>.<CharStyle:CodeMedium>log<CharStyle:>  <CharStyle:CodeMedium>main<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeMedium>root<CharStyle:>         <CharStyle:CodeMedium>html<CharStyle:>;
 <ParaStyle:code-conf:code/nginx.conf>
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:BoldGray>location<CharStyle:> ~ \.<CharStyle:BoldGray>php<CharStyle:>$ {
-<ParaStyle:code-conf:code/nginx.conf>      <CharStyle:BoldGray>fastcgi_pass<CharStyle:>   <CharStyle:RegularDark>127<CharStyle:>.<CharStyle:RegularDark>0<CharStyle:>.<CharStyle:RegularDark>0<CharStyle:>.<CharStyle:RegularDark>1<CharStyle:>:<CharStyle:RegularDark>1025<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeMedium>location<CharStyle:> ~ \.<CharStyle:CodeMedium>php<CharStyle:>$ {
+<ParaStyle:code-conf:code/nginx.conf>      <CharStyle:CodeMedium>fastcgi_pass<CharStyle:>   <CharStyle:CodePale>127<CharStyle:>.<CharStyle:CodePale>0<CharStyle:>.<CharStyle:CodePale>0<CharStyle:>.<CharStyle:CodePale>1<CharStyle:>:<CharStyle:CodePale>1025<CharStyle:>;
 <ParaStyle:code-conf:code/nginx.conf>    }
 <ParaStyle:code-conf:code/nginx.conf>  }
 <ParaStyle:code-conf:code/nginx.conf>
-<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:BoldGray>server<CharStyle:> { <CharStyle:RegularSilverItalic># simple reverse-proxy
-<ParaStyle:code-conf:code/nginx.conf><CharStyle:>    <CharStyle:BoldGray>listen<CharStyle:>       <CharStyle:RegularDark>80<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:BoldGray>server_name<CharStyle:>  <CharStyle:BoldGray>domain2<CharStyle:>.<CharStyle:BoldGray>com<CharStyle:> <CharStyle:BoldGray>www<CharStyle:>.<CharStyle:BoldGray>domain2<CharStyle:>.<CharStyle:BoldGray>com<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:BoldGray>access_log<CharStyle:>   <CharStyle:BoldGray>logs<CharStyle:>/<CharStyle:BoldGray>domain2<CharStyle:>.<CharStyle:BoldGray>access<CharStyle:>.<CharStyle:BoldGray>log<CharStyle:>  <CharStyle:BoldGray>main<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:CodeMedium>server<CharStyle:> { <CharStyle:CodeItalic># simple reverse-proxy
+<ParaStyle:code-conf:code/nginx.conf><CharStyle:>    <CharStyle:CodeMedium>listen<CharStyle:>       <CharStyle:CodePale>80<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeMedium>server_name<CharStyle:>  <CharStyle:CodeMedium>domain2<CharStyle:>.<CharStyle:CodeMedium>com<CharStyle:> <CharStyle:CodeMedium>www<CharStyle:>.<CharStyle:CodeMedium>domain2<CharStyle:>.<CharStyle:CodeMedium>com<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeMedium>access_log<CharStyle:>   <CharStyle:CodeMedium>logs<CharStyle:>/<CharStyle:CodeMedium>domain2<CharStyle:>.<CharStyle:CodeMedium>access<CharStyle:>.<CharStyle:CodeMedium>log<CharStyle:>  <CharStyle:CodeMedium>main<CharStyle:>;
 <ParaStyle:code-conf:code/nginx.conf>
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:RegularSilverItalic># serve static files
-<ParaStyle:code-conf:code/nginx.conf><CharStyle:>    <CharStyle:BoldGray>location<CharStyle:> ~ ^/(<CharStyle:BoldGray>images<CharStyle:>|<CharStyle:BoldGray>javascript<CharStyle:>|<CharStyle:BoldGray>js<CharStyle:>|<CharStyle:BoldGray>css<CharStyle:>|<CharStyle:BoldGray>flash<CharStyle:>|<CharStyle:BoldGray>media<CharStyle:>|<CharStyle:BoldGray>static<CharStyle:>)/  {
-<ParaStyle:code-conf:code/nginx.conf>      <CharStyle:BoldGray>root<CharStyle:>    /<CharStyle:BoldGray>var<CharStyle:>/<CharStyle:BoldGray>www<CharStyle:>/<CharStyle:BoldGray>virtual<CharStyle:>/<CharStyle:BoldGray>big<CharStyle:>.<CharStyle:BoldGray>server<CharStyle:>.<CharStyle:BoldGray>com<CharStyle:>/<CharStyle:BoldGray>htdocs<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>      <CharStyle:BoldGray>expires<CharStyle:> <CharStyle:RegularDark>30<CharStyle:><CharStyle:BoldGray>d<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeItalic># serve static files
+<ParaStyle:code-conf:code/nginx.conf><CharStyle:>    <CharStyle:CodeMedium>location<CharStyle:> ~ ^/(<CharStyle:CodeMedium>images<CharStyle:>|<CharStyle:CodeMedium>javascript<CharStyle:>|<CharStyle:CodeMedium>js<CharStyle:>|<CharStyle:CodeMedium>css<CharStyle:>|<CharStyle:CodeMedium>flash<CharStyle:>|<CharStyle:CodeMedium>media<CharStyle:>|<CharStyle:CodeMedium>static<CharStyle:>)/  {
+<ParaStyle:code-conf:code/nginx.conf>      <CharStyle:CodeMedium>root<CharStyle:>    /<CharStyle:CodeMedium>var<CharStyle:>/<CharStyle:CodeMedium>www<CharStyle:>/<CharStyle:CodeMedium>virtual<CharStyle:>/<CharStyle:CodeMedium>big<CharStyle:>.<CharStyle:CodeMedium>server<CharStyle:>.<CharStyle:CodeMedium>com<CharStyle:>/<CharStyle:CodeMedium>htdocs<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>      <CharStyle:CodeMedium>expires<CharStyle:> <CharStyle:CodePale>30<CharStyle:><CharStyle:CodeMedium>d<CharStyle:>;
 <ParaStyle:code-conf:code/nginx.conf>    }
 <ParaStyle:code-conf:code/nginx.conf>
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:RegularSilverItalic># pass requests for dynamic content to rails/turbogears/zope, et al
-<ParaStyle:code-conf:code/nginx.conf><CharStyle:>    <CharStyle:BoldGray>location<CharStyle:> / {
-<ParaStyle:code-conf:code/nginx.conf>      <CharStyle:BoldGray>proxy_pass<CharStyle:>      <CharStyle:BoldGray>http<CharStyle:>://<CharStyle:RegularDark>127<CharStyle:>.<CharStyle:RegularDark>0<CharStyle:>.<CharStyle:RegularDark>0<CharStyle:>.<CharStyle:RegularDark>1<CharStyle:>:<CharStyle:RegularDark>8080<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeItalic># pass requests for dynamic content to rails/turbogears/zope, et al
+<ParaStyle:code-conf:code/nginx.conf><CharStyle:>    <CharStyle:CodeMedium>location<CharStyle:> / {
+<ParaStyle:code-conf:code/nginx.conf>      <CharStyle:CodeMedium>proxy_pass<CharStyle:>      <CharStyle:CodeMedium>http<CharStyle:>://<CharStyle:CodePale>127<CharStyle:>.<CharStyle:CodePale>0<CharStyle:>.<CharStyle:CodePale>0<CharStyle:>.<CharStyle:CodePale>1<CharStyle:>:<CharStyle:CodePale>8080<CharStyle:>;
 <ParaStyle:code-conf:code/nginx.conf>    }
 <ParaStyle:code-conf:code/nginx.conf>  }
 <ParaStyle:code-conf:code/nginx.conf>
-<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:BoldGray>upstream<CharStyle:> <CharStyle:BoldGray>big_server_com<CharStyle:> {
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:BoldGray>server<CharStyle:> <CharStyle:RegularDark>127<CharStyle:>.<CharStyle:RegularDark>0<CharStyle:>.<CharStyle:RegularDark>0<CharStyle:>.<CharStyle:RegularDark>3<CharStyle:>:<CharStyle:RegularDark>8000<CharStyle:> <CharStyle:BoldGray>weight<CharStyle:>=<CharStyle:RegularDark>5<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:BoldGray>server<CharStyle:> <CharStyle:RegularDark>127<CharStyle:>.<CharStyle:RegularDark>0<CharStyle:>.<CharStyle:RegularDark>0<CharStyle:>.<CharStyle:RegularDark>3<CharStyle:>:<CharStyle:RegularDark>8001<CharStyle:> <CharStyle:BoldGray>weight<CharStyle:>=<CharStyle:RegularDark>5<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:BoldGray>server<CharStyle:> <CharStyle:RegularDark>192<CharStyle:>.<CharStyle:RegularDark>168<CharStyle:>.<CharStyle:RegularDark>0<CharStyle:>.<CharStyle:RegularDark>1<CharStyle:>:<CharStyle:RegularDark>8000<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:BoldGray>server<CharStyle:> <CharStyle:RegularDark>192<CharStyle:>.<CharStyle:RegularDark>168<CharStyle:>.<CharStyle:RegularDark>0<CharStyle:>.<CharStyle:RegularDark>1<CharStyle:>:<CharStyle:RegularDark>8001<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:CodeMedium>upstream<CharStyle:> <CharStyle:CodeMedium>big_server_com<CharStyle:> {
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeMedium>server<CharStyle:> <CharStyle:CodePale>127<CharStyle:>.<CharStyle:CodePale>0<CharStyle:>.<CharStyle:CodePale>0<CharStyle:>.<CharStyle:CodePale>3<CharStyle:>:<CharStyle:CodePale>8000<CharStyle:> <CharStyle:CodeMedium>weight<CharStyle:>=<CharStyle:CodePale>5<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeMedium>server<CharStyle:> <CharStyle:CodePale>127<CharStyle:>.<CharStyle:CodePale>0<CharStyle:>.<CharStyle:CodePale>0<CharStyle:>.<CharStyle:CodePale>3<CharStyle:>:<CharStyle:CodePale>8001<CharStyle:> <CharStyle:CodeMedium>weight<CharStyle:>=<CharStyle:CodePale>5<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeMedium>server<CharStyle:> <CharStyle:CodePale>192<CharStyle:>.<CharStyle:CodePale>168<CharStyle:>.<CharStyle:CodePale>0<CharStyle:>.<CharStyle:CodePale>1<CharStyle:>:<CharStyle:CodePale>8000<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeMedium>server<CharStyle:> <CharStyle:CodePale>192<CharStyle:>.<CharStyle:CodePale>168<CharStyle:>.<CharStyle:CodePale>0<CharStyle:>.<CharStyle:CodePale>1<CharStyle:>:<CharStyle:CodePale>8001<CharStyle:>;
 <ParaStyle:code-conf:code/nginx.conf>  }
 <ParaStyle:code-conf:code/nginx.conf>
-<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:BoldGray>server<CharStyle:> { <CharStyle:RegularSilverItalic># simple load balancing
-<ParaStyle:code-conf:code/nginx.conf><CharStyle:>    <CharStyle:BoldGray>listen<CharStyle:>          <CharStyle:RegularDark>80<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:BoldGray>server_name<CharStyle:>     <CharStyle:BoldGray>big<CharStyle:>.<CharStyle:BoldGray>server<CharStyle:>.<CharStyle:BoldGray>com<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:BoldGray>access_log<CharStyle:>      <CharStyle:BoldGray>logs<CharStyle:>/<CharStyle:BoldGray>big<CharStyle:>.<CharStyle:BoldGray>server<CharStyle:>.<CharStyle:BoldGray>access<CharStyle:>.<CharStyle:BoldGray>log<CharStyle:> <CharStyle:BoldGray>main<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:CodeMedium>server<CharStyle:> { <CharStyle:CodeItalic># simple load balancing
+<ParaStyle:code-conf:code/nginx.conf><CharStyle:>    <CharStyle:CodeMedium>listen<CharStyle:>          <CharStyle:CodePale>80<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeMedium>server_name<CharStyle:>     <CharStyle:CodeMedium>big<CharStyle:>.<CharStyle:CodeMedium>server<CharStyle:>.<CharStyle:CodeMedium>com<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeMedium>access_log<CharStyle:>      <CharStyle:CodeMedium>logs<CharStyle:>/<CharStyle:CodeMedium>big<CharStyle:>.<CharStyle:CodeMedium>server<CharStyle:>.<CharStyle:CodeMedium>access<CharStyle:>.<CharStyle:CodeMedium>log<CharStyle:> <CharStyle:CodeMedium>main<CharStyle:>;
 <ParaStyle:code-conf:code/nginx.conf>
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:BoldGray>location<CharStyle:> / {
-<ParaStyle:code-conf:code/nginx.conf>      <CharStyle:BoldGray>proxy_pass<CharStyle:>      <CharStyle:BoldGray>http<CharStyle:>://<CharStyle:BoldGray>big_server_com<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeMedium>location<CharStyle:> / {
+<ParaStyle:code-conf:code/nginx.conf>      <CharStyle:CodeMedium>proxy_pass<CharStyle:>      <CharStyle:CodeMedium>http<CharStyle:>://<CharStyle:CodeMedium>big_server_com<CharStyle:>;
 <ParaStyle:code-conf:code/nginx.conf>    }
 <ParaStyle:code-conf:code/nginx.conf>  }
 <ParaStyle:h4>go
-<ParaStyle:code-go:code/sample.go><CharStyle:BoldBlack>package<CharStyle:> <CharStyle:BoldGray>main<CharStyle:>
+<ParaStyle:code-go:code/sample.go><CharStyle:CodeBold>package<CharStyle:> <CharStyle:CodeMedium>main<CharStyle:>
 <ParaStyle:code-go:code/sample.go>
-<ParaStyle:code-go:code/sample.go><CharStyle:BoldBlack>import<CharStyle:> <CharStyle:RegularSilverItalic>"fmt"<CharStyle:>
+<ParaStyle:code-go:code/sample.go><CharStyle:CodeBold>import<CharStyle:> <CharStyle:CodeItalic>"fmt"<CharStyle:>
 <ParaStyle:code-go:code/sample.go>
-<ParaStyle:code-go:code/sample.go><CharStyle:BoldBlack>func<CharStyle:> <CharStyle:BoldGray>main<CharStyle:><CharStyle:Punctuation>()<CharStyle:> <CharStyle:Punctuation>{<CharStyle:>
-<ParaStyle:code-go:code/sample.go>	<CharStyle:RegularSilverItalic>// this is sample code<CharStyle:>
-<ParaStyle:code-go:code/sample.go>	<CharStyle:BoldGray>fmt<CharStyle:><CharStyle:RegularDark>.<CharStyle:><CharStyle:BoldGray>Println<CharStyle:><CharStyle:Punctuation>(<CharStyle:><CharStyle:RegularSilverItalic>"Hello World"<CharStyle:><CharStyle:Punctuation>)<CharStyle:>
-<ParaStyle:code-go:code/sample.go><CharStyle:Punctuation>}<CharStyle:>
+<ParaStyle:code-go:code/sample.go><CharStyle:CodeBold>func<CharStyle:> <CharStyle:CodeMedium>main<CharStyle:><CharStyle:CodeOther>()<CharStyle:> <CharStyle:CodeOther>{<CharStyle:>
+<ParaStyle:code-go:code/sample.go>	<CharStyle:CodeItalic>// this is sample code<CharStyle:>
+<ParaStyle:code-go:code/sample.go>	<CharStyle:CodeMedium>fmt<CharStyle:><CharStyle:CodePale>.<CharStyle:><CharStyle:CodeMedium>Println<CharStyle:><CharStyle:CodeOther>(<CharStyle:><CharStyle:CodeItalic>"Hello World"<CharStyle:><CharStyle:CodeOther>)<CharStyle:>
+<ParaStyle:code-go:code/sample.go><CharStyle:CodeOther>}<CharStyle:>
 <ParaStyle:h4>java
-<ParaStyle:code-java:code/sample.java><CharStyle:BoldBlack>public<CharStyle:> <CharStyle:BoldBlack>class<CharStyle:> <CharStyle:BoldGray>HelloWorld<CharStyle:> <CharStyle:RegularDark>{<CharStyle:>
-<ParaStyle:code-java:code/sample.java>  <CharStyle:BoldBlack>public<CharStyle:> <CharStyle:BoldBlack>static<CharStyle:> <CharStyle:BoldBlack>void<CharStyle:> <CharStyle:BoldGray>main<CharStyle:><CharStyle:RegularDark>(<CharStyle:><CharStyle:BoldGray>String<CharStyle:><CharStyle:RegularDark>[]<CharStyle:> <CharStyle:BoldGray>args<CharStyle:><CharStyle:RegularDark>)<CharStyle:> <CharStyle:RegularDark>{<CharStyle:>
-<ParaStyle:code-java:code/sample.java>    <CharStyle:BoldGray>System<CharStyle:><CharStyle:RegularDark>.<CharStyle:><CharStyle:BoldGray>out<CharStyle:><CharStyle:RegularDark>.<CharStyle:><CharStyle:BoldGray>printf<CharStyle:><CharStyle:RegularDark>(<CharStyle:><CharStyle:RegularSilverItalic>"Hello World"<CharStyle:><CharStyle:RegularDark>);<CharStyle:>
-<ParaStyle:code-java:code/sample.java>  <CharStyle:RegularDark>}<CharStyle:>
+<ParaStyle:code-java:code/sample.java><CharStyle:CodeBold>public<CharStyle:> <CharStyle:CodeBold>class<CharStyle:> <CharStyle:CodeMedium>HelloWorld<CharStyle:> <CharStyle:CodePale>{<CharStyle:>
+<ParaStyle:code-java:code/sample.java>  <CharStyle:CodeBold>public<CharStyle:> <CharStyle:CodeBold>static<CharStyle:> <CharStyle:CodeBold>void<CharStyle:> <CharStyle:CodeMedium>main<CharStyle:><CharStyle:CodePale>(<CharStyle:><CharStyle:CodeMedium>String<CharStyle:><CharStyle:CodePale>[]<CharStyle:> <CharStyle:CodeMedium>args<CharStyle:><CharStyle:CodePale>)<CharStyle:> <CharStyle:CodePale>{<CharStyle:>
+<ParaStyle:code-java:code/sample.java>    <CharStyle:CodeMedium>System<CharStyle:><CharStyle:CodePale>.<CharStyle:><CharStyle:CodeMedium>out<CharStyle:><CharStyle:CodePale>.<CharStyle:><CharStyle:CodeMedium>printf<CharStyle:><CharStyle:CodePale>(<CharStyle:><CharStyle:CodeItalic>"Hello World"<CharStyle:><CharStyle:CodePale>);<CharStyle:>
+<ParaStyle:code-java:code/sample.java>  <CharStyle:CodePale>}<CharStyle:>
 <ParaStyle:code-java:code/sample.java>
-<ParaStyle:code-java:code/sample.java>  <CharStyle:BoldBlack>public<CharStyle:> <CharStyle:BoldBlack>static<CharStyle:> <CharStyle:BoldBlack>int<CharStyle:> <CharStyle:BoldGray>add<CharStyle:><CharStyle:RegularDark>(<CharStyle:><CharStyle:BoldBlack>int<CharStyle:> <CharStyle:BoldGray>x<CharStyle:><CharStyle:RegularDark>,<CharStyle:> <CharStyle:BoldBlack>int<CharStyle:> <CharStyle:BoldGray>y<CharStyle:><CharStyle:RegularDark>)<CharStyle:> <CharStyle:RegularDark>{<CharStyle:>
-<ParaStyle:code-java:code/sample.java>    <CharStyle:BoldBlack>int<CharStyle:> <CharStyle:BoldGray>z<CharStyle:> <CharStyle:RegularDark>=<CharStyle:> <CharStyle:BoldGray>x<CharStyle:> <CharStyle:RegularDark>+<CharStyle:> <CharStyle:BoldGray>y<CharStyle:><CharStyle:RegularDark>;<CharStyle:>
-<ParaStyle:code-java:code/sample.java>    <CharStyle:BoldBlack>return<CharStyle:> <CharStyle:BoldGray>z<CharStyle:><CharStyle:RegularDark>;<CharStyle:>
-<ParaStyle:code-java:code/sample.java>  <CharStyle:RegularDark>}<CharStyle:>
-<ParaStyle:code-java:code/sample.java><CharStyle:RegularDark>}<CharStyle:>
+<ParaStyle:code-java:code/sample.java>  <CharStyle:CodeBold>public<CharStyle:> <CharStyle:CodeBold>static<CharStyle:> <CharStyle:CodeBold>int<CharStyle:> <CharStyle:CodeMedium>add<CharStyle:><CharStyle:CodePale>(<CharStyle:><CharStyle:CodeBold>int<CharStyle:> <CharStyle:CodeMedium>x<CharStyle:><CharStyle:CodePale>,<CharStyle:> <CharStyle:CodeBold>int<CharStyle:> <CharStyle:CodeMedium>y<CharStyle:><CharStyle:CodePale>)<CharStyle:> <CharStyle:CodePale>{<CharStyle:>
+<ParaStyle:code-java:code/sample.java>    <CharStyle:CodeBold>int<CharStyle:> <CharStyle:CodeMedium>z<CharStyle:> <CharStyle:CodePale>=<CharStyle:> <CharStyle:CodeMedium>x<CharStyle:> <CharStyle:CodePale>+<CharStyle:> <CharStyle:CodeMedium>y<CharStyle:><CharStyle:CodePale>;<CharStyle:>
+<ParaStyle:code-java:code/sample.java>    <CharStyle:CodeBold>return<CharStyle:> <CharStyle:CodeMedium>z<CharStyle:><CharStyle:CodePale>;<CharStyle:>
+<ParaStyle:code-java:code/sample.java>  <CharStyle:CodePale>}<CharStyle:>
+<ParaStyle:code-java:code/sample.java><CharStyle:CodePale>}<CharStyle:>
 <ParaStyle:h4>html
-<ParaStyle:code-html:code/sample.html><CharStyle:RegularSilverItalic>\<!DOCTYPE html\><CharStyle:>
-<ParaStyle:code-html:code/sample.html><CharStyle:BoldBlack>\<meta<CharStyle:> <CharStyle:BoldGray>charset=<CharStyle:><CharStyle:RegularSilverItalic>utf-8<CharStyle:><CharStyle:BoldBlack>\><CharStyle:>
-<ParaStyle:code-html:code/sample.html><CharStyle:BoldBlack>\<meta<CharStyle:> <CharStyle:BoldGray>name=<CharStyle:><CharStyle:RegularSilverItalic>viewport<CharStyle:> <CharStyle:BoldGray>content=<CharStyle:><CharStyle:RegularSilverItalic>"width=device-width,initial-scale=1"<CharStyle:><CharStyle:BoldBlack>\><CharStyle:>
-<ParaStyle:code-html:code/sample.html><CharStyle:BoldBlack>\<title\><CharStyle:>DEMO<CharStyle:BoldBlack>\</title\><CharStyle:>
+<ParaStyle:code-html:code/sample.html><CharStyle:CodeItalic>\<!DOCTYPE html\><CharStyle:>
+<ParaStyle:code-html:code/sample.html><CharStyle:CodeBold>\<meta<CharStyle:> <CharStyle:CodeMedium>charset=<CharStyle:><CharStyle:CodeItalic>utf-8<CharStyle:><CharStyle:CodeBold>\><CharStyle:>
+<ParaStyle:code-html:code/sample.html><CharStyle:CodeBold>\<meta<CharStyle:> <CharStyle:CodeMedium>name=<CharStyle:><CharStyle:CodeItalic>viewport<CharStyle:> <CharStyle:CodeMedium>content=<CharStyle:><CharStyle:CodeItalic>"width=device-width,initial-scale=1"<CharStyle:><CharStyle:CodeBold>\><CharStyle:>
+<ParaStyle:code-html:code/sample.html><CharStyle:CodeBold>\<title\><CharStyle:>DEMO<CharStyle:CodeBold>\</title\><CharStyle:>
 <ParaStyle:code-html:code/sample.html>
-<ParaStyle:code-html:code/sample.html><CharStyle:BoldBlack>\<style\><CharStyle:>
-<ParaStyle:code-html:code/sample.html><CharStyle:BoldBlack>\</style\><CharStyle:>
+<ParaStyle:code-html:code/sample.html><CharStyle:CodeBold>\<style\><CharStyle:>
+<ParaStyle:code-html:code/sample.html><CharStyle:CodeBold>\</style\><CharStyle:>
 <ParaStyle:code-html:code/sample.html>
-<ParaStyle:code-html:code/sample.html><CharStyle:BoldBlack>\<h1\><CharStyle:>Test<CharStyle:BoldBlack>\</h1\><CharStyle:>
-<ParaStyle:code-html:code/sample.html><CharStyle:RegularSilverItalic>\<!-- comment --\><CharStyle:>
-<ParaStyle:code-html:code/sample.html><CharStyle:BoldBlack>\<p\><CharStyle:>this is <CharStyle:BoldBlack>\<strong\><CharStyle:>sample<CharStyle:BoldBlack>\</strong\><CharStyle:> text<CharStyle:BoldBlack>\</p\><CharStyle:>
+<ParaStyle:code-html:code/sample.html><CharStyle:CodeBold>\<h1\><CharStyle:>Test<CharStyle:CodeBold>\</h1\><CharStyle:>
+<ParaStyle:code-html:code/sample.html><CharStyle:CodeItalic>\<!-- comment --\><CharStyle:>
+<ParaStyle:code-html:code/sample.html><CharStyle:CodeBold>\<p\><CharStyle:>this is <CharStyle:CodeBold>\<strong\><CharStyle:>sample<CharStyle:CodeBold>\</strong\><CharStyle:> text<CharStyle:CodeBold>\</p\><CharStyle:>
 <ParaStyle:code-html:code/sample.html>
-<ParaStyle:code-html:code/sample.html><CharStyle:BoldBlack>\<div\><CharStyle:>
-<ParaStyle:code-html:code/sample.html>  <CharStyle:BoldBlack>\<video<CharStyle:> <CharStyle:BoldGray>src=<CharStyle:><CharStyle:RegularSilverItalic>"some.mp4"<CharStyle:><CharStyle:BoldBlack>\><CharStyle:>
-<ParaStyle:code-html:code/sample.html>  <CharStyle:BoldBlack>\<img<CharStyle:> <CharStyle:BoldGray>src=<CharStyle:><CharStyle:RegularSilverItalic>some.webp<CharStyle:> <CharStyle:BoldGray>label=<CharStyle:><CharStyle:RegularSilverItalic>"good picture"<CharStyle:><CharStyle:BoldBlack>\><CharStyle:>
+<ParaStyle:code-html:code/sample.html><CharStyle:CodeBold>\<div\><CharStyle:>
+<ParaStyle:code-html:code/sample.html>  <CharStyle:CodeBold>\<video<CharStyle:> <CharStyle:CodeMedium>src=<CharStyle:><CharStyle:CodeItalic>"some.mp4"<CharStyle:><CharStyle:CodeBold>\><CharStyle:>
+<ParaStyle:code-html:code/sample.html>  <CharStyle:CodeBold>\<img<CharStyle:> <CharStyle:CodeMedium>src=<CharStyle:><CharStyle:CodeItalic>some.webp<CharStyle:> <CharStyle:CodeMedium>label=<CharStyle:><CharStyle:CodeItalic>"good picture"<CharStyle:><CharStyle:CodeBold>\><CharStyle:>
 <ParaStyle:code-html:code/sample.html>
-<ParaStyle:code-html:code/sample.html>  <CharStyle:BoldBlack>\<form<CharStyle:> <CharStyle:BoldGray>action=<CharStyle:><CharStyle:RegularSilverItalic>/login<CharStyle:> <CharStyle:BoldGray>method=<CharStyle:><CharStyle:RegularSilverItalic>post<CharStyle:><CharStyle:BoldBlack>\><CharStyle:>
-<ParaStyle:code-html:code/sample.html>    <CharStyle:BoldBlack>\<input<CharStyle:> <CharStyle:BoldGray>type=<CharStyle:><CharStyle:RegularSilverItalic>text<CharStyle:> <CharStyle:BoldGray>name=<CharStyle:><CharStyle:RegularSilverItalic>username<CharStyle:><CharStyle:BoldBlack>\><CharStyle:>
-<ParaStyle:code-html:code/sample.html>    <CharStyle:BoldBlack>\<input<CharStyle:> <CharStyle:BoldGray>type=<CharStyle:><CharStyle:RegularSilverItalic>password<CharStyle:> <CharStyle:BoldGray>name=<CharStyle:><CharStyle:RegularSilverItalic>password<CharStyle:><CharStyle:BoldBlack>\><CharStyle:>
-<ParaStyle:code-html:code/sample.html>    <CharStyle:BoldBlack>\<button<CharStyle:> <CharStyle:BoldGray>type=<CharStyle:><CharStyle:RegularSilverItalic>submit<CharStyle:><CharStyle:BoldBlack>\><CharStyle:>ok<CharStyle:BoldBlack>\</button\><CharStyle:>
-<ParaStyle:code-html:code/sample.html>  <CharStyle:BoldBlack>\</form\><CharStyle:>
-<ParaStyle:code-html:code/sample.html><CharStyle:BoldBlack>\</div\><CharStyle:>
+<ParaStyle:code-html:code/sample.html>  <CharStyle:CodeBold>\<form<CharStyle:> <CharStyle:CodeMedium>action=<CharStyle:><CharStyle:CodeItalic>/login<CharStyle:> <CharStyle:CodeMedium>method=<CharStyle:><CharStyle:CodeItalic>post<CharStyle:><CharStyle:CodeBold>\><CharStyle:>
+<ParaStyle:code-html:code/sample.html>    <CharStyle:CodeBold>\<input<CharStyle:> <CharStyle:CodeMedium>type=<CharStyle:><CharStyle:CodeItalic>text<CharStyle:> <CharStyle:CodeMedium>name=<CharStyle:><CharStyle:CodeItalic>username<CharStyle:><CharStyle:CodeBold>\><CharStyle:>
+<ParaStyle:code-html:code/sample.html>    <CharStyle:CodeBold>\<input<CharStyle:> <CharStyle:CodeMedium>type=<CharStyle:><CharStyle:CodeItalic>password<CharStyle:> <CharStyle:CodeMedium>name=<CharStyle:><CharStyle:CodeItalic>password<CharStyle:><CharStyle:CodeBold>\><CharStyle:>
+<ParaStyle:code-html:code/sample.html>    <CharStyle:CodeBold>\<button<CharStyle:> <CharStyle:CodeMedium>type=<CharStyle:><CharStyle:CodeItalic>submit<CharStyle:><CharStyle:CodeBold>\><CharStyle:>ok<CharStyle:CodeBold>\</button\><CharStyle:>
+<ParaStyle:code-html:code/sample.html>  <CharStyle:CodeBold>\</form\><CharStyle:>
+<ParaStyle:code-html:code/sample.html><CharStyle:CodeBold>\</div\><CharStyle:>
 <ParaStyle:h4>css
-<ParaStyle:code-css:code/style.css><CharStyle:RegularSilverItalic>/** markdown like css **/<CharStyle:>
-<ParaStyle:code-css:code/style.css><CharStyle:BoldBlack>strong<CharStyle:><CharStyle:BoldGray>::before<CharStyle:><CharStyle:RegularDark>,<CharStyle:>
-<ParaStyle:code-css:code/style.css><CharStyle:BoldBlack>strong<CharStyle:><CharStyle:BoldGray>::after<CharStyle:> <CharStyle:Punctuation>{<CharStyle:>
-<ParaStyle:code-css:code/style.css>  <CharStyle:BoldBlack>content<CharStyle:><CharStyle:Punctuation>:<CharStyle:> <CharStyle:RegularSilverItalic>"**"<CharStyle:><CharStyle:Punctuation>;<CharStyle:>
-<ParaStyle:code-css:code/style.css><CharStyle:Punctuation>}<CharStyle:>
+<ParaStyle:code-css:code/style.css><CharStyle:CodeItalic>/** markdown like css **/<CharStyle:>
+<ParaStyle:code-css:code/style.css><CharStyle:CodeBold>strong<CharStyle:><CharStyle:CodeMedium>::before<CharStyle:><CharStyle:CodePale>,<CharStyle:>
+<ParaStyle:code-css:code/style.css><CharStyle:CodeBold>strong<CharStyle:><CharStyle:CodeMedium>::after<CharStyle:> <CharStyle:CodeOther>{<CharStyle:>
+<ParaStyle:code-css:code/style.css>  <CharStyle:CodeBold>content<CharStyle:><CharStyle:CodeOther>:<CharStyle:> <CharStyle:CodeItalic>"**"<CharStyle:><CharStyle:CodeOther>;<CharStyle:>
+<ParaStyle:code-css:code/style.css><CharStyle:CodeOther>}<CharStyle:>
 <ParaStyle:code-css:code/style.css>
-<ParaStyle:code-css:code/style.css><CharStyle:BoldBlack>ul<CharStyle:> <CharStyle:BoldBlack>li<CharStyle:><CharStyle:BoldGray>::before<CharStyle:> <CharStyle:Punctuation>{<CharStyle:>
-<ParaStyle:code-css:code/style.css>  <CharStyle:BoldBlack>content<CharStyle:><CharStyle:Punctuation>:<CharStyle:> <CharStyle:RegularSilverItalic>"- "<CharStyle:><CharStyle:Punctuation>;<CharStyle:>
-<ParaStyle:code-css:code/style.css><CharStyle:Punctuation>}<CharStyle:>
+<ParaStyle:code-css:code/style.css><CharStyle:CodeBold>ul<CharStyle:> <CharStyle:CodeBold>li<CharStyle:><CharStyle:CodeMedium>::before<CharStyle:> <CharStyle:CodeOther>{<CharStyle:>
+<ParaStyle:code-css:code/style.css>  <CharStyle:CodeBold>content<CharStyle:><CharStyle:CodeOther>:<CharStyle:> <CharStyle:CodeItalic>"- "<CharStyle:><CharStyle:CodeOther>;<CharStyle:>
+<ParaStyle:code-css:code/style.css><CharStyle:CodeOther>}<CharStyle:>
 <ParaStyle:code-css:code/style.css>
-<ParaStyle:code-css:code/style.css><CharStyle:BoldBlack>ol<CharStyle:> <CharStyle:Punctuation>{<CharStyle:>
-<ParaStyle:code-css:code/style.css>  <CharStyle:BoldBlack>counter-reset<CharStyle:><CharStyle:Punctuation>:<CharStyle:> <CharStyle:BoldGray>list<CharStyle:><CharStyle:Punctuation>;<CharStyle:>
-<ParaStyle:code-css:code/style.css><CharStyle:Punctuation>}<CharStyle:>
+<ParaStyle:code-css:code/style.css><CharStyle:CodeBold>ol<CharStyle:> <CharStyle:CodeOther>{<CharStyle:>
+<ParaStyle:code-css:code/style.css>  <CharStyle:CodeBold>counter-reset<CharStyle:><CharStyle:CodeOther>:<CharStyle:> <CharStyle:CodeMedium>list<CharStyle:><CharStyle:CodeOther>;<CharStyle:>
+<ParaStyle:code-css:code/style.css><CharStyle:CodeOther>}<CharStyle:>
 <ParaStyle:code-css:code/style.css>
-<ParaStyle:code-css:code/style.css><CharStyle:BoldBlack>ol<CharStyle:> <CharStyle:BoldBlack>li<CharStyle:><CharStyle:BoldGray>::before<CharStyle:> <CharStyle:Punctuation>{<CharStyle:>
-<ParaStyle:code-css:code/style.css>  <CharStyle:BoldBlack>counter-increment<CharStyle:><CharStyle:Punctuation>:<CharStyle:> <CharStyle:BoldGray>list<CharStyle:><CharStyle:Punctuation>;<CharStyle:>
-<ParaStyle:code-css:code/style.css>  <CharStyle:BoldBlack>content<CharStyle:><CharStyle:Punctuation>:<CharStyle:> <CharStyle:BoldGray>counter<CharStyle:><CharStyle:Punctuation>(<CharStyle:><CharStyle:BoldGray>list<CharStyle:><CharStyle:Punctuation>)<CharStyle:> <CharStyle:RegularSilverItalic>". "<CharStyle:><CharStyle:Punctuation>;<CharStyle:>
-<ParaStyle:code-css:code/style.css><CharStyle:Punctuation>}<CharStyle:>
+<ParaStyle:code-css:code/style.css><CharStyle:CodeBold>ol<CharStyle:> <CharStyle:CodeBold>li<CharStyle:><CharStyle:CodeMedium>::before<CharStyle:> <CharStyle:CodeOther>{<CharStyle:>
+<ParaStyle:code-css:code/style.css>  <CharStyle:CodeBold>counter-increment<CharStyle:><CharStyle:CodeOther>:<CharStyle:> <CharStyle:CodeMedium>list<CharStyle:><CharStyle:CodeOther>;<CharStyle:>
+<ParaStyle:code-css:code/style.css>  <CharStyle:CodeBold>content<CharStyle:><CharStyle:CodeOther>:<CharStyle:> <CharStyle:CodeMedium>counter<CharStyle:><CharStyle:CodeOther>(<CharStyle:><CharStyle:CodeMedium>list<CharStyle:><CharStyle:CodeOther>)<CharStyle:> <CharStyle:CodeItalic>". "<CharStyle:><CharStyle:CodeOther>;<CharStyle:>
+<ParaStyle:code-css:code/style.css><CharStyle:CodeOther>}<CharStyle:>
 <ParaStyle:code-css:code/style.css>
-<ParaStyle:code-css:code/style.css><CharStyle:BoldBlack>dl<CharStyle:> <CharStyle:BoldBlack>dt<CharStyle:><CharStyle:BoldGray>::after<CharStyle:> <CharStyle:Punctuation>{<CharStyle:>
-<ParaStyle:code-css:code/style.css>  <CharStyle:BoldBlack>content<CharStyle:><CharStyle:Punctuation>:<CharStyle:> <CharStyle:RegularSilverItalic>":"<CharStyle:><CharStyle:Punctuation>;<CharStyle:>
-<ParaStyle:code-css:code/style.css><CharStyle:Punctuation>}<CharStyle:>
+<ParaStyle:code-css:code/style.css><CharStyle:CodeBold>dl<CharStyle:> <CharStyle:CodeBold>dt<CharStyle:><CharStyle:CodeMedium>::after<CharStyle:> <CharStyle:CodeOther>{<CharStyle:>
+<ParaStyle:code-css:code/style.css>  <CharStyle:CodeBold>content<CharStyle:><CharStyle:CodeOther>:<CharStyle:> <CharStyle:CodeItalic>":"<CharStyle:><CharStyle:CodeOther>;<CharStyle:>
+<ParaStyle:code-css:code/style.css><CharStyle:CodeOther>}<CharStyle:>
 <ParaStyle:code-css:code/style.css>
-<ParaStyle:code-css:code/style.css><CharStyle:BoldBlack>blockquote<CharStyle:> <CharStyle:Punctuation>{<CharStyle:>
-<ParaStyle:code-css:code/style.css>  <CharStyle:BoldBlack>display<CharStyle:><CharStyle:Punctuation>:<CharStyle:> <CharStyle:BoldGray>block<CharStyle:><CharStyle:Punctuation>;<CharStyle:>
-<ParaStyle:code-css:code/style.css>  <CharStyle:BoldBlack>border<CharStyle:><CharStyle:Punctuation>:<CharStyle:> <CharStyle:BoldGray>solid<CharStyle:> <CharStyle:RegularDark>1px<CharStyle:> <CharStyle:BoldGray>var<CharStyle:><CharStyle:Punctuation>(<CharStyle:><CharStyle:BoldGray>--block-quote<CharStyle:><CharStyle:Punctuation>);<CharStyle:>
-<ParaStyle:code-css:code/style.css>  <CharStyle:BoldBlack>border-radius<CharStyle:><CharStyle:Punctuation>:<CharStyle:> <CharStyle:RegularDark>4px<CharStyle:><CharStyle:Punctuation>;<CharStyle:>
-<ParaStyle:code-css:code/style.css>  <CharStyle:BoldBlack>padding<CharStyle:><CharStyle:Punctuation>:<CharStyle:> <CharStyle:RegularDark>0.4em<CharStyle:> <CharStyle:RegularDark>1em<CharStyle:><CharStyle:Punctuation>;<CharStyle:>
-<ParaStyle:code-css:code/style.css>  <CharStyle:BoldBlack>margin<CharStyle:><CharStyle:Punctuation>:<CharStyle:> <CharStyle:RegularDark>0<CharStyle:><CharStyle:Punctuation>;<CharStyle:>
-<ParaStyle:code-css:code/style.css><CharStyle:Punctuation>}<CharStyle:>
+<ParaStyle:code-css:code/style.css><CharStyle:CodeBold>blockquote<CharStyle:> <CharStyle:CodeOther>{<CharStyle:>
+<ParaStyle:code-css:code/style.css>  <CharStyle:CodeBold>display<CharStyle:><CharStyle:CodeOther>:<CharStyle:> <CharStyle:CodeMedium>block<CharStyle:><CharStyle:CodeOther>;<CharStyle:>
+<ParaStyle:code-css:code/style.css>  <CharStyle:CodeBold>border<CharStyle:><CharStyle:CodeOther>:<CharStyle:> <CharStyle:CodeMedium>solid<CharStyle:> <CharStyle:CodePale>1px<CharStyle:> <CharStyle:CodeMedium>var<CharStyle:><CharStyle:CodeOther>(<CharStyle:><CharStyle:CodeMedium>--block-quote<CharStyle:><CharStyle:CodeOther>);<CharStyle:>
+<ParaStyle:code-css:code/style.css>  <CharStyle:CodeBold>border-radius<CharStyle:><CharStyle:CodeOther>:<CharStyle:> <CharStyle:CodePale>4px<CharStyle:><CharStyle:CodeOther>;<CharStyle:>
+<ParaStyle:code-css:code/style.css>  <CharStyle:CodeBold>padding<CharStyle:><CharStyle:CodeOther>:<CharStyle:> <CharStyle:CodePale>0.4em<CharStyle:> <CharStyle:CodePale>1em<CharStyle:><CharStyle:CodeOther>;<CharStyle:>
+<ParaStyle:code-css:code/style.css>  <CharStyle:CodeBold>margin<CharStyle:><CharStyle:CodeOther>:<CharStyle:> <CharStyle:CodePale>0<CharStyle:><CharStyle:CodeOther>;<CharStyle:>
+<ParaStyle:code-css:code/style.css><CharStyle:CodeOther>}<CharStyle:>
 <ParaStyle:h4>js
-<ParaStyle:code-js:code/script.js><CharStyle:BoldBlack>import<CharStyle:> <CharStyle:BoldGray>file<CharStyle:> <CharStyle:BoldBlack>from<CharStyle:> <CharStyle:BoldGray>fs<CharStyle:>
+<ParaStyle:code-js:code/script.js><CharStyle:CodeBold>import<CharStyle:> <CharStyle:CodeMedium>file<CharStyle:> <CharStyle:CodeBold>from<CharStyle:> <CharStyle:CodeMedium>fs<CharStyle:>
 <ParaStyle:code-js:code/script.js>
-<ParaStyle:code-js:code/script.js><CharStyle:BoldBlack>function<CharStyle:> <CharStyle:BoldGray>callback<CharStyle:><CharStyle:Punctuation>(<CharStyle:><CharStyle:BoldGray>err<CharStyle:><CharStyle:Punctuation>,<CharStyle:> <CharStyle:BoldGray>file<CharStyle:><CharStyle:Punctuation>)<CharStyle:> <CharStyle:Punctuation>{<CharStyle:>
-<ParaStyle:code-js:code/script.js>  <CharStyle:BoldBlack>if<CharStyle:> <CharStyle:Punctuation>(<CharStyle:><CharStyle:BoldGray>err<CharStyle:><CharStyle:Punctuation>)<CharStyle:> <CharStyle:BoldBlack>return<CharStyle:> <CharStyle:BoldGray>console<CharStyle:><CharStyle:Punctuation>.<CharStyle:><CharStyle:BoldGray>error<CharStyle:><CharStyle:Punctuation>(<CharStyle:><CharStyle:BoldGray>err<CharStyle:><CharStyle:Punctuation>);<CharStyle:>
+<ParaStyle:code-js:code/script.js><CharStyle:CodeBold>function<CharStyle:> <CharStyle:CodeMedium>callback<CharStyle:><CharStyle:CodeOther>(<CharStyle:><CharStyle:CodeMedium>err<CharStyle:><CharStyle:CodeOther>,<CharStyle:> <CharStyle:CodeMedium>file<CharStyle:><CharStyle:CodeOther>)<CharStyle:> <CharStyle:CodeOther>{<CharStyle:>
+<ParaStyle:code-js:code/script.js>  <CharStyle:CodeBold>if<CharStyle:> <CharStyle:CodeOther>(<CharStyle:><CharStyle:CodeMedium>err<CharStyle:><CharStyle:CodeOther>)<CharStyle:> <CharStyle:CodeBold>return<CharStyle:> <CharStyle:CodeMedium>console<CharStyle:><CharStyle:CodeOther>.<CharStyle:><CharStyle:CodeMedium>error<CharStyle:><CharStyle:CodeOther>(<CharStyle:><CharStyle:CodeMedium>err<CharStyle:><CharStyle:CodeOther>);<CharStyle:>
 <ParaStyle:code-js:code/script.js>
-<ParaStyle:code-js:code/script.js>  <CharStyle:RegularSilverItalic>/* do something */<CharStyle:>
-<ParaStyle:code-js:code/script.js><CharStyle:Punctuation>};<CharStyle:>
+<ParaStyle:code-js:code/script.js>  <CharStyle:CodeItalic>/* do something */<CharStyle:>
+<ParaStyle:code-js:code/script.js><CharStyle:CodeOther>};<CharStyle:>
 <ParaStyle:code-js:code/script.js>
-<ParaStyle:code-js:code/script.js><CharStyle:BoldGray>file<CharStyle:><CharStyle:Punctuation>.<CharStyle:><CharStyle:BoldGray>open<CharStyle:><CharStyle:Punctuation>(<CharStyle:><CharStyle:BoldGray>callback<CharStyle:><CharStyle:Punctuation>);<CharStyle:>
+<ParaStyle:code-js:code/script.js><CharStyle:CodeMedium>file<CharStyle:><CharStyle:CodeOther>.<CharStyle:><CharStyle:CodeMedium>open<CharStyle:><CharStyle:CodeOther>(<CharStyle:><CharStyle:CodeMedium>callback<CharStyle:><CharStyle:CodeOther>);<CharStyle:>
 <ParaStyle:code-js:code/script.js>
-<ParaStyle:code-js:code/script.js><CharStyle:BoldBlack>class<CharStyle:> <CharStyle:BoldGray>Test<CharStyle:> <CharStyle:BoldBlack>extends<CharStyle:> <CharStyle:BoldGray>EventEmitter<CharStyle:> <CharStyle:Punctuation>{<CharStyle:>
-<ParaStyle:code-js:code/script.js>  <CharStyle:BoldBlack>constructor<CharStyle:><CharStyle:Punctuation>(<CharStyle:><CharStyle:BoldGray>data<CharStyle:><CharStyle:Punctuation>)<CharStyle:> <CharStyle:Punctuation>{<CharStyle:>
-<ParaStyle:code-js:code/script.js>    <CharStyle:BoldBlack>this<CharStyle:><CharStyle:Punctuation>.<CharStyle:><CharStyle:BoldGray>data<CharStyle:> <CharStyle:RegularDark>=<CharStyle:> <CharStyle:BoldGray>data<CharStyle:>
-<ParaStyle:code-js:code/script.js>  <CharStyle:Punctuation>}<CharStyle:>
+<ParaStyle:code-js:code/script.js><CharStyle:CodeBold>class<CharStyle:> <CharStyle:CodeMedium>Test<CharStyle:> <CharStyle:CodeBold>extends<CharStyle:> <CharStyle:CodeMedium>EventEmitter<CharStyle:> <CharStyle:CodeOther>{<CharStyle:>
+<ParaStyle:code-js:code/script.js>  <CharStyle:CodeBold>constructor<CharStyle:><CharStyle:CodeOther>(<CharStyle:><CharStyle:CodeMedium>data<CharStyle:><CharStyle:CodeOther>)<CharStyle:> <CharStyle:CodeOther>{<CharStyle:>
+<ParaStyle:code-js:code/script.js>    <CharStyle:CodeBold>this<CharStyle:><CharStyle:CodeOther>.<CharStyle:><CharStyle:CodeMedium>data<CharStyle:> <CharStyle:CodePale>=<CharStyle:> <CharStyle:CodeMedium>data<CharStyle:>
+<ParaStyle:code-js:code/script.js>  <CharStyle:CodeOther>}<CharStyle:>
 <ParaStyle:code-js:code/script.js>
-<ParaStyle:code-js:code/script.js>  <CharStyle:BoldGray>jquery<CharStyle:><CharStyle:Punctuation>()<CharStyle:> <CharStyle:Punctuation>{<CharStyle:>
-<ParaStyle:code-js:code/script.js>    <CharStyle:BoldGray>$<CharStyle:><CharStyle:Punctuation>(<CharStyle:><CharStyle:RegularSilverItalic>'<CharStyle:><CharStyle:RegularSilverItalic>body<CharStyle:><CharStyle:RegularSilverItalic>'<CharStyle:><CharStyle:Punctuation>).<CharStyle:><CharStyle:BoldGray>innerHTML<CharStyle:> <CharStyle:RegularDark>=<CharStyle:> <CharStyle:RegularSilverItalic>"<CharStyle:><CharStyle:RegularSilverItalic>alert('xss')<CharStyle:><CharStyle:RegularSilverItalic>"<CharStyle:>
-<ParaStyle:code-js:code/script.js>  <CharStyle:Punctuation>}<CharStyle:>
+<ParaStyle:code-js:code/script.js>  <CharStyle:CodeMedium>jquery<CharStyle:><CharStyle:CodeOther>()<CharStyle:> <CharStyle:CodeOther>{<CharStyle:>
+<ParaStyle:code-js:code/script.js>    <CharStyle:CodeMedium>$<CharStyle:><CharStyle:CodeOther>(<CharStyle:><CharStyle:CodeItalic>'<CharStyle:><CharStyle:CodeItalic>body<CharStyle:><CharStyle:CodeItalic>'<CharStyle:><CharStyle:CodeOther>).<CharStyle:><CharStyle:CodeMedium>innerHTML<CharStyle:> <CharStyle:CodePale>=<CharStyle:> <CharStyle:CodeItalic>"<CharStyle:><CharStyle:CodeItalic>alert('xss')<CharStyle:><CharStyle:CodeItalic>"<CharStyle:>
+<ParaStyle:code-js:code/script.js>  <CharStyle:CodeOther>}<CharStyle:>
 <ParaStyle:code-js:code/script.js>
-<ParaStyle:code-js:code/script.js>  <CharStyle:BoldGray>promise<CharStyle:><CharStyle:Punctuation>()<CharStyle:> <CharStyle:Punctuation>{<CharStyle:>
-<ParaStyle:code-js:code/script.js>    <CharStyle:BoldBlack>return<CharStyle:> <CharStyle:BoldGray>Promise<CharStyle:><CharStyle:Punctuation>.<CharStyle:><CharStyle:BoldGray>resolve<CharStyle:><CharStyle:Punctuation>(<CharStyle:><CharStyle:RegularSilverItalic>'<CharStyle:><CharStyle:RegularSilverItalic>foo<CharStyle:><CharStyle:RegularSilverItalic>'<CharStyle:><CharStyle:Punctuation>)<CharStyle:>
-<ParaStyle:code-js:code/script.js>  <CharStyle:Punctuation>}<CharStyle:>
-<ParaStyle:code-js:code/script.js><CharStyle:Punctuation>}<CharStyle:>
+<ParaStyle:code-js:code/script.js>  <CharStyle:CodeMedium>promise<CharStyle:><CharStyle:CodeOther>()<CharStyle:> <CharStyle:CodeOther>{<CharStyle:>
+<ParaStyle:code-js:code/script.js>    <CharStyle:CodeBold>return<CharStyle:> <CharStyle:CodeMedium>Promise<CharStyle:><CharStyle:CodeOther>.<CharStyle:><CharStyle:CodeMedium>resolve<CharStyle:><CharStyle:CodeOther>(<CharStyle:><CharStyle:CodeItalic>'<CharStyle:><CharStyle:CodeItalic>foo<CharStyle:><CharStyle:CodeItalic>'<CharStyle:><CharStyle:CodeOther>)<CharStyle:>
+<ParaStyle:code-js:code/script.js>  <CharStyle:CodeOther>}<CharStyle:>
+<ParaStyle:code-js:code/script.js><CharStyle:CodeOther>}<CharStyle:>
 <ParaStyle:code-js:code/script.js>
-<ParaStyle:code-js:code/script.js><CharStyle:BoldBlack>const<CharStyle:> <CharStyle:BoldGray>test<CharStyle:> <CharStyle:RegularDark>=<CharStyle:> <CharStyle:BoldBlack>new<CharStyle:> <CharStyle:BoldGray>Test<CharStyle:><CharStyle:Punctuation>()<CharStyle:>
-<ParaStyle:code-js:code/script.js><CharStyle:BoldGray>test<CharStyle:><CharStyle:Punctuation>.<CharStyle:><CharStyle:BoldGray>promise<CharStyle:><CharStyle:Punctuation>().<CharStyle:><CharStyle:BoldGray>then<CharStyle:><CharStyle:Punctuation>((<CharStyle:><CharStyle:BoldGray>e<CharStyle:><CharStyle:Punctuation>)<CharStyle:> <CharStyle:RegularDark>=\><CharStyle:> <CharStyle:Punctuation>{<CharStyle:>
-<ParaStyle:code-js:code/script.js>  <CharStyle:BoldGray>console<CharStyle:><CharStyle:Punctuation>.<CharStyle:><CharStyle:BoldGray>log<CharStyle:><CharStyle:Punctuation>(<CharStyle:><CharStyle:BoldGray>e<CharStyle:><CharStyle:Punctuation>)<CharStyle:>
-<ParaStyle:code-js:code/script.js><CharStyle:Punctuation>})<CharStyle:>
+<ParaStyle:code-js:code/script.js><CharStyle:CodeBold>const<CharStyle:> <CharStyle:CodeMedium>test<CharStyle:> <CharStyle:CodePale>=<CharStyle:> <CharStyle:CodeBold>new<CharStyle:> <CharStyle:CodeMedium>Test<CharStyle:><CharStyle:CodeOther>()<CharStyle:>
+<ParaStyle:code-js:code/script.js><CharStyle:CodeMedium>test<CharStyle:><CharStyle:CodeOther>.<CharStyle:><CharStyle:CodeMedium>promise<CharStyle:><CharStyle:CodeOther>().<CharStyle:><CharStyle:CodeMedium>then<CharStyle:><CharStyle:CodeOther>((<CharStyle:><CharStyle:CodeMedium>e<CharStyle:><CharStyle:CodeOther>)<CharStyle:> <CharStyle:CodePale>=\><CharStyle:> <CharStyle:CodeOther>{<CharStyle:>
+<ParaStyle:code-js:code/script.js>  <CharStyle:CodeMedium>console<CharStyle:><CharStyle:CodeOther>.<CharStyle:><CharStyle:CodeMedium>log<CharStyle:><CharStyle:CodeOther>(<CharStyle:><CharStyle:CodeMedium>e<CharStyle:><CharStyle:CodeOther>)<CharStyle:>
+<ParaStyle:code-js:code/script.js><CharStyle:CodeOther>})<CharStyle:>
 <ParaStyle:code-js:code/script.js>
-<ParaStyle:code-js:code/script.js><CharStyle:BoldBlack>export<CharStyle:> <CharStyle:BoldGray>module<CharStyle:><CharStyle:Punctuation>;<CharStyle:>
+<ParaStyle:code-js:code/script.js><CharStyle:CodeBold>export<CharStyle:> <CharStyle:CodeMedium>module<CharStyle:><CharStyle:CodeOther>;<CharStyle:>
 <ParaStyle:h3>special text
 <ParaStyle:p>' & " \< \> "single quote in 'double' quote" ... --- -- \<\< \>\>
