@@ -86,16 +86,13 @@ eve
 
 ## html
 
-<div>outputs as is</div>
+英語の場合は <kbd>A</kbd> 日本語は <kbd>あ</kbd>
 
-<div id="attribute" disabled>value</div>
+ショートカットは
 
-<dl>
-  <li>aaa</li>
-  <li class="second">bbb</li>
-  <li disabled>ccc</li>
-</dl>
+<kbd>CTL+S</kbd>
 
+で保存できる。
 
 ## hr
 
