@@ -10,15 +10,16 @@ module MD2Indesign
       end
 
       def classname(classes)
-        return "RegularSilverItalic" if classes.include?("Comment")
-        return "RegularSilverItalic" if classes.include?("String")
-        return "RegularDark"         if classes.include?("Number")
-        return "RegularDark"         if classes.include?("Operator")
-        return "BoldBlack"           if classes.include?("Label")
-        return "BoldBlack"           if classes.include?("Tag")
-        return "BoldGray"            if classes.include?("Name")
-        return "BoldBlack"           if classes.include?("Keyword")
-        classes.join(" ")
+        return "CodeItalic" if classes.include?("Comment")
+        return "CodeItalic" if classes.include?("String")
+        return "CodePale"   if classes.include?("Number")
+        return "CodePale"   if classes.include?("Operator")
+        return "CodeBold"   if classes.include?("Label")
+        return "CodeBold"   if classes.include?("Tag")
+        return "CodeMedium" if classes.include?("Name")
+        return "CodeBold"   if classes.include?("Keyword")
+        return "CodeError"  if classes.include?("Error")
+        return "CodeOther"
       end
     end
   end

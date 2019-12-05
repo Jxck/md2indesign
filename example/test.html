@@ -229,25 +229,25 @@ sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</code></pre>
           <h3>programing block</a></h3>
           <section>
             <h4>javascript</a></h4>
-            <pre class=js><code translate="no"><span class="BoldBlack">function</span> <span class="BoldGray">hoo</span><span class="Punctuation">(</span><span class="BoldGray">x</span><span class="Punctuation">)</span> <span class="Punctuation">{</span>
-  <span class="BoldGray">console</span><span class="Punctuation">.</span><span class="BoldGray">log</span><span class="Punctuation">(</span><span class="BoldGray">x</span><span class="Punctuation">)</span>
-<span class="Punctuation">}</span></code></pre>
+            <pre class=js><code translate="no"><span class="CodeBold">function</span> <span class="CodeMedium">hoo</span><span class="CodeOther">(</span><span class="CodeMedium">x</span><span class="CodeOther">)</span> <span class="CodeOther">{</span>
+  <span class="CodeMedium">console</span><span class="CodeOther">.</span><span class="CodeMedium">log</span><span class="CodeOther">(</span><span class="CodeMedium">x</span><span class="CodeOther">)</span>
+<span class="CodeOther">}</span></code></pre>
           </section>
           <section>
             <h4>makefile</a></h4>
-            <pre class=make><code translate="no"><span class="RegularSilverItalic"># Makefile
-</span><span class="BoldBlack">.PHONY</span><span class="RegularDark">:</span> <span class="BoldGray">all</span>
-<span class="BoldBlack">all</span><span class="RegularDark">:</span> <span class="BoldGray">main</span>
+            <pre class=make><code translate="no"><span class="CodeItalic"># Makefile
+</span><span class="CodeBold">.PHONY</span><span class="CodePale">:</span> <span class="CodeMedium">all</span>
+<span class="CodeBold">all</span><span class="CodePale">:</span> <span class="CodeMedium">main</span>
 
-<span class="BoldBlack">main</span><span class="RegularDark">:</span> <span class="BoldGray">main.o</span>
-	gcc <span class="BoldBlack">-o</span> main main.o
+<span class="CodeBold">main</span><span class="CodePale">:</span> <span class="CodeMedium">main.o</span>
+	gcc <span class="CodeBold">-o</span> main main.o
 
-<span class="BoldBlack">main.o</span><span class="RegularDark">:</span> <span class="BoldGray">main.c</span>
-	gcc <span class="BoldBlack">-c</span> main.c
+<span class="CodeBold">main.o</span><span class="CodePale">:</span> <span class="CodeMedium">main.c</span>
+	gcc <span class="CodeBold">-c</span> main.c
 
-<span class="BoldBlack">.PHONY</span><span class="RegularDark">:</span> <span class="BoldGray">clean</span>
-<span class="BoldBlack">clean</span><span class="RegularDark">:</span>
-	<span class="BoldGray">rm</span> <span class="BoldBlack">-rf</span> main main.o</code></pre>
+<span class="CodeBold">.PHONY</span><span class="CodePale">:</span> <span class="CodeMedium">clean</span>
+<span class="CodeBold">clean</span><span class="CodePale">:</span>
+	<span class="CodeMedium">rm</span> <span class="CodeBold">-rf</span> main main.o</code></pre>
           </section>
           <section>
             <h4>http</a></h4>
@@ -264,192 +264,192 @@ Accept-Language: ja,en-US;q=0.9,en;q=0.8</code></pre>
           </section>
           <section>
             <h4>noginx.conf</a></h4>
-            <pre class=conf><code translate="no"><span class="RegularSilverItalic"># https://www.nginx.com/resources/wiki/start/topics/examples/full/
-</span><span class="BoldGray">user</span>       <span class="BoldGray">www</span> <span class="BoldGray">www</span>;  <span class="RegularSilverItalic">## Default: nobody
-</span><span class="BoldGray">worker_processes</span>  <span class="RegularDark">5</span>;  <span class="RegularSilverItalic">## Default: 1
-</span><span class="BoldGray">error_log</span>  <span class="BoldGray">logs</span>/<span class="BoldGray">error</span>.<span class="BoldGray">log</span>;
-<span class="BoldGray">pid</span>        <span class="BoldGray">logs</span>/<span class="BoldGray">nginx</span>.<span class="BoldGray">pid</span>;
-<span class="BoldGray">worker_rlimit_nofile</span> <span class="RegularDark">8192</span>;
+            <pre class=conf><code translate="no"><span class="CodeItalic"># https://www.nginx.com/resources/wiki/start/topics/examples/full/
+</span><span class="CodeMedium">user</span>       <span class="CodeMedium">www</span> <span class="CodeMedium">www</span>;  <span class="CodeItalic">## Default: nobody
+</span><span class="CodeMedium">worker_processes</span>  <span class="CodePale">5</span>;  <span class="CodeItalic">## Default: 1
+</span><span class="CodeMedium">error_log</span>  <span class="CodeMedium">logs</span>/<span class="CodeMedium">error</span>.<span class="CodeMedium">log</span>;
+<span class="CodeMedium">pid</span>        <span class="CodeMedium">logs</span>/<span class="CodeMedium">nginx</span>.<span class="CodeMedium">pid</span>;
+<span class="CodeMedium">worker_rlimit_nofile</span> <span class="CodePale">8192</span>;
 
-<span class="BoldGray">events</span> {
-  <span class="BoldGray">worker_connections</span>  <span class="RegularDark">4096</span>;  <span class="RegularSilverItalic">## Default: 1024
+<span class="CodeMedium">events</span> {
+  <span class="CodeMedium">worker_connections</span>  <span class="CodePale">4096</span>;  <span class="CodeItalic">## Default: 1024
 </span>}
 
-<span class="BoldGray">http</span> {
-  <span class="BoldGray">include</span>    <span class="BoldGray">conf</span>/<span class="BoldGray">mime</span>.<span class="BoldGray">types</span>;
-  <span class="BoldGray">include</span>    /<span class="BoldGray">etc</span>/<span class="BoldGray">nginx</span>/<span class="BoldGray">proxy</span>.<span class="BoldGray">conf</span>;
-  <span class="BoldGray">include</span>    /<span class="BoldGray">etc</span>/<span class="BoldGray">nginx</span>/<span class="BoldGray">fastcgi</span>.<span class="BoldGray">conf</span>;
-  <span class="BoldGray">index</span>    <span class="BoldGray">index</span>.<span class="BoldGray">html</span> <span class="BoldGray">index</span>.<span class="BoldGray">htm</span> <span class="BoldGray">index</span>.<span class="BoldGray">php</span>;
+<span class="CodeMedium">http</span> {
+  <span class="CodeMedium">include</span>    <span class="CodeMedium">conf</span>/<span class="CodeMedium">mime</span>.<span class="CodeMedium">types</span>;
+  <span class="CodeMedium">include</span>    /<span class="CodeMedium">etc</span>/<span class="CodeMedium">nginx</span>/<span class="CodeMedium">proxy</span>.<span class="CodeMedium">conf</span>;
+  <span class="CodeMedium">include</span>    /<span class="CodeMedium">etc</span>/<span class="CodeMedium">nginx</span>/<span class="CodeMedium">fastcgi</span>.<span class="CodeMedium">conf</span>;
+  <span class="CodeMedium">index</span>    <span class="CodeMedium">index</span>.<span class="CodeMedium">html</span> <span class="CodeMedium">index</span>.<span class="CodeMedium">htm</span> <span class="CodeMedium">index</span>.<span class="CodeMedium">php</span>;
 
-  <span class="BoldGray">default_type</span> <span class="BoldGray">application</span>/<span class="BoldGray">octet</span>-<span class="BoldGray">stream</span>;
-  <span class="BoldGray">log_format</span>   <span class="BoldGray">main</span> <span class="RegularSilverItalic">'$remote_addr - $remote_user [$time_local]  $status '</span>
-    <span class="RegularSilverItalic">'"$request" $body_bytes_sent "$http_referer" '</span>
-    <span class="RegularSilverItalic">'"$http_user_agent" "$http_x_forwarded_for"'</span>;
-  <span class="BoldGray">access_log</span>   <span class="BoldGray">logs</span>/<span class="BoldGray">access</span>.<span class="BoldGray">log</span>  <span class="BoldGray">main</span>;
-  <span class="BoldGray">sendfile</span>     <span class="BoldGray">on</span>;
-  <span class="BoldGray">tcp_nopush</span>   <span class="BoldGray">on</span>;
-  <span class="BoldGray">server_names_hash_bucket_size</span> <span class="RegularDark">128</span>; <span class="RegularSilverItalic"># this seems to be required for some vhosts
+  <span class="CodeMedium">default_type</span> <span class="CodeMedium">application</span>/<span class="CodeMedium">octet</span>-<span class="CodeMedium">stream</span>;
+  <span class="CodeMedium">log_format</span>   <span class="CodeMedium">main</span> <span class="CodeItalic">'$remote_addr - $remote_user [$time_local]  $status '</span>
+    <span class="CodeItalic">'"$request" $body_bytes_sent "$http_referer" '</span>
+    <span class="CodeItalic">'"$http_user_agent" "$http_x_forwarded_for"'</span>;
+  <span class="CodeMedium">access_log</span>   <span class="CodeMedium">logs</span>/<span class="CodeMedium">access</span>.<span class="CodeMedium">log</span>  <span class="CodeMedium">main</span>;
+  <span class="CodeMedium">sendfile</span>     <span class="CodeMedium">on</span>;
+  <span class="CodeMedium">tcp_nopush</span>   <span class="CodeMedium">on</span>;
+  <span class="CodeMedium">server_names_hash_bucket_size</span> <span class="CodePale">128</span>; <span class="CodeItalic"># this seems to be required for some vhosts
 </span>
-  <span class="BoldGray">server</span> { <span class="RegularSilverItalic"># php/fastcgi
-</span>    <span class="BoldGray">listen</span>       <span class="RegularDark">80</span>;
-    <span class="BoldGray">server_name</span>  <span class="BoldGray">domain1</span>.<span class="BoldGray">com</span> <span class="BoldGray">www</span>.<span class="BoldGray">domain1</span>.<span class="BoldGray">com</span>;
-    <span class="BoldGray">access_log</span>   <span class="BoldGray">logs</span>/<span class="BoldGray">domain1</span>.<span class="BoldGray">access</span>.<span class="BoldGray">log</span>  <span class="BoldGray">main</span>;
-    <span class="BoldGray">root</span>         <span class="BoldGray">html</span>;
+  <span class="CodeMedium">server</span> { <span class="CodeItalic"># php/fastcgi
+</span>    <span class="CodeMedium">listen</span>       <span class="CodePale">80</span>;
+    <span class="CodeMedium">server_name</span>  <span class="CodeMedium">domain1</span>.<span class="CodeMedium">com</span> <span class="CodeMedium">www</span>.<span class="CodeMedium">domain1</span>.<span class="CodeMedium">com</span>;
+    <span class="CodeMedium">access_log</span>   <span class="CodeMedium">logs</span>/<span class="CodeMedium">domain1</span>.<span class="CodeMedium">access</span>.<span class="CodeMedium">log</span>  <span class="CodeMedium">main</span>;
+    <span class="CodeMedium">root</span>         <span class="CodeMedium">html</span>;
 
-    <span class="BoldGray">location</span> ~ \.<span class="BoldGray">php</span>$ {
-      <span class="BoldGray">fastcgi_pass</span>   <span class="RegularDark">127</span>.<span class="RegularDark">0</span>.<span class="RegularDark">0</span>.<span class="RegularDark">1</span>:<span class="RegularDark">1025</span>;
+    <span class="CodeMedium">location</span> ~ \.<span class="CodeMedium">php</span>$ {
+      <span class="CodeMedium">fastcgi_pass</span>   <span class="CodePale">127</span>.<span class="CodePale">0</span>.<span class="CodePale">0</span>.<span class="CodePale">1</span>:<span class="CodePale">1025</span>;
     }
   }
 
-  <span class="BoldGray">server</span> { <span class="RegularSilverItalic"># simple reverse-proxy
-</span>    <span class="BoldGray">listen</span>       <span class="RegularDark">80</span>;
-    <span class="BoldGray">server_name</span>  <span class="BoldGray">domain2</span>.<span class="BoldGray">com</span> <span class="BoldGray">www</span>.<span class="BoldGray">domain2</span>.<span class="BoldGray">com</span>;
-    <span class="BoldGray">access_log</span>   <span class="BoldGray">logs</span>/<span class="BoldGray">domain2</span>.<span class="BoldGray">access</span>.<span class="BoldGray">log</span>  <span class="BoldGray">main</span>;
+  <span class="CodeMedium">server</span> { <span class="CodeItalic"># simple reverse-proxy
+</span>    <span class="CodeMedium">listen</span>       <span class="CodePale">80</span>;
+    <span class="CodeMedium">server_name</span>  <span class="CodeMedium">domain2</span>.<span class="CodeMedium">com</span> <span class="CodeMedium">www</span>.<span class="CodeMedium">domain2</span>.<span class="CodeMedium">com</span>;
+    <span class="CodeMedium">access_log</span>   <span class="CodeMedium">logs</span>/<span class="CodeMedium">domain2</span>.<span class="CodeMedium">access</span>.<span class="CodeMedium">log</span>  <span class="CodeMedium">main</span>;
 
-    <span class="RegularSilverItalic"># serve static files
-</span>    <span class="BoldGray">location</span> ~ ^/(<span class="BoldGray">images</span>|<span class="BoldGray">javascript</span>|<span class="BoldGray">js</span>|<span class="BoldGray">css</span>|<span class="BoldGray">flash</span>|<span class="BoldGray">media</span>|<span class="BoldGray">static</span>)/  {
-      <span class="BoldGray">root</span>    /<span class="BoldGray">var</span>/<span class="BoldGray">www</span>/<span class="BoldGray">virtual</span>/<span class="BoldGray">big</span>.<span class="BoldGray">server</span>.<span class="BoldGray">com</span>/<span class="BoldGray">htdocs</span>;
-      <span class="BoldGray">expires</span> <span class="RegularDark">30</span><span class="BoldGray">d</span>;
+    <span class="CodeItalic"># serve static files
+</span>    <span class="CodeMedium">location</span> ~ ^/(<span class="CodeMedium">images</span>|<span class="CodeMedium">javascript</span>|<span class="CodeMedium">js</span>|<span class="CodeMedium">css</span>|<span class="CodeMedium">flash</span>|<span class="CodeMedium">media</span>|<span class="CodeMedium">static</span>)/  {
+      <span class="CodeMedium">root</span>    /<span class="CodeMedium">var</span>/<span class="CodeMedium">www</span>/<span class="CodeMedium">virtual</span>/<span class="CodeMedium">big</span>.<span class="CodeMedium">server</span>.<span class="CodeMedium">com</span>/<span class="CodeMedium">htdocs</span>;
+      <span class="CodeMedium">expires</span> <span class="CodePale">30</span><span class="CodeMedium">d</span>;
     }
 
-    <span class="RegularSilverItalic"># pass requests for dynamic content to rails/turbogears/zope, et al
-</span>    <span class="BoldGray">location</span> / {
-      <span class="BoldGray">proxy_pass</span>      <span class="BoldGray">http</span>://<span class="RegularDark">127</span>.<span class="RegularDark">0</span>.<span class="RegularDark">0</span>.<span class="RegularDark">1</span>:<span class="RegularDark">8080</span>;
+    <span class="CodeItalic"># pass requests for dynamic content to rails/turbogears/zope, et al
+</span>    <span class="CodeMedium">location</span> / {
+      <span class="CodeMedium">proxy_pass</span>      <span class="CodeMedium">http</span>://<span class="CodePale">127</span>.<span class="CodePale">0</span>.<span class="CodePale">0</span>.<span class="CodePale">1</span>:<span class="CodePale">8080</span>;
     }
   }
 
-  <span class="BoldGray">upstream</span> <span class="BoldGray">big_server_com</span> {
-    <span class="BoldGray">server</span> <span class="RegularDark">127</span>.<span class="RegularDark">0</span>.<span class="RegularDark">0</span>.<span class="RegularDark">3</span>:<span class="RegularDark">8000</span> <span class="BoldGray">weight</span>=<span class="RegularDark">5</span>;
-    <span class="BoldGray">server</span> <span class="RegularDark">127</span>.<span class="RegularDark">0</span>.<span class="RegularDark">0</span>.<span class="RegularDark">3</span>:<span class="RegularDark">8001</span> <span class="BoldGray">weight</span>=<span class="RegularDark">5</span>;
-    <span class="BoldGray">server</span> <span class="RegularDark">192</span>.<span class="RegularDark">168</span>.<span class="RegularDark">0</span>.<span class="RegularDark">1</span>:<span class="RegularDark">8000</span>;
-    <span class="BoldGray">server</span> <span class="RegularDark">192</span>.<span class="RegularDark">168</span>.<span class="RegularDark">0</span>.<span class="RegularDark">1</span>:<span class="RegularDark">8001</span>;
+  <span class="CodeMedium">upstream</span> <span class="CodeMedium">big_server_com</span> {
+    <span class="CodeMedium">server</span> <span class="CodePale">127</span>.<span class="CodePale">0</span>.<span class="CodePale">0</span>.<span class="CodePale">3</span>:<span class="CodePale">8000</span> <span class="CodeMedium">weight</span>=<span class="CodePale">5</span>;
+    <span class="CodeMedium">server</span> <span class="CodePale">127</span>.<span class="CodePale">0</span>.<span class="CodePale">0</span>.<span class="CodePale">3</span>:<span class="CodePale">8001</span> <span class="CodeMedium">weight</span>=<span class="CodePale">5</span>;
+    <span class="CodeMedium">server</span> <span class="CodePale">192</span>.<span class="CodePale">168</span>.<span class="CodePale">0</span>.<span class="CodePale">1</span>:<span class="CodePale">8000</span>;
+    <span class="CodeMedium">server</span> <span class="CodePale">192</span>.<span class="CodePale">168</span>.<span class="CodePale">0</span>.<span class="CodePale">1</span>:<span class="CodePale">8001</span>;
   }
 
-  <span class="BoldGray">server</span> { <span class="RegularSilverItalic"># simple load balancing
-</span>    <span class="BoldGray">listen</span>          <span class="RegularDark">80</span>;
-    <span class="BoldGray">server_name</span>     <span class="BoldGray">big</span>.<span class="BoldGray">server</span>.<span class="BoldGray">com</span>;
-    <span class="BoldGray">access_log</span>      <span class="BoldGray">logs</span>/<span class="BoldGray">big</span>.<span class="BoldGray">server</span>.<span class="BoldGray">access</span>.<span class="BoldGray">log</span> <span class="BoldGray">main</span>;
+  <span class="CodeMedium">server</span> { <span class="CodeItalic"># simple load balancing
+</span>    <span class="CodeMedium">listen</span>          <span class="CodePale">80</span>;
+    <span class="CodeMedium">server_name</span>     <span class="CodeMedium">big</span>.<span class="CodeMedium">server</span>.<span class="CodeMedium">com</span>;
+    <span class="CodeMedium">access_log</span>      <span class="CodeMedium">logs</span>/<span class="CodeMedium">big</span>.<span class="CodeMedium">server</span>.<span class="CodeMedium">access</span>.<span class="CodeMedium">log</span> <span class="CodeMedium">main</span>;
 
-    <span class="BoldGray">location</span> / {
-      <span class="BoldGray">proxy_pass</span>      <span class="BoldGray">http</span>://<span class="BoldGray">big_server_com</span>;
+    <span class="CodeMedium">location</span> / {
+      <span class="CodeMedium">proxy_pass</span>      <span class="CodeMedium">http</span>://<span class="CodeMedium">big_server_com</span>;
     }
   }</code></pre>
           </section>
           <section>
             <h4>go</a></h4>
-            <pre class=go><code translate="no"><span class="BoldBlack">package</span> <span class="BoldGray">main</span>
+            <pre class=go><code translate="no"><span class="CodeBold">package</span> <span class="CodeMedium">main</span>
 
-<span class="BoldBlack">import</span> <span class="RegularSilverItalic">"fmt"</span>
+<span class="CodeBold">import</span> <span class="CodeItalic">"fmt"</span>
 
-<span class="BoldBlack">func</span> <span class="BoldGray">main</span><span class="Punctuation">()</span> <span class="Punctuation">{</span>
-	<span class="RegularSilverItalic">// this is sample code</span>
-	<span class="BoldGray">fmt</span><span class="RegularDark">.</span><span class="BoldGray">Println</span><span class="Punctuation">(</span><span class="RegularSilverItalic">"Hello World"</span><span class="Punctuation">)</span>
-<span class="Punctuation">}</span></code></pre>
+<span class="CodeBold">func</span> <span class="CodeMedium">main</span><span class="CodeOther">()</span> <span class="CodeOther">{</span>
+	<span class="CodeItalic">// this is sample code</span>
+	<span class="CodeMedium">fmt</span><span class="CodePale">.</span><span class="CodeMedium">Println</span><span class="CodeOther">(</span><span class="CodeItalic">"Hello World"</span><span class="CodeOther">)</span>
+<span class="CodeOther">}</span></code></pre>
           </section>
           <section>
             <h4>java</a></h4>
-            <pre class=java><code translate="no"><span class="BoldBlack">public</span> <span class="BoldBlack">class</span> <span class="BoldGray">HelloWorld</span> <span class="RegularDark">{</span>
-  <span class="BoldBlack">public</span> <span class="BoldBlack">static</span> <span class="BoldBlack">void</span> <span class="BoldGray">main</span><span class="RegularDark">(</span><span class="BoldGray">String</span><span class="RegularDark">[]</span> <span class="BoldGray">args</span><span class="RegularDark">)</span> <span class="RegularDark">{</span>
-    <span class="BoldGray">System</span><span class="RegularDark">.</span><span class="BoldGray">out</span><span class="RegularDark">.</span><span class="BoldGray">printf</span><span class="RegularDark">(</span><span class="RegularSilverItalic">"Hello World"</span><span class="RegularDark">);</span>
-  <span class="RegularDark">}</span>
+            <pre class=java><code translate="no"><span class="CodeBold">public</span> <span class="CodeBold">class</span> <span class="CodeMedium">HelloWorld</span> <span class="CodePale">{</span>
+  <span class="CodeBold">public</span> <span class="CodeBold">static</span> <span class="CodeBold">void</span> <span class="CodeMedium">main</span><span class="CodePale">(</span><span class="CodeMedium">String</span><span class="CodePale">[]</span> <span class="CodeMedium">args</span><span class="CodePale">)</span> <span class="CodePale">{</span>
+    <span class="CodeMedium">System</span><span class="CodePale">.</span><span class="CodeMedium">out</span><span class="CodePale">.</span><span class="CodeMedium">printf</span><span class="CodePale">(</span><span class="CodeItalic">"Hello World"</span><span class="CodePale">);</span>
+  <span class="CodePale">}</span>
 
-  <span class="BoldBlack">public</span> <span class="BoldBlack">static</span> <span class="BoldBlack">int</span> <span class="BoldGray">add</span><span class="RegularDark">(</span><span class="BoldBlack">int</span> <span class="BoldGray">x</span><span class="RegularDark">,</span> <span class="BoldBlack">int</span> <span class="BoldGray">y</span><span class="RegularDark">)</span> <span class="RegularDark">{</span>
-    <span class="BoldBlack">int</span> <span class="BoldGray">z</span> <span class="RegularDark">=</span> <span class="BoldGray">x</span> <span class="RegularDark">+</span> <span class="BoldGray">y</span><span class="RegularDark">;</span>
-    <span class="BoldBlack">return</span> <span class="BoldGray">z</span><span class="RegularDark">;</span>
-  <span class="RegularDark">}</span>
-<span class="RegularDark">}</span></code></pre>
+  <span class="CodeBold">public</span> <span class="CodeBold">static</span> <span class="CodeBold">int</span> <span class="CodeMedium">add</span><span class="CodePale">(</span><span class="CodeBold">int</span> <span class="CodeMedium">x</span><span class="CodePale">,</span> <span class="CodeBold">int</span> <span class="CodeMedium">y</span><span class="CodePale">)</span> <span class="CodePale">{</span>
+    <span class="CodeBold">int</span> <span class="CodeMedium">z</span> <span class="CodePale">=</span> <span class="CodeMedium">x</span> <span class="CodePale">+</span> <span class="CodeMedium">y</span><span class="CodePale">;</span>
+    <span class="CodeBold">return</span> <span class="CodeMedium">z</span><span class="CodePale">;</span>
+  <span class="CodePale">}</span>
+<span class="CodePale">}</span></code></pre>
           </section>
           <section>
             <h4>html</a></h4>
-            <pre class=html><code translate="no"><span class="RegularSilverItalic">&lt;!DOCTYPE html&gt;</span>
-<span class="BoldBlack">&lt;meta</span> <span class="BoldGray">charset=</span><span class="RegularSilverItalic">utf-8</span><span class="BoldBlack">&gt;</span>
-<span class="BoldBlack">&lt;meta</span> <span class="BoldGray">name=</span><span class="RegularSilverItalic">viewport</span> <span class="BoldGray">content=</span><span class="RegularSilverItalic">"width=device-width,initial-scale=1"</span><span class="BoldBlack">&gt;</span>
-<span class="BoldBlack">&lt;title&gt;</span>DEMO<span class="BoldBlack">&lt;/title&gt;</span>
+            <pre class=html><code translate="no"><span class="CodeItalic">&lt;!DOCTYPE html&gt;</span>
+<span class="CodeBold">&lt;meta</span> <span class="CodeMedium">charset=</span><span class="CodeItalic">utf-8</span><span class="CodeBold">&gt;</span>
+<span class="CodeBold">&lt;meta</span> <span class="CodeMedium">name=</span><span class="CodeItalic">viewport</span> <span class="CodeMedium">content=</span><span class="CodeItalic">"width=device-width,initial-scale=1"</span><span class="CodeBold">&gt;</span>
+<span class="CodeBold">&lt;title&gt;</span>DEMO<span class="CodeBold">&lt;/title&gt;</span>
 
-<span class="BoldBlack">&lt;style&gt;</span>
-<span class="BoldBlack">&lt;/style&gt;</span>
+<span class="CodeBold">&lt;style&gt;</span>
+<span class="CodeBold">&lt;/style&gt;</span>
 
-<span class="BoldBlack">&lt;h1&gt;</span>Test<span class="BoldBlack">&lt;/h1&gt;</span>
-<span class="RegularSilverItalic">&lt;!-- comment --&gt;</span>
-<span class="BoldBlack">&lt;p&gt;</span>this is <span class="BoldBlack">&lt;strong&gt;</span>sample<span class="BoldBlack">&lt;/strong&gt;</span> text<span class="BoldBlack">&lt;/p&gt;</span>
+<span class="CodeBold">&lt;h1&gt;</span>Test<span class="CodeBold">&lt;/h1&gt;</span>
+<span class="CodeItalic">&lt;!-- comment --&gt;</span>
+<span class="CodeBold">&lt;p&gt;</span>this is <span class="CodeBold">&lt;strong&gt;</span>sample<span class="CodeBold">&lt;/strong&gt;</span> text<span class="CodeBold">&lt;/p&gt;</span>
 
-<span class="BoldBlack">&lt;div&gt;</span>
-  <span class="BoldBlack">&lt;video</span> <span class="BoldGray">src=</span><span class="RegularSilverItalic">"some.mp4"</span><span class="BoldBlack">&gt;</span>
-  <span class="BoldBlack">&lt;img</span> <span class="BoldGray">src=</span><span class="RegularSilverItalic">some.webp</span> <span class="BoldGray">label=</span><span class="RegularSilverItalic">"good picture"</span><span class="BoldBlack">&gt;</span>
+<span class="CodeBold">&lt;div&gt;</span>
+  <span class="CodeBold">&lt;video</span> <span class="CodeMedium">src=</span><span class="CodeItalic">"some.mp4"</span><span class="CodeBold">&gt;</span>
+  <span class="CodeBold">&lt;img</span> <span class="CodeMedium">src=</span><span class="CodeItalic">some.webp</span> <span class="CodeMedium">label=</span><span class="CodeItalic">"good picture"</span><span class="CodeBold">&gt;</span>
 
-  <span class="BoldBlack">&lt;form</span> <span class="BoldGray">action=</span><span class="RegularSilverItalic">/login</span> <span class="BoldGray">method=</span><span class="RegularSilverItalic">post</span><span class="BoldBlack">&gt;</span>
-    <span class="BoldBlack">&lt;input</span> <span class="BoldGray">type=</span><span class="RegularSilverItalic">text</span> <span class="BoldGray">name=</span><span class="RegularSilverItalic">username</span><span class="BoldBlack">&gt;</span>
-    <span class="BoldBlack">&lt;input</span> <span class="BoldGray">type=</span><span class="RegularSilverItalic">password</span> <span class="BoldGray">name=</span><span class="RegularSilverItalic">password</span><span class="BoldBlack">&gt;</span>
-    <span class="BoldBlack">&lt;button</span> <span class="BoldGray">type=</span><span class="RegularSilverItalic">submit</span><span class="BoldBlack">&gt;</span>ok<span class="BoldBlack">&lt;/button&gt;</span>
-  <span class="BoldBlack">&lt;/form&gt;</span>
-<span class="BoldBlack">&lt;/div&gt;</span></code></pre>
+  <span class="CodeBold">&lt;form</span> <span class="CodeMedium">action=</span><span class="CodeItalic">/login</span> <span class="CodeMedium">method=</span><span class="CodeItalic">post</span><span class="CodeBold">&gt;</span>
+    <span class="CodeBold">&lt;input</span> <span class="CodeMedium">type=</span><span class="CodeItalic">text</span> <span class="CodeMedium">name=</span><span class="CodeItalic">username</span><span class="CodeBold">&gt;</span>
+    <span class="CodeBold">&lt;input</span> <span class="CodeMedium">type=</span><span class="CodeItalic">password</span> <span class="CodeMedium">name=</span><span class="CodeItalic">password</span><span class="CodeBold">&gt;</span>
+    <span class="CodeBold">&lt;button</span> <span class="CodeMedium">type=</span><span class="CodeItalic">submit</span><span class="CodeBold">&gt;</span>ok<span class="CodeBold">&lt;/button&gt;</span>
+  <span class="CodeBold">&lt;/form&gt;</span>
+<span class="CodeBold">&lt;/div&gt;</span></code></pre>
           </section>
           <section>
             <h4>css</a></h4>
-            <pre class=css><code translate="no"><span class="RegularSilverItalic">/** markdown like css **/</span>
-<span class="BoldBlack">strong</span><span class="BoldGray">::before</span><span class="RegularDark">,</span>
-<span class="BoldBlack">strong</span><span class="BoldGray">::after</span> <span class="Punctuation">{</span>
-  <span class="BoldBlack">content</span><span class="Punctuation">:</span> <span class="RegularSilverItalic">"**"</span><span class="Punctuation">;</span>
-<span class="Punctuation">}</span>
+            <pre class=css><code translate="no"><span class="CodeItalic">/** markdown like css **/</span>
+<span class="CodeBold">strong</span><span class="CodeMedium">::before</span><span class="CodePale">,</span>
+<span class="CodeBold">strong</span><span class="CodeMedium">::after</span> <span class="CodeOther">{</span>
+  <span class="CodeBold">content</span><span class="CodeOther">:</span> <span class="CodeItalic">"**"</span><span class="CodeOther">;</span>
+<span class="CodeOther">}</span>
 
-<span class="BoldBlack">ul</span> <span class="BoldBlack">li</span><span class="BoldGray">::before</span> <span class="Punctuation">{</span>
-  <span class="BoldBlack">content</span><span class="Punctuation">:</span> <span class="RegularSilverItalic">"- "</span><span class="Punctuation">;</span>
-<span class="Punctuation">}</span>
+<span class="CodeBold">ul</span> <span class="CodeBold">li</span><span class="CodeMedium">::before</span> <span class="CodeOther">{</span>
+  <span class="CodeBold">content</span><span class="CodeOther">:</span> <span class="CodeItalic">"- "</span><span class="CodeOther">;</span>
+<span class="CodeOther">}</span>
 
-<span class="BoldBlack">ol</span> <span class="Punctuation">{</span>
-  <span class="BoldBlack">counter-reset</span><span class="Punctuation">:</span> <span class="BoldGray">list</span><span class="Punctuation">;</span>
-<span class="Punctuation">}</span>
+<span class="CodeBold">ol</span> <span class="CodeOther">{</span>
+  <span class="CodeBold">counter-reset</span><span class="CodeOther">:</span> <span class="CodeMedium">list</span><span class="CodeOther">;</span>
+<span class="CodeOther">}</span>
 
-<span class="BoldBlack">ol</span> <span class="BoldBlack">li</span><span class="BoldGray">::before</span> <span class="Punctuation">{</span>
-  <span class="BoldBlack">counter-increment</span><span class="Punctuation">:</span> <span class="BoldGray">list</span><span class="Punctuation">;</span>
-  <span class="BoldBlack">content</span><span class="Punctuation">:</span> <span class="BoldGray">counter</span><span class="Punctuation">(</span><span class="BoldGray">list</span><span class="Punctuation">)</span> <span class="RegularSilverItalic">". "</span><span class="Punctuation">;</span>
-<span class="Punctuation">}</span>
+<span class="CodeBold">ol</span> <span class="CodeBold">li</span><span class="CodeMedium">::before</span> <span class="CodeOther">{</span>
+  <span class="CodeBold">counter-increment</span><span class="CodeOther">:</span> <span class="CodeMedium">list</span><span class="CodeOther">;</span>
+  <span class="CodeBold">content</span><span class="CodeOther">:</span> <span class="CodeMedium">counter</span><span class="CodeOther">(</span><span class="CodeMedium">list</span><span class="CodeOther">)</span> <span class="CodeItalic">". "</span><span class="CodeOther">;</span>
+<span class="CodeOther">}</span>
 
-<span class="BoldBlack">dl</span> <span class="BoldBlack">dt</span><span class="BoldGray">::after</span> <span class="Punctuation">{</span>
-  <span class="BoldBlack">content</span><span class="Punctuation">:</span> <span class="RegularSilverItalic">":"</span><span class="Punctuation">;</span>
-<span class="Punctuation">}</span>
+<span class="CodeBold">dl</span> <span class="CodeBold">dt</span><span class="CodeMedium">::after</span> <span class="CodeOther">{</span>
+  <span class="CodeBold">content</span><span class="CodeOther">:</span> <span class="CodeItalic">":"</span><span class="CodeOther">;</span>
+<span class="CodeOther">}</span>
 
-<span class="BoldBlack">blockquote</span> <span class="Punctuation">{</span>
-  <span class="BoldBlack">display</span><span class="Punctuation">:</span> <span class="BoldGray">block</span><span class="Punctuation">;</span>
-  <span class="BoldBlack">border</span><span class="Punctuation">:</span> <span class="BoldGray">solid</span> <span class="RegularDark">1px</span> <span class="BoldGray">var</span><span class="Punctuation">(</span><span class="BoldGray">--block-quote</span><span class="Punctuation">);</span>
-  <span class="BoldBlack">border-radius</span><span class="Punctuation">:</span> <span class="RegularDark">4px</span><span class="Punctuation">;</span>
-  <span class="BoldBlack">padding</span><span class="Punctuation">:</span> <span class="RegularDark">0.4em</span> <span class="RegularDark">1em</span><span class="Punctuation">;</span>
-  <span class="BoldBlack">margin</span><span class="Punctuation">:</span> <span class="RegularDark">0</span><span class="Punctuation">;</span>
-<span class="Punctuation">}</span>
+<span class="CodeBold">blockquote</span> <span class="CodeOther">{</span>
+  <span class="CodeBold">display</span><span class="CodeOther">:</span> <span class="CodeMedium">block</span><span class="CodeOther">;</span>
+  <span class="CodeBold">border</span><span class="CodeOther">:</span> <span class="CodeMedium">solid</span> <span class="CodePale">1px</span> <span class="CodeMedium">var</span><span class="CodeOther">(</span><span class="CodeMedium">--block-quote</span><span class="CodeOther">);</span>
+  <span class="CodeBold">border-radius</span><span class="CodeOther">:</span> <span class="CodePale">4px</span><span class="CodeOther">;</span>
+  <span class="CodeBold">padding</span><span class="CodeOther">:</span> <span class="CodePale">0.4em</span> <span class="CodePale">1em</span><span class="CodeOther">;</span>
+  <span class="CodeBold">margin</span><span class="CodeOther">:</span> <span class="CodePale">0</span><span class="CodeOther">;</span>
+<span class="CodeOther">}</span>
 </code></pre>
           </section>
           <section>
             <h4>js</a></h4>
-            <pre class=js><code translate="no"><span class="BoldBlack">import</span> <span class="BoldGray">file</span> <span class="BoldBlack">from</span> <span class="BoldGray">fs</span>
+            <pre class=js><code translate="no"><span class="CodeBold">import</span> <span class="CodeMedium">file</span> <span class="CodeBold">from</span> <span class="CodeMedium">fs</span>
 
-<span class="BoldBlack">function</span> <span class="BoldGray">callback</span><span class="Punctuation">(</span><span class="BoldGray">err</span><span class="Punctuation">,</span> <span class="BoldGray">file</span><span class="Punctuation">)</span> <span class="Punctuation">{</span>
-  <span class="BoldBlack">if</span> <span class="Punctuation">(</span><span class="BoldGray">err</span><span class="Punctuation">)</span> <span class="BoldBlack">return</span> <span class="BoldGray">console</span><span class="Punctuation">.</span><span class="BoldGray">error</span><span class="Punctuation">(</span><span class="BoldGray">err</span><span class="Punctuation">);</span>
+<span class="CodeBold">function</span> <span class="CodeMedium">callback</span><span class="CodeOther">(</span><span class="CodeMedium">err</span><span class="CodeOther">,</span> <span class="CodeMedium">file</span><span class="CodeOther">)</span> <span class="CodeOther">{</span>
+  <span class="CodeBold">if</span> <span class="CodeOther">(</span><span class="CodeMedium">err</span><span class="CodeOther">)</span> <span class="CodeBold">return</span> <span class="CodeMedium">console</span><span class="CodeOther">.</span><span class="CodeMedium">error</span><span class="CodeOther">(</span><span class="CodeMedium">err</span><span class="CodeOther">);</span>
 
-  <span class="RegularSilverItalic">/* do something */</span>
-<span class="Punctuation">};</span>
+  <span class="CodeItalic">/* do something */</span>
+<span class="CodeOther">};</span>
 
-<span class="BoldGray">file</span><span class="Punctuation">.</span><span class="BoldGray">open</span><span class="Punctuation">(</span><span class="BoldGray">callback</span><span class="Punctuation">);</span>
+<span class="CodeMedium">file</span><span class="CodeOther">.</span><span class="CodeMedium">open</span><span class="CodeOther">(</span><span class="CodeMedium">callback</span><span class="CodeOther">);</span>
 
-<span class="BoldBlack">class</span> <span class="BoldGray">Test</span> <span class="BoldBlack">extends</span> <span class="BoldGray">EventEmitter</span> <span class="Punctuation">{</span>
-  <span class="BoldBlack">constructor</span><span class="Punctuation">(</span><span class="BoldGray">data</span><span class="Punctuation">)</span> <span class="Punctuation">{</span>
-    <span class="BoldBlack">this</span><span class="Punctuation">.</span><span class="BoldGray">data</span> <span class="RegularDark">=</span> <span class="BoldGray">data</span>
-  <span class="Punctuation">}</span>
+<span class="CodeBold">class</span> <span class="CodeMedium">Test</span> <span class="CodeBold">extends</span> <span class="CodeMedium">EventEmitter</span> <span class="CodeOther">{</span>
+  <span class="CodeBold">constructor</span><span class="CodeOther">(</span><span class="CodeMedium">data</span><span class="CodeOther">)</span> <span class="CodeOther">{</span>
+    <span class="CodeBold">this</span><span class="CodeOther">.</span><span class="CodeMedium">data</span> <span class="CodePale">=</span> <span class="CodeMedium">data</span>
+  <span class="CodeOther">}</span>
 
-  <span class="BoldGray">jquery</span><span class="Punctuation">()</span> <span class="Punctuation">{</span>
-    <span class="BoldGray">$</span><span class="Punctuation">(</span><span class="RegularSilverItalic">'</span><span class="RegularSilverItalic">body</span><span class="RegularSilverItalic">'</span><span class="Punctuation">).</span><span class="BoldGray">innerHTML</span> <span class="RegularDark">=</span> <span class="RegularSilverItalic">"</span><span class="RegularSilverItalic">alert('xss')</span><span class="RegularSilverItalic">"</span>
-  <span class="Punctuation">}</span>
+  <span class="CodeMedium">jquery</span><span class="CodeOther">()</span> <span class="CodeOther">{</span>
+    <span class="CodeMedium">$</span><span class="CodeOther">(</span><span class="CodeItalic">'</span><span class="CodeItalic">body</span><span class="CodeItalic">'</span><span class="CodeOther">).</span><span class="CodeMedium">innerHTML</span> <span class="CodePale">=</span> <span class="CodeItalic">"</span><span class="CodeItalic">alert('xss')</span><span class="CodeItalic">"</span>
+  <span class="CodeOther">}</span>
 
-  <span class="BoldGray">promise</span><span class="Punctuation">()</span> <span class="Punctuation">{</span>
-    <span class="BoldBlack">return</span> <span class="BoldGray">Promise</span><span class="Punctuation">.</span><span class="BoldGray">resolve</span><span class="Punctuation">(</span><span class="RegularSilverItalic">'</span><span class="RegularSilverItalic">foo</span><span class="RegularSilverItalic">'</span><span class="Punctuation">)</span>
-  <span class="Punctuation">}</span>
-<span class="Punctuation">}</span>
+  <span class="CodeMedium">promise</span><span class="CodeOther">()</span> <span class="CodeOther">{</span>
+    <span class="CodeBold">return</span> <span class="CodeMedium">Promise</span><span class="CodeOther">.</span><span class="CodeMedium">resolve</span><span class="CodeOther">(</span><span class="CodeItalic">'</span><span class="CodeItalic">foo</span><span class="CodeItalic">'</span><span class="CodeOther">)</span>
+  <span class="CodeOther">}</span>
+<span class="CodeOther">}</span>
 
-<span class="BoldBlack">const</span> <span class="BoldGray">test</span> <span class="RegularDark">=</span> <span class="BoldBlack">new</span> <span class="BoldGray">Test</span><span class="Punctuation">()</span>
-<span class="BoldGray">test</span><span class="Punctuation">.</span><span class="BoldGray">promise</span><span class="Punctuation">().</span><span class="BoldGray">then</span><span class="Punctuation">((</span><span class="BoldGray">e</span><span class="Punctuation">)</span> <span class="RegularDark">=&gt;</span> <span class="Punctuation">{</span>
-  <span class="BoldGray">console</span><span class="Punctuation">.</span><span class="BoldGray">log</span><span class="Punctuation">(</span><span class="BoldGray">e</span><span class="Punctuation">)</span>
-<span class="Punctuation">})</span>
+<span class="CodeBold">const</span> <span class="CodeMedium">test</span> <span class="CodePale">=</span> <span class="CodeBold">new</span> <span class="CodeMedium">Test</span><span class="CodeOther">()</span>
+<span class="CodeMedium">test</span><span class="CodeOther">.</span><span class="CodeMedium">promise</span><span class="CodeOther">().</span><span class="CodeMedium">then</span><span class="CodeOther">((</span><span class="CodeMedium">e</span><span class="CodeOther">)</span> <span class="CodePale">=&gt;</span> <span class="CodeOther">{</span>
+  <span class="CodeMedium">console</span><span class="CodeOther">.</span><span class="CodeMedium">log</span><span class="CodeOther">(</span><span class="CodeMedium">e</span><span class="CodeOther">)</span>
+<span class="CodeOther">})</span>
 
-<span class="BoldBlack">export</span> <span class="BoldGray">module</span><span class="Punctuation">;</span></code></pre>
+<span class="CodeBold">export</span> <span class="CodeMedium">module</span><span class="CodeOther">;</span></code></pre>
           </section>
         </section>
         <section>
