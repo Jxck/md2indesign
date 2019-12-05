@@ -180,7 +180,7 @@ module MD2Indesign
         node[:children].join("")
       end
       def a(node)
-        href  = node[:attr][:href]
+        href  = node[:attr]["href"]
         value = node[:value]
         "<CharStyle:link>#{value}<CharStyle:><CharStyle:href>#{href}<CharStyle:>"
       end

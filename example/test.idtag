@@ -45,7 +45,7 @@
 <ParaStyle:blockquote>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 <ParaStyle:blockquote>--- https://en.wikipedia.org/wiki/Lorem_ipsum
 <ParaStyle:h2>link
-<ParaStyle:p><CharStyle:link>Example Domain<CharStyle:><CharStyle:href><CharStyle:>
+<ParaStyle:p><CharStyle:link>Example Domain<CharStyle:><CharStyle:href>https://example.com<CharStyle:>
 <ParaStyle:h2>img
 <ParaStyle:p><CharStyle:imgSrc>./sample.png<CharStyle:><CharStyle:imgTitle>this is sample image<CharStyle:><CharStyle:imgAlt>sample image<CharStyle:>
 <ParaStyle:h2>html
