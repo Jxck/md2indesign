@@ -60,7 +60,7 @@
 <ParaStyle:hr>
 <ParaStyle:h2>Codeblock
 <ParaStyle:h3>text block
-<ParaStyle:code-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+<ParaStyle:code-text>Lorem \\ ipsum \\\\ dolor \<sit\> \<\<amet\>\>, consectetur adipiscing elit,
 <ParaStyle:code-text>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 <ParaStyle:h3>programing block
 <ParaStyle:h4>javascript
@@ -125,7 +125,7 @@
 <ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeMedium>access_log<CharStyle:>   <CharStyle:CodeMedium>logs<CharStyle:>/<CharStyle:CodeMedium>domain1<CharStyle:>.<CharStyle:CodeMedium>access<CharStyle:>.<CharStyle:CodeMedium>log<CharStyle:>  <CharStyle:CodeMedium>main<CharStyle:>;
 <ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeMedium>root<CharStyle:>         <CharStyle:CodeMedium>html<CharStyle:>;
 <ParaStyle:code-conf:code/nginx.conf>
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeMedium>location<CharStyle:> ~ \.<CharStyle:CodeMedium>php<CharStyle:>$ {
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeMedium>location<CharStyle:> ~ \\.<CharStyle:CodeMedium>php<CharStyle:>$ {
 <ParaStyle:code-conf:code/nginx.conf>      <CharStyle:CodeMedium>fastcgi_pass<CharStyle:>   <CharStyle:CodePale>127<CharStyle:>.<CharStyle:CodePale>0<CharStyle:>.<CharStyle:CodePale>0<CharStyle:>.<CharStyle:CodePale>1<CharStyle:>:<CharStyle:CodePale>1025<CharStyle:>;
 <ParaStyle:code-conf:code/nginx.conf>    }
 <ParaStyle:code-conf:code/nginx.conf>  }

@@ -100,6 +100,7 @@ module MD2Indesign
 
       ## output as-is
       def html_element(node)
+        pp node.reject{|k,v| k == :parent}
         # gather attributes if exists
         attrs = node[:attr]&.map {|key, value|
           next key if value == ""
@@ -110,7 +111,7 @@ module MD2Indesign
         attr = attrs.nil? ? "" : " " + attrs.join(" ")
 
         # don't break line inside html element
-        tail = (node[:parent][:type] == :html_element) ? "" : "\n"
+        tail = "" #(node[:parent][:type] == :html_element) ? "" : "\n"
 
         "<#{node[:tag]}#{attr}>#{node[:value]}</#{node[:tag]}>#{tail}"
       end

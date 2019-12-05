@@ -30,7 +30,7 @@ module MD2Indesign
       private
       def escape(str)
         str
-          .gsub('\\', '\\\\')
+          .gsub(/\\/){'\\\\'}
           .gsub('<', '\\<')
           .gsub('>', '\\>')
       end
