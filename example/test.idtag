@@ -49,10 +49,7 @@
 <ParaStyle:h2>img
 <ParaStyle:p><CharStyle:imgSrc>./sample.png<CharStyle:><CharStyle:imgTitle>this is sample image<CharStyle:><CharStyle:imgAlt>sample image<CharStyle:>
 <ParaStyle:h2>html
-<ParaStyle:p>英語の場合は <kbd>A</kbd> 日本語は <kbd>あ</kbd>
-<ParaStyle:p>ショートカットは
-<ParaStyle:p><kbd>CTL+S</kbd>
-<ParaStyle:p>で保存できる。
+<ParaStyle:p>html prints <strong>as is</strong>.
 <ParaStyle:h2>hr
 <ParaStyle:hr>
 <ParaStyle:h2>Codeblock

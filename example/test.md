@@ -86,13 +86,8 @@ eve
 
 ## html
 
-英語の場合は <kbd>A</kbd> 日本語は <kbd>あ</kbd>
+html prints <strong>as is</strong>.
 
-ショートカットは
-
-<kbd>CTL+S</kbd>
-
-で保存できる。
 
 ## hr
 
