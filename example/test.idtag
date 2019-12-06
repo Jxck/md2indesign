@@ -264,3 +264,5 @@
 <ParaStyle:code-js:code/script.js><CharStyle:CodeBold>export<CharStyle:> <CharStyle:CodeMedium>module<CharStyle:><CharStyle:CodeOther>;<CharStyle:>
 <ParaStyle:h3>special text
 <ParaStyle:p>' & " \< \> "single quote in 'double' quote" ... --- -- \<\< \>\>
+<ParaStyle:h3>reference charactor
+<ParaStyle:p>&lt; &gt; &quot;

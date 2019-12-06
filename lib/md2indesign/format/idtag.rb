@@ -38,7 +38,7 @@ module MD2Indesign
 
       def entity(node)
         # &gt; &lt; etc
-        node[:options].original
+        node[:options][:original]
       end
 
       def header(node)

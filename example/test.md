@@ -178,3 +178,8 @@ function hoo(x) {
 ### special text
 
 ' & " < > "single quote in 'double' quote" ... --- -- << >>
+
+
+### reference charactor
+
+&lt; &gt; &quot;
