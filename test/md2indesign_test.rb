@@ -54,7 +54,7 @@ class MD2IndesignTest < Minitest::Test
     traverser = MD2Indesign::Markdown::Traverser.new(format, dir)
 
     body     = traverser.start(ast)
-    entry    = OpenStruct.new({title: path, body: body})
+    entry    = OpenStruct.new({title: path, body: body, highlight: "mono"})
     template = ERB.new(File.read("./template/html.erb"))
     html     = template.result(entry.instance_eval{binding}).strip
 
@@ -71,7 +71,7 @@ class MD2IndesignTest < Minitest::Test
     traverser = MD2Indesign::Markdown::Traverser.new(format, dir)
 
     body     = traverser.start(ast)
-    entry    = OpenStruct.new({title: path, body: body})
+    entry    = OpenStruct.new({title: path, body: body, highlight: "color"})
     template = ERB.new(File.read("./template/html.erb"))
     html     = template.result(entry.instance_eval{binding}).strip
 
