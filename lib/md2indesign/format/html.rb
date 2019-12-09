@@ -107,12 +107,14 @@ module MD2Indesign
         case @highlight
         when "mono"
           lexer = Rouge::Lexer.guess(filename: ".#{lang}")
-          formatter = MD2Indesign::Highlighter::HTML.new
+          formatter = MD2Indesign::Highlighter::HTML.new(highlight: "mono")
           formatted = formatter.format(lexer.new.lex(code))
           formatted
         when "color"
-          # TODO
-          escape(code)
+          lexer = Rouge::Lexer.guess(filename: ".#{lang}")
+          formatter = MD2Indesign::Highlighter::HTML.new(highlight: "color")
+          formatted = formatter.format(lexer.new.lex(code))
+          formatted
         when "none"
           escape(code)
         end

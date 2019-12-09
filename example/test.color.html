@@ -1,0 +1,460 @@
+<!doctype html>
+<html>
+  <head>
+    <title>./example/test.md</title>
+    <style>
+:root {
+
+  /** font-weight **/
+  --thin:    100;
+  /*--light:   300;*/
+  --regular: 400;
+  /*--medium:  500;*/
+  --bold:    700;
+
+
+  /** font-color **/
+  --black:  rgb(0, 0, 0);
+  --dark:   rgb(50, 50, 50);
+  --gray:   rgb(100, 100, 100);
+  --silver: rgb(150, 150, 150);
+
+
+  /** background **/
+  --bg-light: rgb(230, 230, 230);
+  --bg-white: rgb(255, 255, 255);
+}
+
+body.dark pre {
+  background-color: var(--bg-light);
+}
+body.white pre {
+  background-color: var(--bg-white);
+}
+
+
+pre {
+  font-family: 'Roboto Mono', monospace;
+  padding:     1em;
+  border:      1px solid black;
+
+  /* base */
+  font-weight: var(--thin);
+  color:       var(--silver);
+}
+
+/* bold-gray */
+.BoldGray,
+.Name {
+  color:       var(--gray);
+  font-weight: var(--bold);
+}
+
+/* bold-black */
+.BoldBlack,
+.Keyword,
+.Label,
+.Tag {
+  color:       var(--black);
+  font-weight: var(--bold);
+}
+
+/* regular-dark */
+.RegularDark,
+.Number,
+.Operator {
+  color:       var(--dark);
+  font-weight: var(--regular);
+}
+
+/* regular silver italic */
+.RegularSilverItalic,
+.Comment,
+.String {
+  font-style:  italic;
+  color:       var(--silver);
+  font-weight: var(--regular);
+}
+    </style>
+  </head>
+  <body>
+    <article>
+      <h1>This is Title</a></h1>
+      <section>
+        <h2>basic paragraph</a></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </section>
+      <section>
+        <h2>inline style</a></h2>
+        <p>inline styles are  <em>italic</em> also <em>italic</em> and <strong>strong</strong> and <code translate="no">inline code</code> are supported.
+      </section>
+      <section>
+        <h2>list style</a></h2>
+        <section>
+          <h3>un-ordered list</a></h3>
+          <ul>
+            <li>level 1-1
+            <li>
+              level 1-2
+              <ul>
+                <li>level 2-1
+                <li>
+                  level 2-2
+                  <ul>
+                    <li>level 3-1
+                    <li>level 3-2
+                  </ul>
+                </li>
+                <li>level 2-3
+              </ul>
+            </li>
+            <li>level 1-3
+          </ul>
+        </section>
+        <section>
+          <h3>ordered list</a></h3>
+          <ol>
+            <li>level 1-1
+            <li>
+              level 1-2
+              <ol>
+                <li>level 2-1
+                <li>
+                  level 2-2
+                  <ol>
+                    <li>level 3-1
+                    <li>level 3-2
+                  </ol>
+                </li>
+                <li>level 2-3
+              </ol>
+            </li>
+            <li>level 1-3
+          </ol>
+          <p>(indent needs to be 4 space)
+        </section>
+        <section>
+          <h3>definition list</a></h3>
+          <dl>
+            <div>
+              <dt>alice
+              <dd>who starts handshake
+            </div>
+            <div>
+              <dt>bob
+              <dd>who receives handshake
+            </div>
+            <div>
+              <dt>eve
+              <dd>who in the middle of transaction
+            </div>
+          </dl>
+        </section>
+      </section>
+      <section>
+        <h2>table</a></h2>
+        <table>
+          <thead>
+            <tr>
+              <th class=align-center>ext</th>
+              <th class=align-right>language</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class=align-center>.cpp</td>
+              <td class=align-right>c++</td>
+            </tr>
+            <tr>
+              <td class=align-center>.erl</td>
+              <td class=align-right>erlang</td>
+            </tr>
+            <tr>
+              <td class=align-center>.js</td>
+              <td class=align-right>javascript</td>
+            </tr>
+            <tr>
+              <td class=align-center>.py</td>
+              <td class=align-right>python</td>
+            </tr>
+            <tr>
+              <td class=align-center>.rb</td>
+              <td class=align-right>ruby</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h2>blockquote</a></h2>
+        <blockquote>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          <p>&mdash; https://en.wikipedia.org/wiki/Lorem_ipsum
+        </blockquote>
+      </section>
+      <section>
+        <h2>link</a></h2>
+        <p><a href="https://example.com">Example Domain</a>
+      </section>
+      <section>
+        <h2>img</a></h2>
+        <p>
+          <img src=./sample.png alt="sample image" title="this is sample image">
+        </p>
+      </section>
+      <section>
+        <h2>html</a></h2>
+        <p>html prints <strong>as is</strong>.
+      </section>
+      <section>
+        <h2>hr</a></h2>
+        <hr>
+      </section>
+      <section>
+        <h2>Codeblock</a></h2>
+        <section>
+          <h3>text block</a></h3>
+          <pre class=text><code translate="no">Lorem \ ipsum \\ dolor &lt;sit&gt; &lt;&lt;amet&gt;&gt;, consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</code></pre>
+        </section>
+        <section>
+          <h3>programing block</a></h3>
+          <section>
+            <h4>javascript</a></h4>
+            <pre class=js><code translate="no"><span class="KeywordDeclaration">function</span> <span class="NameOther">hoo</span><span class="Punctuation">(</span><span class="NameOther">x</span><span class="Punctuation">)</span> <span class="Punctuation">{</span>
+  <span class="NameOther">console</span><span class="Punctuation">.</span><span class="NameOther">log</span><span class="Punctuation">(</span><span class="NameOther">x</span><span class="Punctuation">)</span>
+<span class="Punctuation">}</span></code></pre>
+          </section>
+          <section>
+            <h4>makefile</a></h4>
+            <pre class=make><code translate="no"><span class="Comment"># Makefile
+</span><span class="NameLabel">.PHONY</span><span class="Operator">:</span> <span class="NameFunction">all</span>
+<span class="NameLabel">all</span><span class="Operator">:</span> <span class="NameFunction">main</span>
+
+<span class="NameLabel">main</span><span class="Operator">:</span> <span class="NameFunction">main.o</span>
+	gcc <span class="NameTag">-o</span> main main.o
+
+<span class="NameLabel">main.o</span><span class="Operator">:</span> <span class="NameFunction">main.c</span>
+	gcc <span class="NameTag">-c</span> main.c
+
+<span class="NameLabel">.PHONY</span><span class="Operator">:</span> <span class="NameFunction">clean</span>
+<span class="NameLabel">clean</span><span class="Operator">:</span>
+	<span class="NameBuiltin">rm</span> <span class="NameTag">-rf</span> main main.o</code></pre>
+          </section>
+          <section>
+            <h4>http</a></h4>
+            <pre class=http><code translate="no">GET / HTTP/1.1
+Host: example.com
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding: gzip, deflate
+Accept-Language: ja,en-US;q=0.9,en;q=0.8</code></pre>
+          </section>
+          <section>
+            <h4>noginx.conf</a></h4>
+            <pre class=conf><code translate="no"><span class="Comment"># https://www.nginx.com/resources/wiki/start/topics/examples/full/
+</span><span class="Name">user</span>       <span class="Name">www</span> <span class="Name">www</span>;  <span class="Comment">## Default: nobody
+</span><span class="Name">worker_processes</span>  <span class="LiteralNumber">5</span>;  <span class="Comment">## Default: 1
+</span><span class="Name">error_log</span>  <span class="Name">logs</span>/<span class="Name">error</span>.<span class="Name">log</span>;
+<span class="Name">pid</span>        <span class="Name">logs</span>/<span class="Name">nginx</span>.<span class="Name">pid</span>;
+<span class="Name">worker_rlimit_nofile</span> <span class="LiteralNumber">8192</span>;
+
+<span class="Name">events</span> {
+  <span class="Name">worker_connections</span>  <span class="LiteralNumber">4096</span>;  <span class="Comment">## Default: 1024
+</span>}
+
+<span class="Name">http</span> {
+  <span class="Name">include</span>    <span class="Name">conf</span>/<span class="Name">mime</span>.<span class="Name">types</span>;
+  <span class="Name">include</span>    /<span class="Name">etc</span>/<span class="Name">nginx</span>/<span class="Name">proxy</span>.<span class="Name">conf</span>;
+  <span class="Name">include</span>    /<span class="Name">etc</span>/<span class="Name">nginx</span>/<span class="Name">fastcgi</span>.<span class="Name">conf</span>;
+  <span class="Name">index</span>    <span class="Name">index</span>.<span class="Name">html</span> <span class="Name">index</span>.<span class="Name">htm</span> <span class="Name">index</span>.<span class="Name">php</span>;
+
+  <span class="Name">default_type</span> <span class="Name">application</span>/<span class="Name">octet</span>-<span class="Name">stream</span>;
+  <span class="Name">log_format</span>   <span class="Name">main</span> <span class="LiteralStringSingle">'$remote_addr - $remote_user [$time_local]  $status '</span>
+    <span class="LiteralStringSingle">'"$request" $body_bytes_sent "$http_referer" '</span>
+    <span class="LiteralStringSingle">'"$http_user_agent" "$http_x_forwarded_for"'</span>;
+  <span class="Name">access_log</span>   <span class="Name">logs</span>/<span class="Name">access</span>.<span class="Name">log</span>  <span class="Name">main</span>;
+  <span class="Name">sendfile</span>     <span class="Name">on</span>;
+  <span class="Name">tcp_nopush</span>   <span class="Name">on</span>;
+  <span class="Name">server_names_hash_bucket_size</span> <span class="LiteralNumber">128</span>; <span class="Comment"># this seems to be required for some vhosts
+</span>
+  <span class="Name">server</span> { <span class="Comment"># php/fastcgi
+</span>    <span class="Name">listen</span>       <span class="LiteralNumber">80</span>;
+    <span class="Name">server_name</span>  <span class="Name">domain1</span>.<span class="Name">com</span> <span class="Name">www</span>.<span class="Name">domain1</span>.<span class="Name">com</span>;
+    <span class="Name">access_log</span>   <span class="Name">logs</span>/<span class="Name">domain1</span>.<span class="Name">access</span>.<span class="Name">log</span>  <span class="Name">main</span>;
+    <span class="Name">root</span>         <span class="Name">html</span>;
+
+    <span class="Name">location</span> ~ \.<span class="Name">php</span>$ {
+      <span class="Name">fastcgi_pass</span>   <span class="LiteralNumber">127</span>.<span class="LiteralNumber">0</span>.<span class="LiteralNumber">0</span>.<span class="LiteralNumber">1</span>:<span class="LiteralNumber">1025</span>;
+    }
+  }
+
+  <span class="Name">server</span> { <span class="Comment"># simple reverse-proxy
+</span>    <span class="Name">listen</span>       <span class="LiteralNumber">80</span>;
+    <span class="Name">server_name</span>  <span class="Name">domain2</span>.<span class="Name">com</span> <span class="Name">www</span>.<span class="Name">domain2</span>.<span class="Name">com</span>;
+    <span class="Name">access_log</span>   <span class="Name">logs</span>/<span class="Name">domain2</span>.<span class="Name">access</span>.<span class="Name">log</span>  <span class="Name">main</span>;
+
+    <span class="Comment"># serve static files
+</span>    <span class="Name">location</span> ~ ^/(<span class="Name">images</span>|<span class="Name">javascript</span>|<span class="Name">js</span>|<span class="Name">css</span>|<span class="Name">flash</span>|<span class="Name">media</span>|<span class="Name">static</span>)/  {
+      <span class="Name">root</span>    /<span class="Name">var</span>/<span class="Name">www</span>/<span class="Name">virtual</span>/<span class="Name">big</span>.<span class="Name">server</span>.<span class="Name">com</span>/<span class="Name">htdocs</span>;
+      <span class="Name">expires</span> <span class="LiteralNumber">30</span><span class="Name">d</span>;
+    }
+
+    <span class="Comment"># pass requests for dynamic content to rails/turbogears/zope, et al
+</span>    <span class="Name">location</span> / {
+      <span class="Name">proxy_pass</span>      <span class="Name">http</span>://<span class="LiteralNumber">127</span>.<span class="LiteralNumber">0</span>.<span class="LiteralNumber">0</span>.<span class="LiteralNumber">1</span>:<span class="LiteralNumber">8080</span>;
+    }
+  }
+
+  <span class="Name">upstream</span> <span class="Name">big_server_com</span> {
+    <span class="Name">server</span> <span class="LiteralNumber">127</span>.<span class="LiteralNumber">0</span>.<span class="LiteralNumber">0</span>.<span class="LiteralNumber">3</span>:<span class="LiteralNumber">8000</span> <span class="Name">weight</span>=<span class="LiteralNumber">5</span>;
+    <span class="Name">server</span> <span class="LiteralNumber">127</span>.<span class="LiteralNumber">0</span>.<span class="LiteralNumber">0</span>.<span class="LiteralNumber">3</span>:<span class="LiteralNumber">8001</span> <span class="Name">weight</span>=<span class="LiteralNumber">5</span>;
+    <span class="Name">server</span> <span class="LiteralNumber">192</span>.<span class="LiteralNumber">168</span>.<span class="LiteralNumber">0</span>.<span class="LiteralNumber">1</span>:<span class="LiteralNumber">8000</span>;
+    <span class="Name">server</span> <span class="LiteralNumber">192</span>.<span class="LiteralNumber">168</span>.<span class="LiteralNumber">0</span>.<span class="LiteralNumber">1</span>:<span class="LiteralNumber">8001</span>;
+  }
+
+  <span class="Name">server</span> { <span class="Comment"># simple load balancing
+</span>    <span class="Name">listen</span>          <span class="LiteralNumber">80</span>;
+    <span class="Name">server_name</span>     <span class="Name">big</span>.<span class="Name">server</span>.<span class="Name">com</span>;
+    <span class="Name">access_log</span>      <span class="Name">logs</span>/<span class="Name">big</span>.<span class="Name">server</span>.<span class="Name">access</span>.<span class="Name">log</span> <span class="Name">main</span>;
+
+    <span class="Name">location</span> / {
+      <span class="Name">proxy_pass</span>      <span class="Name">http</span>://<span class="Name">big_server_com</span>;
+    }
+  }</code></pre>
+          </section>
+          <section>
+            <h4>go</a></h4>
+            <pre class=go><code translate="no"><span class="Keyword">package</span> <span class="Name">main</span>
+
+<span class="Keyword">import</span> <span class="LiteralString">"fmt"</span>
+
+<span class="Keyword">func</span> <span class="Name">main</span><span class="Punctuation">()</span> <span class="Punctuation">{</span>
+	<span class="Comment">// this is sample code</span>
+	<span class="Name">fmt</span><span class="Operator">.</span><span class="Name">Println</span><span class="Punctuation">(</span><span class="LiteralString">"Hello World"</span><span class="Punctuation">)</span>
+<span class="Punctuation">}</span></code></pre>
+          </section>
+          <section>
+            <h4>java</a></h4>
+            <pre class=java><code translate="no"><span class="KeywordDeclaration">public</span> <span class="KeywordDeclaration">class</span> <span class="NameClass">HelloWorld</span> <span class="Operator">{</span>
+  <span class="KeywordDeclaration">public</span> <span class="KeywordDeclaration">static</span> <span class="KeywordType">void</span> <span class="NameFunction">main</span><span class="Operator">(</span><span class="NameClass">String</span><span class="Operator">[]</span> <span class="Name">args</span><span class="Operator">)</span> <span class="Operator">{</span>
+    <span class="NameClass">System</span><span class="Operator">.</span><span class="NameAttribute">out</span><span class="Operator">.</span><span class="NameAttribute">printf</span><span class="Operator">(</span><span class="LiteralString">"Hello World"</span><span class="Operator">);</span>
+  <span class="Operator">}</span>
+
+  <span class="KeywordDeclaration">public</span> <span class="KeywordDeclaration">static</span> <span class="KeywordType">int</span> <span class="NameFunction">add</span><span class="Operator">(</span><span class="KeywordType">int</span> <span class="Name">x</span><span class="Operator">,</span> <span class="KeywordType">int</span> <span class="Name">y</span><span class="Operator">)</span> <span class="Operator">{</span>
+    <span class="KeywordType">int</span> <span class="Name">z</span> <span class="Operator">=</span> <span class="Name">x</span> <span class="Operator">+</span> <span class="Name">y</span><span class="Operator">;</span>
+    <span class="Keyword">return</span> <span class="Name">z</span><span class="Operator">;</span>
+  <span class="Operator">}</span>
+<span class="Operator">}</span></code></pre>
+          </section>
+          <section>
+            <h4>html</a></h4>
+            <pre class=html><code translate="no"><span class="CommentPreproc">&lt;!DOCTYPE html&gt;</span>
+<span class="NameTag">&lt;meta</span> <span class="NameAttribute">charset=</span><span class="LiteralString">utf-8</span><span class="NameTag">&gt;</span>
+<span class="NameTag">&lt;meta</span> <span class="NameAttribute">name=</span><span class="LiteralString">viewport</span> <span class="NameAttribute">content=</span><span class="LiteralString">"width=device-width,initial-scale=1"</span><span class="NameTag">&gt;</span>
+<span class="NameTag">&lt;title&gt;</span>DEMO<span class="NameTag">&lt;/title&gt;</span>
+
+<span class="NameTag">&lt;style&gt;</span>
+<span class="NameTag">&lt;/style&gt;</span>
+
+<span class="NameTag">&lt;h1&gt;</span>Test<span class="NameTag">&lt;/h1&gt;</span>
+<span class="Comment">&lt;!-- comment --&gt;</span>
+<span class="NameTag">&lt;p&gt;</span>this is <span class="NameTag">&lt;strong&gt;</span>sample<span class="NameTag">&lt;/strong&gt;</span> text<span class="NameTag">&lt;/p&gt;</span>
+
+<span class="NameTag">&lt;div&gt;</span>
+  <span class="NameTag">&lt;video</span> <span class="NameAttribute">src=</span><span class="LiteralString">"some.mp4"</span><span class="NameTag">&gt;</span>
+  <span class="NameTag">&lt;img</span> <span class="NameAttribute">src=</span><span class="LiteralString">some.webp</span> <span class="NameAttribute">label=</span><span class="LiteralString">"good picture"</span><span class="NameTag">&gt;</span>
+
+  <span class="NameTag">&lt;form</span> <span class="NameAttribute">action=</span><span class="LiteralString">/login</span> <span class="NameAttribute">method=</span><span class="LiteralString">post</span><span class="NameTag">&gt;</span>
+    <span class="NameTag">&lt;input</span> <span class="NameAttribute">type=</span><span class="LiteralString">text</span> <span class="NameAttribute">name=</span><span class="LiteralString">username</span><span class="NameTag">&gt;</span>
+    <span class="NameTag">&lt;input</span> <span class="NameAttribute">type=</span><span class="LiteralString">password</span> <span class="NameAttribute">name=</span><span class="LiteralString">password</span><span class="NameTag">&gt;</span>
+    <span class="NameTag">&lt;button</span> <span class="NameAttribute">type=</span><span class="LiteralString">submit</span><span class="NameTag">&gt;</span>ok<span class="NameTag">&lt;/button&gt;</span>
+  <span class="NameTag">&lt;/form&gt;</span>
+<span class="NameTag">&lt;/div&gt;</span></code></pre>
+          </section>
+          <section>
+            <h4>css</a></h4>
+            <pre class=css><code translate="no"><span class="Comment">/** markdown like css **/</span>
+<span class="NameTag">strong</span><span class="NameDecorator">::before</span><span class="Operator">,</span>
+<span class="NameTag">strong</span><span class="NameDecorator">::after</span> <span class="Punctuation">{</span>
+  <span class="NameLabel">content</span><span class="Punctuation">:</span> <span class="LiteralStringSingle">"**"</span><span class="Punctuation">;</span>
+<span class="Punctuation">}</span>
+
+<span class="NameTag">ul</span> <span class="NameTag">li</span><span class="NameDecorator">::before</span> <span class="Punctuation">{</span>
+  <span class="NameLabel">content</span><span class="Punctuation">:</span> <span class="LiteralStringSingle">"- "</span><span class="Punctuation">;</span>
+<span class="Punctuation">}</span>
+
+<span class="NameTag">ol</span> <span class="Punctuation">{</span>
+  <span class="NameLabel">counter-reset</span><span class="Punctuation">:</span> <span class="Name">list</span><span class="Punctuation">;</span>
+<span class="Punctuation">}</span>
+
+<span class="NameTag">ol</span> <span class="NameTag">li</span><span class="NameDecorator">::before</span> <span class="Punctuation">{</span>
+  <span class="NameLabel">counter-increment</span><span class="Punctuation">:</span> <span class="Name">list</span><span class="Punctuation">;</span>
+  <span class="NameLabel">content</span><span class="Punctuation">:</span> <span class="Name">counter</span><span class="Punctuation">(</span><span class="Name">list</span><span class="Punctuation">)</span> <span class="LiteralStringSingle">". "</span><span class="Punctuation">;</span>
+<span class="Punctuation">}</span>
+
+<span class="NameTag">dl</span> <span class="NameTag">dt</span><span class="NameDecorator">::after</span> <span class="Punctuation">{</span>
+  <span class="NameLabel">content</span><span class="Punctuation">:</span> <span class="LiteralStringSingle">":"</span><span class="Punctuation">;</span>
+<span class="Punctuation">}</span>
+
+<span class="NameTag">blockquote</span> <span class="Punctuation">{</span>
+  <span class="NameLabel">display</span><span class="Punctuation">:</span> <span class="NameBuiltin">block</span><span class="Punctuation">;</span>
+  <span class="NameLabel">border</span><span class="Punctuation">:</span> <span class="NameBuiltin">solid</span> <span class="LiteralNumber">1px</span> <span class="Name">var</span><span class="Punctuation">(</span><span class="Name">--block-quote</span><span class="Punctuation">);</span>
+  <span class="NameLabel">border-radius</span><span class="Punctuation">:</span> <span class="LiteralNumber">4px</span><span class="Punctuation">;</span>
+  <span class="NameLabel">padding</span><span class="Punctuation">:</span> <span class="LiteralNumber">0.4em</span> <span class="LiteralNumber">1em</span><span class="Punctuation">;</span>
+  <span class="NameLabel">margin</span><span class="Punctuation">:</span> <span class="LiteralNumber">0</span><span class="Punctuation">;</span>
+<span class="Punctuation">}</span>
+</code></pre>
+          </section>
+          <section>
+            <h4>js</a></h4>
+            <pre class=js><code translate="no"><span class="Keyword">import</span> <span class="NameOther">file</span> <span class="Keyword">from</span> <span class="NameOther">fs</span>
+
+<span class="KeywordDeclaration">function</span> <span class="NameOther">callback</span><span class="Punctuation">(</span><span class="NameOther">err</span><span class="Punctuation">,</span> <span class="NameOther">file</span><span class="Punctuation">)</span> <span class="Punctuation">{</span>
+  <span class="Keyword">if</span> <span class="Punctuation">(</span><span class="NameOther">err</span><span class="Punctuation">)</span> <span class="Keyword">return</span> <span class="NameOther">console</span><span class="Punctuation">.</span><span class="NameOther">error</span><span class="Punctuation">(</span><span class="NameOther">err</span><span class="Punctuation">);</span>
+
+  <span class="CommentMultiline">/* do something */</span>
+<span class="Punctuation">};</span>
+
+<span class="NameOther">file</span><span class="Punctuation">.</span><span class="NameOther">open</span><span class="Punctuation">(</span><span class="NameOther">callback</span><span class="Punctuation">);</span>
+
+<span class="KeywordDeclaration">class</span> <span class="NameOther">Test</span> <span class="KeywordDeclaration">extends</span> <span class="NameOther">EventEmitter</span> <span class="Punctuation">{</span>
+  <span class="KeywordDeclaration">constructor</span><span class="Punctuation">(</span><span class="NameOther">data</span><span class="Punctuation">)</span> <span class="Punctuation">{</span>
+    <span class="Keyword">this</span><span class="Punctuation">.</span><span class="NameOther">data</span> <span class="Operator">=</span> <span class="NameOther">data</span>
+  <span class="Punctuation">}</span>
+
+  <span class="NameOther">jquery</span><span class="Punctuation">()</span> <span class="Punctuation">{</span>
+    <span class="NameOther">$</span><span class="Punctuation">(</span><span class="LiteralStringDelimiter">'</span><span class="LiteralStringSingle">body</span><span class="LiteralStringDelimiter">'</span><span class="Punctuation">).</span><span class="NameOther">innerHTML</span> <span class="Operator">=</span> <span class="LiteralStringDelimiter">"</span><span class="LiteralStringDouble">alert('xss')</span><span class="LiteralStringDelimiter">"</span>
+  <span class="Punctuation">}</span>
+
+  <span class="NameOther">promise</span><span class="Punctuation">()</span> <span class="Punctuation">{</span>
+    <span class="Keyword">return</span> <span class="NameBuiltin">Promise</span><span class="Punctuation">.</span><span class="NameOther">resolve</span><span class="Punctuation">(</span><span class="LiteralStringDelimiter">'</span><span class="LiteralStringSingle">foo</span><span class="LiteralStringDelimiter">'</span><span class="Punctuation">)</span>
+  <span class="Punctuation">}</span>
+<span class="Punctuation">}</span>
+
+<span class="KeywordDeclaration">const</span> <span class="NameOther">test</span> <span class="Operator">=</span> <span class="Keyword">new</span> <span class="NameOther">Test</span><span class="Punctuation">()</span>
+<span class="NameOther">test</span><span class="Punctuation">.</span><span class="NameOther">promise</span><span class="Punctuation">().</span><span class="NameOther">then</span><span class="Punctuation">((</span><span class="NameOther">e</span><span class="Punctuation">)</span> <span class="Operator">=&gt;</span> <span class="Punctuation">{</span>
+  <span class="NameOther">console</span><span class="Punctuation">.</span><span class="NameOther">log</span><span class="Punctuation">(</span><span class="NameOther">e</span><span class="Punctuation">)</span>
+<span class="Punctuation">})</span>
+
+<span class="Keyword">export</span> <span class="NameOther">module</span><span class="Punctuation">;</span></code></pre>
+          </section>
+        </section>
+        <section>
+          <h3>special text</a></h3>
+          <p>&rsquo; &amp; &ldquo; &lt; &gt; &ldquo;single quote in &lsquo;double&rsquo; quote&rdquo; &hellip; &mdash; &ndash; &raquo;
+        </section>
+        <section>
+          <h3>reference charactor</a></h3>
+          <p>&lt; &gt; &quot;
+        </section>
+      </section>
+    </article>
+  </body>
+</html>
