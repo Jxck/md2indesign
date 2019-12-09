@@ -24,7 +24,7 @@ class MD2IndesignTest < Minitest::Test
     template  = ERB.new(File.read("./template/idtag.erb"))
     idtag     = template.result(entry.instance_eval{binding}).strip
 
-    File.write("#{dir}/test.idtag", idtag)
+    File.write("#{dir}/test.mono.idtag", idtag)
   end
 
   def test_color_idtag
@@ -44,7 +44,7 @@ class MD2IndesignTest < Minitest::Test
     File.write("#{dir}/test.color.idtag", idtag)
   end
 
-  def test_html
+  def test_mono_html
     path = "./example/test.md"
     dir  = File.dirname(path)
     body = File.read(path)
@@ -58,6 +58,6 @@ class MD2IndesignTest < Minitest::Test
     template = ERB.new(File.read("./template/html.erb"))
     html     = template.result(entry.instance_eval{binding}).strip
 
-    File.write("#{dir}/test.html", html)
+    File.write("#{dir}/test.mono.html", html)
   end
 end
