@@ -1,6 +1,10 @@
 module MD2Indesign
   module Highlighter
     class Idtag < Rouge::Formatter
+      def initialize(highlight: "none")
+        @highlight = highlight
+      end
+
       def stream(tokens, &b)
         tokens.each { |tok, val| yield span(tok, val) }
       end
@@ -11,7 +15,12 @@ module MD2Indesign
 
         classes = token.qualname.split(".")
 
-        return "<CharStyle:#{self.classname(classes)}>#{val}<CharStyle:>"
+        case @highlight
+        when "mono"
+          "<CharStyle:#{self.classname(classes)}>#{val}<CharStyle:>"
+        when "color"
+          "<CharStyle:#{classes.join}>#{val}<CharStyle:>"
+        end
       end
 
       def classname(classes)
