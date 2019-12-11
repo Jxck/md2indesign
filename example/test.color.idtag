@@ -60,23 +60,23 @@
 <ParaStyle:code-text>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 <ParaStyle:h3>programing block
 <ParaStyle:h4>javascript
-<ParaStyle:code-js><CharStyle:KeywordDeclaration>function<CharStyle:> <CharStyle:NameOther>hoo<CharStyle:><CharStyle:Punctuation>(<CharStyle:><CharStyle:NameOther>x<CharStyle:><CharStyle:Punctuation>)<CharStyle:> <CharStyle:Punctuation>{<CharStyle:>
-<ParaStyle:code-js>  <CharStyle:NameOther>console<CharStyle:><CharStyle:Punctuation>.<CharStyle:><CharStyle:NameOther>log<CharStyle:><CharStyle:Punctuation>(<CharStyle:><CharStyle:NameOther>x<CharStyle:><CharStyle:Punctuation>)<CharStyle:>
-<ParaStyle:code-js><CharStyle:Punctuation>}<CharStyle:>
+<ParaStyle:code-js><CharStyle:CodeKeywordDeclaration>function<CharStyle:> <CharStyle:CodeNameOther>hoo<CharStyle:><CharStyle:CodePunctuation>(<CharStyle:><CharStyle:CodeNameOther>x<CharStyle:><CharStyle:CodePunctuation>)<CharStyle:> <CharStyle:CodePunctuation>{<CharStyle:>
+<ParaStyle:code-js>  <CharStyle:CodeNameOther>console<CharStyle:><CharStyle:CodePunctuation>.<CharStyle:><CharStyle:CodeNameOther>log<CharStyle:><CharStyle:CodePunctuation>(<CharStyle:><CharStyle:CodeNameOther>x<CharStyle:><CharStyle:CodePunctuation>)<CharStyle:>
+<ParaStyle:code-js><CharStyle:CodePunctuation>}<CharStyle:>
 <ParaStyle:h4>makefile
-<ParaStyle:code-make:code/Makefile><CharStyle:Comment># Makefile
-<ParaStyle:code-make:code/Makefile><CharStyle:><CharStyle:NameLabel>.PHONY<CharStyle:><CharStyle:Operator>:<CharStyle:> <CharStyle:NameFunction>all<CharStyle:>
-<ParaStyle:code-make:code/Makefile><CharStyle:NameLabel>all<CharStyle:><CharStyle:Operator>:<CharStyle:> <CharStyle:NameFunction>main<CharStyle:>
+<ParaStyle:code-make:code/Makefile><CharStyle:CodeComment># Makefile
+<ParaStyle:code-make:code/Makefile><CharStyle:><CharStyle:CodeNameLabel>.PHONY<CharStyle:><CharStyle:CodeOperator>:<CharStyle:> <CharStyle:CodeNameFunction>all<CharStyle:>
+<ParaStyle:code-make:code/Makefile><CharStyle:CodeNameLabel>all<CharStyle:><CharStyle:CodeOperator>:<CharStyle:> <CharStyle:CodeNameFunction>main<CharStyle:>
 <ParaStyle:code-make:code/Makefile>
-<ParaStyle:code-make:code/Makefile><CharStyle:NameLabel>main<CharStyle:><CharStyle:Operator>:<CharStyle:> <CharStyle:NameFunction>main.o<CharStyle:>
-<ParaStyle:code-make:code/Makefile>	gcc <CharStyle:NameTag>-o<CharStyle:> main main.o
+<ParaStyle:code-make:code/Makefile><CharStyle:CodeNameLabel>main<CharStyle:><CharStyle:CodeOperator>:<CharStyle:> <CharStyle:CodeNameFunction>main.o<CharStyle:>
+<ParaStyle:code-make:code/Makefile>	gcc <CharStyle:CodeNameTag>-o<CharStyle:> main main.o
 <ParaStyle:code-make:code/Makefile>
-<ParaStyle:code-make:code/Makefile><CharStyle:NameLabel>main.o<CharStyle:><CharStyle:Operator>:<CharStyle:> <CharStyle:NameFunction>main.c<CharStyle:>
-<ParaStyle:code-make:code/Makefile>	gcc <CharStyle:NameTag>-c<CharStyle:> main.c
+<ParaStyle:code-make:code/Makefile><CharStyle:CodeNameLabel>main.o<CharStyle:><CharStyle:CodeOperator>:<CharStyle:> <CharStyle:CodeNameFunction>main.c<CharStyle:>
+<ParaStyle:code-make:code/Makefile>	gcc <CharStyle:CodeNameTag>-c<CharStyle:> main.c
 <ParaStyle:code-make:code/Makefile>
-<ParaStyle:code-make:code/Makefile><CharStyle:NameLabel>.PHONY<CharStyle:><CharStyle:Operator>:<CharStyle:> <CharStyle:NameFunction>clean<CharStyle:>
-<ParaStyle:code-make:code/Makefile><CharStyle:NameLabel>clean<CharStyle:><CharStyle:Operator>:<CharStyle:>
-<ParaStyle:code-make:code/Makefile>	<CharStyle:NameBuiltin>rm<CharStyle:> <CharStyle:NameTag>-rf<CharStyle:> main main.o
+<ParaStyle:code-make:code/Makefile><CharStyle:CodeNameLabel>.PHONY<CharStyle:><CharStyle:CodeOperator>:<CharStyle:> <CharStyle:CodeNameFunction>clean<CharStyle:>
+<ParaStyle:code-make:code/Makefile><CharStyle:CodeNameLabel>clean<CharStyle:><CharStyle:CodeOperator>:<CharStyle:>
+<ParaStyle:code-make:code/Makefile>	<CharStyle:CodeNameBuiltin>rm<CharStyle:> <CharStyle:CodeNameTag>-rf<CharStyle:> main main.o
 <ParaStyle:h4>http
 <ParaStyle:code-http:code/http>GET / HTTP/1.1
 <ParaStyle:code-http:code/http>Host: example.com
@@ -89,181 +89,181 @@
 <ParaStyle:code-http:code/http>Accept-Encoding: gzip, deflate
 <ParaStyle:code-http:code/http>Accept-Language: ja,en-US;q=0.9,en;q=0.8
 <ParaStyle:h4>noginx.conf
-<ParaStyle:code-conf:code/nginx.conf><CharStyle:Comment># https://www.nginx.com/resources/wiki/start/topics/examples/full/
-<ParaStyle:code-conf:code/nginx.conf><CharStyle:><CharStyle:Name>user<CharStyle:>       <CharStyle:Name>www<CharStyle:> <CharStyle:Name>www<CharStyle:>;  <CharStyle:Comment>## Default: nobody
-<ParaStyle:code-conf:code/nginx.conf><CharStyle:><CharStyle:Name>worker_processes<CharStyle:>  <CharStyle:LiteralNumber>5<CharStyle:>;  <CharStyle:Comment>## Default: 1
-<ParaStyle:code-conf:code/nginx.conf><CharStyle:><CharStyle:Name>error_log<CharStyle:>  <CharStyle:Name>logs<CharStyle:>/<CharStyle:Name>error<CharStyle:>.<CharStyle:Name>log<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf><CharStyle:Name>pid<CharStyle:>        <CharStyle:Name>logs<CharStyle:>/<CharStyle:Name>nginx<CharStyle:>.<CharStyle:Name>pid<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf><CharStyle:Name>worker_rlimit_nofile<CharStyle:> <CharStyle:LiteralNumber>8192<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf><CharStyle:CodeComment># https://www.nginx.com/resources/wiki/start/topics/examples/full/
+<ParaStyle:code-conf:code/nginx.conf><CharStyle:><CharStyle:CodeName>user<CharStyle:>       <CharStyle:CodeName>www<CharStyle:> <CharStyle:CodeName>www<CharStyle:>;  <CharStyle:CodeComment>## Default: nobody
+<ParaStyle:code-conf:code/nginx.conf><CharStyle:><CharStyle:CodeName>worker_processes<CharStyle:>  <CharStyle:CodeLiteralNumber>5<CharStyle:>;  <CharStyle:CodeComment>## Default: 1
+<ParaStyle:code-conf:code/nginx.conf><CharStyle:><CharStyle:CodeName>error_log<CharStyle:>  <CharStyle:CodeName>logs<CharStyle:>/<CharStyle:CodeName>error<CharStyle:>.<CharStyle:CodeName>log<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf><CharStyle:CodeName>pid<CharStyle:>        <CharStyle:CodeName>logs<CharStyle:>/<CharStyle:CodeName>nginx<CharStyle:>.<CharStyle:CodeName>pid<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf><CharStyle:CodeName>worker_rlimit_nofile<CharStyle:> <CharStyle:CodeLiteralNumber>8192<CharStyle:>;
 <ParaStyle:code-conf:code/nginx.conf>
-<ParaStyle:code-conf:code/nginx.conf><CharStyle:Name>events<CharStyle:> {
-<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:Name>worker_connections<CharStyle:>  <CharStyle:LiteralNumber>4096<CharStyle:>;  <CharStyle:Comment>## Default: 1024
+<ParaStyle:code-conf:code/nginx.conf><CharStyle:CodeName>events<CharStyle:> {
+<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:CodeName>worker_connections<CharStyle:>  <CharStyle:CodeLiteralNumber>4096<CharStyle:>;  <CharStyle:CodeComment>## Default: 1024
 <ParaStyle:code-conf:code/nginx.conf><CharStyle:>}
 <ParaStyle:code-conf:code/nginx.conf>
-<ParaStyle:code-conf:code/nginx.conf><CharStyle:Name>http<CharStyle:> {
-<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:Name>include<CharStyle:>    <CharStyle:Name>conf<CharStyle:>/<CharStyle:Name>mime<CharStyle:>.<CharStyle:Name>types<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:Name>include<CharStyle:>    /<CharStyle:Name>etc<CharStyle:>/<CharStyle:Name>nginx<CharStyle:>/<CharStyle:Name>proxy<CharStyle:>.<CharStyle:Name>conf<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:Name>include<CharStyle:>    /<CharStyle:Name>etc<CharStyle:>/<CharStyle:Name>nginx<CharStyle:>/<CharStyle:Name>fastcgi<CharStyle:>.<CharStyle:Name>conf<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:Name>index<CharStyle:>    <CharStyle:Name>index<CharStyle:>.<CharStyle:Name>html<CharStyle:> <CharStyle:Name>index<CharStyle:>.<CharStyle:Name>htm<CharStyle:> <CharStyle:Name>index<CharStyle:>.<CharStyle:Name>php<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf><CharStyle:CodeName>http<CharStyle:> {
+<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:CodeName>include<CharStyle:>    <CharStyle:CodeName>conf<CharStyle:>/<CharStyle:CodeName>mime<CharStyle:>.<CharStyle:CodeName>types<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:CodeName>include<CharStyle:>    /<CharStyle:CodeName>etc<CharStyle:>/<CharStyle:CodeName>nginx<CharStyle:>/<CharStyle:CodeName>proxy<CharStyle:>.<CharStyle:CodeName>conf<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:CodeName>include<CharStyle:>    /<CharStyle:CodeName>etc<CharStyle:>/<CharStyle:CodeName>nginx<CharStyle:>/<CharStyle:CodeName>fastcgi<CharStyle:>.<CharStyle:CodeName>conf<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:CodeName>index<CharStyle:>    <CharStyle:CodeName>index<CharStyle:>.<CharStyle:CodeName>html<CharStyle:> <CharStyle:CodeName>index<CharStyle:>.<CharStyle:CodeName>htm<CharStyle:> <CharStyle:CodeName>index<CharStyle:>.<CharStyle:CodeName>php<CharStyle:>;
 <ParaStyle:code-conf:code/nginx.conf>
-<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:Name>default_type<CharStyle:> <CharStyle:Name>application<CharStyle:>/<CharStyle:Name>octet<CharStyle:>-<CharStyle:Name>stream<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:Name>log_format<CharStyle:>   <CharStyle:Name>main<CharStyle:> <CharStyle:LiteralStringSingle>'$remote_addr - $remote_user [$time_local]  $status '<CharStyle:>
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:LiteralStringSingle>'"$request" $body_bytes_sent "$http_referer" '<CharStyle:>
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:LiteralStringSingle>'"$http_user_agent" "$http_x_forwarded_for"'<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:Name>access_log<CharStyle:>   <CharStyle:Name>logs<CharStyle:>/<CharStyle:Name>access<CharStyle:>.<CharStyle:Name>log<CharStyle:>  <CharStyle:Name>main<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:Name>sendfile<CharStyle:>     <CharStyle:Name>on<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:Name>tcp_nopush<CharStyle:>   <CharStyle:Name>on<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:Name>server_names_hash_bucket_size<CharStyle:> <CharStyle:LiteralNumber>128<CharStyle:>; <CharStyle:Comment># this seems to be required for some vhosts
+<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:CodeName>default_type<CharStyle:> <CharStyle:CodeName>application<CharStyle:>/<CharStyle:CodeName>octet<CharStyle:>-<CharStyle:CodeName>stream<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:CodeName>log_format<CharStyle:>   <CharStyle:CodeName>main<CharStyle:> <CharStyle:CodeLiteralStringSingle>'$remote_addr - $remote_user [$time_local]  $status '<CharStyle:>
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeLiteralStringSingle>'"$request" $body_bytes_sent "$http_referer" '<CharStyle:>
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeLiteralStringSingle>'"$http_user_agent" "$http_x_forwarded_for"'<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:CodeName>access_log<CharStyle:>   <CharStyle:CodeName>logs<CharStyle:>/<CharStyle:CodeName>access<CharStyle:>.<CharStyle:CodeName>log<CharStyle:>  <CharStyle:CodeName>main<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:CodeName>sendfile<CharStyle:>     <CharStyle:CodeName>on<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:CodeName>tcp_nopush<CharStyle:>   <CharStyle:CodeName>on<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:CodeName>server_names_hash_bucket_size<CharStyle:> <CharStyle:CodeLiteralNumber>128<CharStyle:>; <CharStyle:CodeComment># this seems to be required for some vhosts
 <ParaStyle:code-conf:code/nginx.conf><CharStyle:>
-<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:Name>server<CharStyle:> { <CharStyle:Comment># php/fastcgi
-<ParaStyle:code-conf:code/nginx.conf><CharStyle:>    <CharStyle:Name>listen<CharStyle:>       <CharStyle:LiteralNumber>80<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:Name>server_name<CharStyle:>  <CharStyle:Name>domain1<CharStyle:>.<CharStyle:Name>com<CharStyle:> <CharStyle:Name>www<CharStyle:>.<CharStyle:Name>domain1<CharStyle:>.<CharStyle:Name>com<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:Name>access_log<CharStyle:>   <CharStyle:Name>logs<CharStyle:>/<CharStyle:Name>domain1<CharStyle:>.<CharStyle:Name>access<CharStyle:>.<CharStyle:Name>log<CharStyle:>  <CharStyle:Name>main<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:Name>root<CharStyle:>         <CharStyle:Name>html<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:CodeName>server<CharStyle:> { <CharStyle:CodeComment># php/fastcgi
+<ParaStyle:code-conf:code/nginx.conf><CharStyle:>    <CharStyle:CodeName>listen<CharStyle:>       <CharStyle:CodeLiteralNumber>80<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeName>server_name<CharStyle:>  <CharStyle:CodeName>domain1<CharStyle:>.<CharStyle:CodeName>com<CharStyle:> <CharStyle:CodeName>www<CharStyle:>.<CharStyle:CodeName>domain1<CharStyle:>.<CharStyle:CodeName>com<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeName>access_log<CharStyle:>   <CharStyle:CodeName>logs<CharStyle:>/<CharStyle:CodeName>domain1<CharStyle:>.<CharStyle:CodeName>access<CharStyle:>.<CharStyle:CodeName>log<CharStyle:>  <CharStyle:CodeName>main<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeName>root<CharStyle:>         <CharStyle:CodeName>html<CharStyle:>;
 <ParaStyle:code-conf:code/nginx.conf>
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:Name>location<CharStyle:> ~ \\.<CharStyle:Name>php<CharStyle:>$ {
-<ParaStyle:code-conf:code/nginx.conf>      <CharStyle:Name>fastcgi_pass<CharStyle:>   <CharStyle:LiteralNumber>127<CharStyle:>.<CharStyle:LiteralNumber>0<CharStyle:>.<CharStyle:LiteralNumber>0<CharStyle:>.<CharStyle:LiteralNumber>1<CharStyle:>:<CharStyle:LiteralNumber>1025<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeName>location<CharStyle:> ~ \\.<CharStyle:CodeName>php<CharStyle:>$ {
+<ParaStyle:code-conf:code/nginx.conf>      <CharStyle:CodeName>fastcgi_pass<CharStyle:>   <CharStyle:CodeLiteralNumber>127<CharStyle:>.<CharStyle:CodeLiteralNumber>0<CharStyle:>.<CharStyle:CodeLiteralNumber>0<CharStyle:>.<CharStyle:CodeLiteralNumber>1<CharStyle:>:<CharStyle:CodeLiteralNumber>1025<CharStyle:>;
 <ParaStyle:code-conf:code/nginx.conf>    }
 <ParaStyle:code-conf:code/nginx.conf>  }
 <ParaStyle:code-conf:code/nginx.conf>
-<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:Name>server<CharStyle:> { <CharStyle:Comment># simple reverse-proxy
-<ParaStyle:code-conf:code/nginx.conf><CharStyle:>    <CharStyle:Name>listen<CharStyle:>       <CharStyle:LiteralNumber>80<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:Name>server_name<CharStyle:>  <CharStyle:Name>domain2<CharStyle:>.<CharStyle:Name>com<CharStyle:> <CharStyle:Name>www<CharStyle:>.<CharStyle:Name>domain2<CharStyle:>.<CharStyle:Name>com<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:Name>access_log<CharStyle:>   <CharStyle:Name>logs<CharStyle:>/<CharStyle:Name>domain2<CharStyle:>.<CharStyle:Name>access<CharStyle:>.<CharStyle:Name>log<CharStyle:>  <CharStyle:Name>main<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:CodeName>server<CharStyle:> { <CharStyle:CodeComment># simple reverse-proxy
+<ParaStyle:code-conf:code/nginx.conf><CharStyle:>    <CharStyle:CodeName>listen<CharStyle:>       <CharStyle:CodeLiteralNumber>80<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeName>server_name<CharStyle:>  <CharStyle:CodeName>domain2<CharStyle:>.<CharStyle:CodeName>com<CharStyle:> <CharStyle:CodeName>www<CharStyle:>.<CharStyle:CodeName>domain2<CharStyle:>.<CharStyle:CodeName>com<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeName>access_log<CharStyle:>   <CharStyle:CodeName>logs<CharStyle:>/<CharStyle:CodeName>domain2<CharStyle:>.<CharStyle:CodeName>access<CharStyle:>.<CharStyle:CodeName>log<CharStyle:>  <CharStyle:CodeName>main<CharStyle:>;
 <ParaStyle:code-conf:code/nginx.conf>
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:Comment># serve static files
-<ParaStyle:code-conf:code/nginx.conf><CharStyle:>    <CharStyle:Name>location<CharStyle:> ~ ^/(<CharStyle:Name>images<CharStyle:>|<CharStyle:Name>javascript<CharStyle:>|<CharStyle:Name>js<CharStyle:>|<CharStyle:Name>css<CharStyle:>|<CharStyle:Name>flash<CharStyle:>|<CharStyle:Name>media<CharStyle:>|<CharStyle:Name>static<CharStyle:>)/  {
-<ParaStyle:code-conf:code/nginx.conf>      <CharStyle:Name>root<CharStyle:>    /<CharStyle:Name>var<CharStyle:>/<CharStyle:Name>www<CharStyle:>/<CharStyle:Name>virtual<CharStyle:>/<CharStyle:Name>big<CharStyle:>.<CharStyle:Name>server<CharStyle:>.<CharStyle:Name>com<CharStyle:>/<CharStyle:Name>htdocs<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>      <CharStyle:Name>expires<CharStyle:> <CharStyle:LiteralNumber>30<CharStyle:><CharStyle:Name>d<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeComment># serve static files
+<ParaStyle:code-conf:code/nginx.conf><CharStyle:>    <CharStyle:CodeName>location<CharStyle:> ~ ^/(<CharStyle:CodeName>images<CharStyle:>|<CharStyle:CodeName>javascript<CharStyle:>|<CharStyle:CodeName>js<CharStyle:>|<CharStyle:CodeName>css<CharStyle:>|<CharStyle:CodeName>flash<CharStyle:>|<CharStyle:CodeName>media<CharStyle:>|<CharStyle:CodeName>static<CharStyle:>)/  {
+<ParaStyle:code-conf:code/nginx.conf>      <CharStyle:CodeName>root<CharStyle:>    /<CharStyle:CodeName>var<CharStyle:>/<CharStyle:CodeName>www<CharStyle:>/<CharStyle:CodeName>virtual<CharStyle:>/<CharStyle:CodeName>big<CharStyle:>.<CharStyle:CodeName>server<CharStyle:>.<CharStyle:CodeName>com<CharStyle:>/<CharStyle:CodeName>htdocs<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>      <CharStyle:CodeName>expires<CharStyle:> <CharStyle:CodeLiteralNumber>30<CharStyle:><CharStyle:CodeName>d<CharStyle:>;
 <ParaStyle:code-conf:code/nginx.conf>    }
 <ParaStyle:code-conf:code/nginx.conf>
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:Comment># pass requests for dynamic content to rails/turbogears/zope, et al
-<ParaStyle:code-conf:code/nginx.conf><CharStyle:>    <CharStyle:Name>location<CharStyle:> / {
-<ParaStyle:code-conf:code/nginx.conf>      <CharStyle:Name>proxy_pass<CharStyle:>      <CharStyle:Name>http<CharStyle:>://<CharStyle:LiteralNumber>127<CharStyle:>.<CharStyle:LiteralNumber>0<CharStyle:>.<CharStyle:LiteralNumber>0<CharStyle:>.<CharStyle:LiteralNumber>1<CharStyle:>:<CharStyle:LiteralNumber>8080<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeComment># pass requests for dynamic content to rails/turbogears/zope, et al
+<ParaStyle:code-conf:code/nginx.conf><CharStyle:>    <CharStyle:CodeName>location<CharStyle:> / {
+<ParaStyle:code-conf:code/nginx.conf>      <CharStyle:CodeName>proxy_pass<CharStyle:>      <CharStyle:CodeName>http<CharStyle:>://<CharStyle:CodeLiteralNumber>127<CharStyle:>.<CharStyle:CodeLiteralNumber>0<CharStyle:>.<CharStyle:CodeLiteralNumber>0<CharStyle:>.<CharStyle:CodeLiteralNumber>1<CharStyle:>:<CharStyle:CodeLiteralNumber>8080<CharStyle:>;
 <ParaStyle:code-conf:code/nginx.conf>    }
 <ParaStyle:code-conf:code/nginx.conf>  }
 <ParaStyle:code-conf:code/nginx.conf>
-<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:Name>upstream<CharStyle:> <CharStyle:Name>big_server_com<CharStyle:> {
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:Name>server<CharStyle:> <CharStyle:LiteralNumber>127<CharStyle:>.<CharStyle:LiteralNumber>0<CharStyle:>.<CharStyle:LiteralNumber>0<CharStyle:>.<CharStyle:LiteralNumber>3<CharStyle:>:<CharStyle:LiteralNumber>8000<CharStyle:> <CharStyle:Name>weight<CharStyle:>=<CharStyle:LiteralNumber>5<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:Name>server<CharStyle:> <CharStyle:LiteralNumber>127<CharStyle:>.<CharStyle:LiteralNumber>0<CharStyle:>.<CharStyle:LiteralNumber>0<CharStyle:>.<CharStyle:LiteralNumber>3<CharStyle:>:<CharStyle:LiteralNumber>8001<CharStyle:> <CharStyle:Name>weight<CharStyle:>=<CharStyle:LiteralNumber>5<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:Name>server<CharStyle:> <CharStyle:LiteralNumber>192<CharStyle:>.<CharStyle:LiteralNumber>168<CharStyle:>.<CharStyle:LiteralNumber>0<CharStyle:>.<CharStyle:LiteralNumber>1<CharStyle:>:<CharStyle:LiteralNumber>8000<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:Name>server<CharStyle:> <CharStyle:LiteralNumber>192<CharStyle:>.<CharStyle:LiteralNumber>168<CharStyle:>.<CharStyle:LiteralNumber>0<CharStyle:>.<CharStyle:LiteralNumber>1<CharStyle:>:<CharStyle:LiteralNumber>8001<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:CodeName>upstream<CharStyle:> <CharStyle:CodeName>big_server_com<CharStyle:> {
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeName>server<CharStyle:> <CharStyle:CodeLiteralNumber>127<CharStyle:>.<CharStyle:CodeLiteralNumber>0<CharStyle:>.<CharStyle:CodeLiteralNumber>0<CharStyle:>.<CharStyle:CodeLiteralNumber>3<CharStyle:>:<CharStyle:CodeLiteralNumber>8000<CharStyle:> <CharStyle:CodeName>weight<CharStyle:>=<CharStyle:CodeLiteralNumber>5<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeName>server<CharStyle:> <CharStyle:CodeLiteralNumber>127<CharStyle:>.<CharStyle:CodeLiteralNumber>0<CharStyle:>.<CharStyle:CodeLiteralNumber>0<CharStyle:>.<CharStyle:CodeLiteralNumber>3<CharStyle:>:<CharStyle:CodeLiteralNumber>8001<CharStyle:> <CharStyle:CodeName>weight<CharStyle:>=<CharStyle:CodeLiteralNumber>5<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeName>server<CharStyle:> <CharStyle:CodeLiteralNumber>192<CharStyle:>.<CharStyle:CodeLiteralNumber>168<CharStyle:>.<CharStyle:CodeLiteralNumber>0<CharStyle:>.<CharStyle:CodeLiteralNumber>1<CharStyle:>:<CharStyle:CodeLiteralNumber>8000<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeName>server<CharStyle:> <CharStyle:CodeLiteralNumber>192<CharStyle:>.<CharStyle:CodeLiteralNumber>168<CharStyle:>.<CharStyle:CodeLiteralNumber>0<CharStyle:>.<CharStyle:CodeLiteralNumber>1<CharStyle:>:<CharStyle:CodeLiteralNumber>8001<CharStyle:>;
 <ParaStyle:code-conf:code/nginx.conf>  }
 <ParaStyle:code-conf:code/nginx.conf>
-<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:Name>server<CharStyle:> { <CharStyle:Comment># simple load balancing
-<ParaStyle:code-conf:code/nginx.conf><CharStyle:>    <CharStyle:Name>listen<CharStyle:>          <CharStyle:LiteralNumber>80<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:Name>server_name<CharStyle:>     <CharStyle:Name>big<CharStyle:>.<CharStyle:Name>server<CharStyle:>.<CharStyle:Name>com<CharStyle:>;
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:Name>access_log<CharStyle:>      <CharStyle:Name>logs<CharStyle:>/<CharStyle:Name>big<CharStyle:>.<CharStyle:Name>server<CharStyle:>.<CharStyle:Name>access<CharStyle:>.<CharStyle:Name>log<CharStyle:> <CharStyle:Name>main<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>  <CharStyle:CodeName>server<CharStyle:> { <CharStyle:CodeComment># simple load balancing
+<ParaStyle:code-conf:code/nginx.conf><CharStyle:>    <CharStyle:CodeName>listen<CharStyle:>          <CharStyle:CodeLiteralNumber>80<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeName>server_name<CharStyle:>     <CharStyle:CodeName>big<CharStyle:>.<CharStyle:CodeName>server<CharStyle:>.<CharStyle:CodeName>com<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeName>access_log<CharStyle:>      <CharStyle:CodeName>logs<CharStyle:>/<CharStyle:CodeName>big<CharStyle:>.<CharStyle:CodeName>server<CharStyle:>.<CharStyle:CodeName>access<CharStyle:>.<CharStyle:CodeName>log<CharStyle:> <CharStyle:CodeName>main<CharStyle:>;
 <ParaStyle:code-conf:code/nginx.conf>
-<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:Name>location<CharStyle:> / {
-<ParaStyle:code-conf:code/nginx.conf>      <CharStyle:Name>proxy_pass<CharStyle:>      <CharStyle:Name>http<CharStyle:>://<CharStyle:Name>big_server_com<CharStyle:>;
+<ParaStyle:code-conf:code/nginx.conf>    <CharStyle:CodeName>location<CharStyle:> / {
+<ParaStyle:code-conf:code/nginx.conf>      <CharStyle:CodeName>proxy_pass<CharStyle:>      <CharStyle:CodeName>http<CharStyle:>://<CharStyle:CodeName>big_server_com<CharStyle:>;
 <ParaStyle:code-conf:code/nginx.conf>    }
 <ParaStyle:code-conf:code/nginx.conf>  }
 <ParaStyle:h4>go
-<ParaStyle:code-go:code/sample.go><CharStyle:Keyword>package<CharStyle:> <CharStyle:Name>main<CharStyle:>
+<ParaStyle:code-go:code/sample.go><CharStyle:CodeKeyword>package<CharStyle:> <CharStyle:CodeName>main<CharStyle:>
 <ParaStyle:code-go:code/sample.go>
-<ParaStyle:code-go:code/sample.go><CharStyle:Keyword>import<CharStyle:> <CharStyle:LiteralString>"fmt"<CharStyle:>
+<ParaStyle:code-go:code/sample.go><CharStyle:CodeKeyword>import<CharStyle:> <CharStyle:CodeLiteralString>"fmt"<CharStyle:>
 <ParaStyle:code-go:code/sample.go>
-<ParaStyle:code-go:code/sample.go><CharStyle:Keyword>func<CharStyle:> <CharStyle:Name>main<CharStyle:><CharStyle:Punctuation>()<CharStyle:> <CharStyle:Punctuation>{<CharStyle:>
-<ParaStyle:code-go:code/sample.go>	<CharStyle:Comment>// this is sample code<CharStyle:>
-<ParaStyle:code-go:code/sample.go>	<CharStyle:Name>fmt<CharStyle:><CharStyle:Operator>.<CharStyle:><CharStyle:Name>Println<CharStyle:><CharStyle:Punctuation>(<CharStyle:><CharStyle:LiteralString>"Hello World"<CharStyle:><CharStyle:Punctuation>)<CharStyle:>
-<ParaStyle:code-go:code/sample.go><CharStyle:Punctuation>}<CharStyle:>
+<ParaStyle:code-go:code/sample.go><CharStyle:CodeKeyword>func<CharStyle:> <CharStyle:CodeName>main<CharStyle:><CharStyle:CodePunctuation>()<CharStyle:> <CharStyle:CodePunctuation>{<CharStyle:>
+<ParaStyle:code-go:code/sample.go>	<CharStyle:CodeComment>// this is sample code<CharStyle:>
+<ParaStyle:code-go:code/sample.go>	<CharStyle:CodeName>fmt<CharStyle:><CharStyle:CodeOperator>.<CharStyle:><CharStyle:CodeName>Println<CharStyle:><CharStyle:CodePunctuation>(<CharStyle:><CharStyle:CodeLiteralString>"Hello World"<CharStyle:><CharStyle:CodePunctuation>)<CharStyle:>
+<ParaStyle:code-go:code/sample.go><CharStyle:CodePunctuation>}<CharStyle:>
 <ParaStyle:h4>java
-<ParaStyle:code-java:code/sample.java><CharStyle:KeywordDeclaration>public<CharStyle:> <CharStyle:KeywordDeclaration>class<CharStyle:> <CharStyle:NameClass>HelloWorld<CharStyle:> <CharStyle:Operator>{<CharStyle:>
-<ParaStyle:code-java:code/sample.java>  <CharStyle:KeywordDeclaration>public<CharStyle:> <CharStyle:KeywordDeclaration>static<CharStyle:> <CharStyle:KeywordType>void<CharStyle:> <CharStyle:NameFunction>main<CharStyle:><CharStyle:Operator>(<CharStyle:><CharStyle:NameClass>String<CharStyle:><CharStyle:Operator>[]<CharStyle:> <CharStyle:Name>args<CharStyle:><CharStyle:Operator>)<CharStyle:> <CharStyle:Operator>{<CharStyle:>
-<ParaStyle:code-java:code/sample.java>    <CharStyle:NameClass>System<CharStyle:><CharStyle:Operator>.<CharStyle:><CharStyle:NameAttribute>out<CharStyle:><CharStyle:Operator>.<CharStyle:><CharStyle:NameAttribute>printf<CharStyle:><CharStyle:Operator>(<CharStyle:><CharStyle:LiteralString>"Hello World"<CharStyle:><CharStyle:Operator>);<CharStyle:>
-<ParaStyle:code-java:code/sample.java>  <CharStyle:Operator>}<CharStyle:>
+<ParaStyle:code-java:code/sample.java><CharStyle:CodeKeywordDeclaration>public<CharStyle:> <CharStyle:CodeKeywordDeclaration>class<CharStyle:> <CharStyle:CodeNameClass>HelloWorld<CharStyle:> <CharStyle:CodeOperator>{<CharStyle:>
+<ParaStyle:code-java:code/sample.java>  <CharStyle:CodeKeywordDeclaration>public<CharStyle:> <CharStyle:CodeKeywordDeclaration>static<CharStyle:> <CharStyle:CodeKeywordType>void<CharStyle:> <CharStyle:CodeNameFunction>main<CharStyle:><CharStyle:CodeOperator>(<CharStyle:><CharStyle:CodeNameClass>String<CharStyle:><CharStyle:CodeOperator>[]<CharStyle:> <CharStyle:CodeName>args<CharStyle:><CharStyle:CodeOperator>)<CharStyle:> <CharStyle:CodeOperator>{<CharStyle:>
+<ParaStyle:code-java:code/sample.java>    <CharStyle:CodeNameClass>System<CharStyle:><CharStyle:CodeOperator>.<CharStyle:><CharStyle:CodeNameAttribute>out<CharStyle:><CharStyle:CodeOperator>.<CharStyle:><CharStyle:CodeNameAttribute>printf<CharStyle:><CharStyle:CodeOperator>(<CharStyle:><CharStyle:CodeLiteralString>"Hello World"<CharStyle:><CharStyle:CodeOperator>);<CharStyle:>
+<ParaStyle:code-java:code/sample.java>  <CharStyle:CodeOperator>}<CharStyle:>
 <ParaStyle:code-java:code/sample.java>
-<ParaStyle:code-java:code/sample.java>  <CharStyle:KeywordDeclaration>public<CharStyle:> <CharStyle:KeywordDeclaration>static<CharStyle:> <CharStyle:KeywordType>int<CharStyle:> <CharStyle:NameFunction>add<CharStyle:><CharStyle:Operator>(<CharStyle:><CharStyle:KeywordType>int<CharStyle:> <CharStyle:Name>x<CharStyle:><CharStyle:Operator>,<CharStyle:> <CharStyle:KeywordType>int<CharStyle:> <CharStyle:Name>y<CharStyle:><CharStyle:Operator>)<CharStyle:> <CharStyle:Operator>{<CharStyle:>
-<ParaStyle:code-java:code/sample.java>    <CharStyle:KeywordType>int<CharStyle:> <CharStyle:Name>z<CharStyle:> <CharStyle:Operator>=<CharStyle:> <CharStyle:Name>x<CharStyle:> <CharStyle:Operator>+<CharStyle:> <CharStyle:Name>y<CharStyle:><CharStyle:Operator>;<CharStyle:>
-<ParaStyle:code-java:code/sample.java>    <CharStyle:Keyword>return<CharStyle:> <CharStyle:Name>z<CharStyle:><CharStyle:Operator>;<CharStyle:>
-<ParaStyle:code-java:code/sample.java>  <CharStyle:Operator>}<CharStyle:>
-<ParaStyle:code-java:code/sample.java><CharStyle:Operator>}<CharStyle:>
+<ParaStyle:code-java:code/sample.java>  <CharStyle:CodeKeywordDeclaration>public<CharStyle:> <CharStyle:CodeKeywordDeclaration>static<CharStyle:> <CharStyle:CodeKeywordType>int<CharStyle:> <CharStyle:CodeNameFunction>add<CharStyle:><CharStyle:CodeOperator>(<CharStyle:><CharStyle:CodeKeywordType>int<CharStyle:> <CharStyle:CodeName>x<CharStyle:><CharStyle:CodeOperator>,<CharStyle:> <CharStyle:CodeKeywordType>int<CharStyle:> <CharStyle:CodeName>y<CharStyle:><CharStyle:CodeOperator>)<CharStyle:> <CharStyle:CodeOperator>{<CharStyle:>
+<ParaStyle:code-java:code/sample.java>    <CharStyle:CodeKeywordType>int<CharStyle:> <CharStyle:CodeName>z<CharStyle:> <CharStyle:CodeOperator>=<CharStyle:> <CharStyle:CodeName>x<CharStyle:> <CharStyle:CodeOperator>+<CharStyle:> <CharStyle:CodeName>y<CharStyle:><CharStyle:CodeOperator>;<CharStyle:>
+<ParaStyle:code-java:code/sample.java>    <CharStyle:CodeKeyword>return<CharStyle:> <CharStyle:CodeName>z<CharStyle:><CharStyle:CodeOperator>;<CharStyle:>
+<ParaStyle:code-java:code/sample.java>  <CharStyle:CodeOperator>}<CharStyle:>
+<ParaStyle:code-java:code/sample.java><CharStyle:CodeOperator>}<CharStyle:>
 <ParaStyle:h4>html
-<ParaStyle:code-html:code/sample.html><CharStyle:CommentPreproc>\<!DOCTYPE html\><CharStyle:>
-<ParaStyle:code-html:code/sample.html><CharStyle:NameTag>\<meta<CharStyle:> <CharStyle:NameAttribute>charset=<CharStyle:><CharStyle:LiteralString>utf-8<CharStyle:><CharStyle:NameTag>\><CharStyle:>
-<ParaStyle:code-html:code/sample.html><CharStyle:NameTag>\<meta<CharStyle:> <CharStyle:NameAttribute>name=<CharStyle:><CharStyle:LiteralString>viewport<CharStyle:> <CharStyle:NameAttribute>content=<CharStyle:><CharStyle:LiteralString>"width=device-width,initial-scale=1"<CharStyle:><CharStyle:NameTag>\><CharStyle:>
-<ParaStyle:code-html:code/sample.html><CharStyle:NameTag>\<title\><CharStyle:>DEMO<CharStyle:NameTag>\</title\><CharStyle:>
+<ParaStyle:code-html:code/sample.html><CharStyle:CodeCommentPreproc>\<!DOCTYPE html\><CharStyle:>
+<ParaStyle:code-html:code/sample.html><CharStyle:CodeNameTag>\<meta<CharStyle:> <CharStyle:CodeNameAttribute>charset=<CharStyle:><CharStyle:CodeLiteralString>utf-8<CharStyle:><CharStyle:CodeNameTag>\><CharStyle:>
+<ParaStyle:code-html:code/sample.html><CharStyle:CodeNameTag>\<meta<CharStyle:> <CharStyle:CodeNameAttribute>name=<CharStyle:><CharStyle:CodeLiteralString>viewport<CharStyle:> <CharStyle:CodeNameAttribute>content=<CharStyle:><CharStyle:CodeLiteralString>"width=device-width,initial-scale=1"<CharStyle:><CharStyle:CodeNameTag>\><CharStyle:>
+<ParaStyle:code-html:code/sample.html><CharStyle:CodeNameTag>\<title\><CharStyle:>DEMO<CharStyle:CodeNameTag>\</title\><CharStyle:>
 <ParaStyle:code-html:code/sample.html>
-<ParaStyle:code-html:code/sample.html><CharStyle:NameTag>\<style\><CharStyle:>
-<ParaStyle:code-html:code/sample.html><CharStyle:NameTag>\</style\><CharStyle:>
+<ParaStyle:code-html:code/sample.html><CharStyle:CodeNameTag>\<style\><CharStyle:>
+<ParaStyle:code-html:code/sample.html><CharStyle:CodeNameTag>\</style\><CharStyle:>
 <ParaStyle:code-html:code/sample.html>
-<ParaStyle:code-html:code/sample.html><CharStyle:NameTag>\<h1\><CharStyle:>Test<CharStyle:NameTag>\</h1\><CharStyle:>
-<ParaStyle:code-html:code/sample.html><CharStyle:Comment>\<!-- comment --\><CharStyle:>
-<ParaStyle:code-html:code/sample.html><CharStyle:NameTag>\<p\><CharStyle:>this is <CharStyle:NameTag>\<strong\><CharStyle:>sample<CharStyle:NameTag>\</strong\><CharStyle:> text<CharStyle:NameTag>\</p\><CharStyle:>
+<ParaStyle:code-html:code/sample.html><CharStyle:CodeNameTag>\<h1\><CharStyle:>Test<CharStyle:CodeNameTag>\</h1\><CharStyle:>
+<ParaStyle:code-html:code/sample.html><CharStyle:CodeComment>\<!-- comment --\><CharStyle:>
+<ParaStyle:code-html:code/sample.html><CharStyle:CodeNameTag>\<p\><CharStyle:>this is <CharStyle:CodeNameTag>\<strong\><CharStyle:>sample<CharStyle:CodeNameTag>\</strong\><CharStyle:> text<CharStyle:CodeNameTag>\</p\><CharStyle:>
 <ParaStyle:code-html:code/sample.html>
-<ParaStyle:code-html:code/sample.html><CharStyle:NameTag>\<div\><CharStyle:>
-<ParaStyle:code-html:code/sample.html>  <CharStyle:NameTag>\<video<CharStyle:> <CharStyle:NameAttribute>src=<CharStyle:><CharStyle:LiteralString>"some.mp4"<CharStyle:><CharStyle:NameTag>\><CharStyle:>
-<ParaStyle:code-html:code/sample.html>  <CharStyle:NameTag>\<img<CharStyle:> <CharStyle:NameAttribute>src=<CharStyle:><CharStyle:LiteralString>some.webp<CharStyle:> <CharStyle:NameAttribute>label=<CharStyle:><CharStyle:LiteralString>"good picture"<CharStyle:><CharStyle:NameTag>\><CharStyle:>
+<ParaStyle:code-html:code/sample.html><CharStyle:CodeNameTag>\<div\><CharStyle:>
+<ParaStyle:code-html:code/sample.html>  <CharStyle:CodeNameTag>\<video<CharStyle:> <CharStyle:CodeNameAttribute>src=<CharStyle:><CharStyle:CodeLiteralString>"some.mp4"<CharStyle:><CharStyle:CodeNameTag>\><CharStyle:>
+<ParaStyle:code-html:code/sample.html>  <CharStyle:CodeNameTag>\<img<CharStyle:> <CharStyle:CodeNameAttribute>src=<CharStyle:><CharStyle:CodeLiteralString>some.webp<CharStyle:> <CharStyle:CodeNameAttribute>label=<CharStyle:><CharStyle:CodeLiteralString>"good picture"<CharStyle:><CharStyle:CodeNameTag>\><CharStyle:>
 <ParaStyle:code-html:code/sample.html>
-<ParaStyle:code-html:code/sample.html>  <CharStyle:NameTag>\<form<CharStyle:> <CharStyle:NameAttribute>action=<CharStyle:><CharStyle:LiteralString>/login<CharStyle:> <CharStyle:NameAttribute>method=<CharStyle:><CharStyle:LiteralString>post<CharStyle:><CharStyle:NameTag>\><CharStyle:>
-<ParaStyle:code-html:code/sample.html>    <CharStyle:NameTag>\<input<CharStyle:> <CharStyle:NameAttribute>type=<CharStyle:><CharStyle:LiteralString>text<CharStyle:> <CharStyle:NameAttribute>name=<CharStyle:><CharStyle:LiteralString>username<CharStyle:><CharStyle:NameTag>\><CharStyle:>
-<ParaStyle:code-html:code/sample.html>    <CharStyle:NameTag>\<input<CharStyle:> <CharStyle:NameAttribute>type=<CharStyle:><CharStyle:LiteralString>password<CharStyle:> <CharStyle:NameAttribute>name=<CharStyle:><CharStyle:LiteralString>password<CharStyle:><CharStyle:NameTag>\><CharStyle:>
-<ParaStyle:code-html:code/sample.html>    <CharStyle:NameTag>\<button<CharStyle:> <CharStyle:NameAttribute>type=<CharStyle:><CharStyle:LiteralString>submit<CharStyle:><CharStyle:NameTag>\><CharStyle:>ok<CharStyle:NameTag>\</button\><CharStyle:>
-<ParaStyle:code-html:code/sample.html>  <CharStyle:NameTag>\</form\><CharStyle:>
-<ParaStyle:code-html:code/sample.html><CharStyle:NameTag>\</div\><CharStyle:>
+<ParaStyle:code-html:code/sample.html>  <CharStyle:CodeNameTag>\<form<CharStyle:> <CharStyle:CodeNameAttribute>action=<CharStyle:><CharStyle:CodeLiteralString>/login<CharStyle:> <CharStyle:CodeNameAttribute>method=<CharStyle:><CharStyle:CodeLiteralString>post<CharStyle:><CharStyle:CodeNameTag>\><CharStyle:>
+<ParaStyle:code-html:code/sample.html>    <CharStyle:CodeNameTag>\<input<CharStyle:> <CharStyle:CodeNameAttribute>type=<CharStyle:><CharStyle:CodeLiteralString>text<CharStyle:> <CharStyle:CodeNameAttribute>name=<CharStyle:><CharStyle:CodeLiteralString>username<CharStyle:><CharStyle:CodeNameTag>\><CharStyle:>
+<ParaStyle:code-html:code/sample.html>    <CharStyle:CodeNameTag>\<input<CharStyle:> <CharStyle:CodeNameAttribute>type=<CharStyle:><CharStyle:CodeLiteralString>password<CharStyle:> <CharStyle:CodeNameAttribute>name=<CharStyle:><CharStyle:CodeLiteralString>password<CharStyle:><CharStyle:CodeNameTag>\><CharStyle:>
+<ParaStyle:code-html:code/sample.html>    <CharStyle:CodeNameTag>\<button<CharStyle:> <CharStyle:CodeNameAttribute>type=<CharStyle:><CharStyle:CodeLiteralString>submit<CharStyle:><CharStyle:CodeNameTag>\><CharStyle:>ok<CharStyle:CodeNameTag>\</button\><CharStyle:>
+<ParaStyle:code-html:code/sample.html>  <CharStyle:CodeNameTag>\</form\><CharStyle:>
+<ParaStyle:code-html:code/sample.html><CharStyle:CodeNameTag>\</div\><CharStyle:>
 <ParaStyle:h4>css
-<ParaStyle:code-css:code/style.css><CharStyle:Comment>/** markdown like css **/<CharStyle:>
-<ParaStyle:code-css:code/style.css><CharStyle:NameTag>strong<CharStyle:><CharStyle:NameDecorator>::before<CharStyle:><CharStyle:Operator>,<CharStyle:>
-<ParaStyle:code-css:code/style.css><CharStyle:NameTag>strong<CharStyle:><CharStyle:NameDecorator>::after<CharStyle:> <CharStyle:Punctuation>{<CharStyle:>
-<ParaStyle:code-css:code/style.css>  <CharStyle:NameLabel>content<CharStyle:><CharStyle:Punctuation>:<CharStyle:> <CharStyle:LiteralStringSingle>"**"<CharStyle:><CharStyle:Punctuation>;<CharStyle:>
-<ParaStyle:code-css:code/style.css><CharStyle:Punctuation>}<CharStyle:>
+<ParaStyle:code-css:code/style.css><CharStyle:CodeComment>/** markdown like css **/<CharStyle:>
+<ParaStyle:code-css:code/style.css><CharStyle:CodeNameTag>strong<CharStyle:><CharStyle:CodeNameDecorator>::before<CharStyle:><CharStyle:CodeOperator>,<CharStyle:>
+<ParaStyle:code-css:code/style.css><CharStyle:CodeNameTag>strong<CharStyle:><CharStyle:CodeNameDecorator>::after<CharStyle:> <CharStyle:CodePunctuation>{<CharStyle:>
+<ParaStyle:code-css:code/style.css>  <CharStyle:CodeNameLabel>content<CharStyle:><CharStyle:CodePunctuation>:<CharStyle:> <CharStyle:CodeLiteralStringSingle>"**"<CharStyle:><CharStyle:CodePunctuation>;<CharStyle:>
+<ParaStyle:code-css:code/style.css><CharStyle:CodePunctuation>}<CharStyle:>
 <ParaStyle:code-css:code/style.css>
-<ParaStyle:code-css:code/style.css><CharStyle:NameTag>ul<CharStyle:> <CharStyle:NameTag>li<CharStyle:><CharStyle:NameDecorator>::before<CharStyle:> <CharStyle:Punctuation>{<CharStyle:>
-<ParaStyle:code-css:code/style.css>  <CharStyle:NameLabel>content<CharStyle:><CharStyle:Punctuation>:<CharStyle:> <CharStyle:LiteralStringSingle>"- "<CharStyle:><CharStyle:Punctuation>;<CharStyle:>
-<ParaStyle:code-css:code/style.css><CharStyle:Punctuation>}<CharStyle:>
+<ParaStyle:code-css:code/style.css><CharStyle:CodeNameTag>ul<CharStyle:> <CharStyle:CodeNameTag>li<CharStyle:><CharStyle:CodeNameDecorator>::before<CharStyle:> <CharStyle:CodePunctuation>{<CharStyle:>
+<ParaStyle:code-css:code/style.css>  <CharStyle:CodeNameLabel>content<CharStyle:><CharStyle:CodePunctuation>:<CharStyle:> <CharStyle:CodeLiteralStringSingle>"- "<CharStyle:><CharStyle:CodePunctuation>;<CharStyle:>
+<ParaStyle:code-css:code/style.css><CharStyle:CodePunctuation>}<CharStyle:>
 <ParaStyle:code-css:code/style.css>
-<ParaStyle:code-css:code/style.css><CharStyle:NameTag>ol<CharStyle:> <CharStyle:Punctuation>{<CharStyle:>
-<ParaStyle:code-css:code/style.css>  <CharStyle:NameLabel>counter-reset<CharStyle:><CharStyle:Punctuation>:<CharStyle:> <CharStyle:Name>list<CharStyle:><CharStyle:Punctuation>;<CharStyle:>
-<ParaStyle:code-css:code/style.css><CharStyle:Punctuation>}<CharStyle:>
+<ParaStyle:code-css:code/style.css><CharStyle:CodeNameTag>ol<CharStyle:> <CharStyle:CodePunctuation>{<CharStyle:>
+<ParaStyle:code-css:code/style.css>  <CharStyle:CodeNameLabel>counter-reset<CharStyle:><CharStyle:CodePunctuation>:<CharStyle:> <CharStyle:CodeName>list<CharStyle:><CharStyle:CodePunctuation>;<CharStyle:>
+<ParaStyle:code-css:code/style.css><CharStyle:CodePunctuation>}<CharStyle:>
 <ParaStyle:code-css:code/style.css>
-<ParaStyle:code-css:code/style.css><CharStyle:NameTag>ol<CharStyle:> <CharStyle:NameTag>li<CharStyle:><CharStyle:NameDecorator>::before<CharStyle:> <CharStyle:Punctuation>{<CharStyle:>
-<ParaStyle:code-css:code/style.css>  <CharStyle:NameLabel>counter-increment<CharStyle:><CharStyle:Punctuation>:<CharStyle:> <CharStyle:Name>list<CharStyle:><CharStyle:Punctuation>;<CharStyle:>
-<ParaStyle:code-css:code/style.css>  <CharStyle:NameLabel>content<CharStyle:><CharStyle:Punctuation>:<CharStyle:> <CharStyle:Name>counter<CharStyle:><CharStyle:Punctuation>(<CharStyle:><CharStyle:Name>list<CharStyle:><CharStyle:Punctuation>)<CharStyle:> <CharStyle:LiteralStringSingle>". "<CharStyle:><CharStyle:Punctuation>;<CharStyle:>
-<ParaStyle:code-css:code/style.css><CharStyle:Punctuation>}<CharStyle:>
+<ParaStyle:code-css:code/style.css><CharStyle:CodeNameTag>ol<CharStyle:> <CharStyle:CodeNameTag>li<CharStyle:><CharStyle:CodeNameDecorator>::before<CharStyle:> <CharStyle:CodePunctuation>{<CharStyle:>
+<ParaStyle:code-css:code/style.css>  <CharStyle:CodeNameLabel>counter-increment<CharStyle:><CharStyle:CodePunctuation>:<CharStyle:> <CharStyle:CodeName>list<CharStyle:><CharStyle:CodePunctuation>;<CharStyle:>
+<ParaStyle:code-css:code/style.css>  <CharStyle:CodeNameLabel>content<CharStyle:><CharStyle:CodePunctuation>:<CharStyle:> <CharStyle:CodeName>counter<CharStyle:><CharStyle:CodePunctuation>(<CharStyle:><CharStyle:CodeName>list<CharStyle:><CharStyle:CodePunctuation>)<CharStyle:> <CharStyle:CodeLiteralStringSingle>". "<CharStyle:><CharStyle:CodePunctuation>;<CharStyle:>
+<ParaStyle:code-css:code/style.css><CharStyle:CodePunctuation>}<CharStyle:>
 <ParaStyle:code-css:code/style.css>
-<ParaStyle:code-css:code/style.css><CharStyle:NameTag>dl<CharStyle:> <CharStyle:NameTag>dt<CharStyle:><CharStyle:NameDecorator>::after<CharStyle:> <CharStyle:Punctuation>{<CharStyle:>
-<ParaStyle:code-css:code/style.css>  <CharStyle:NameLabel>content<CharStyle:><CharStyle:Punctuation>:<CharStyle:> <CharStyle:LiteralStringSingle>":"<CharStyle:><CharStyle:Punctuation>;<CharStyle:>
-<ParaStyle:code-css:code/style.css><CharStyle:Punctuation>}<CharStyle:>
+<ParaStyle:code-css:code/style.css><CharStyle:CodeNameTag>dl<CharStyle:> <CharStyle:CodeNameTag>dt<CharStyle:><CharStyle:CodeNameDecorator>::after<CharStyle:> <CharStyle:CodePunctuation>{<CharStyle:>
+<ParaStyle:code-css:code/style.css>  <CharStyle:CodeNameLabel>content<CharStyle:><CharStyle:CodePunctuation>:<CharStyle:> <CharStyle:CodeLiteralStringSingle>":"<CharStyle:><CharStyle:CodePunctuation>;<CharStyle:>
+<ParaStyle:code-css:code/style.css><CharStyle:CodePunctuation>}<CharStyle:>
 <ParaStyle:code-css:code/style.css>
-<ParaStyle:code-css:code/style.css><CharStyle:NameTag>blockquote<CharStyle:> <CharStyle:Punctuation>{<CharStyle:>
-<ParaStyle:code-css:code/style.css>  <CharStyle:NameLabel>display<CharStyle:><CharStyle:Punctuation>:<CharStyle:> <CharStyle:NameBuiltin>block<CharStyle:><CharStyle:Punctuation>;<CharStyle:>
-<ParaStyle:code-css:code/style.css>  <CharStyle:NameLabel>border<CharStyle:><CharStyle:Punctuation>:<CharStyle:> <CharStyle:NameBuiltin>solid<CharStyle:> <CharStyle:LiteralNumber>1px<CharStyle:> <CharStyle:Name>var<CharStyle:><CharStyle:Punctuation>(<CharStyle:><CharStyle:Name>--block-quote<CharStyle:><CharStyle:Punctuation>);<CharStyle:>
-<ParaStyle:code-css:code/style.css>  <CharStyle:NameLabel>border-radius<CharStyle:><CharStyle:Punctuation>:<CharStyle:> <CharStyle:LiteralNumber>4px<CharStyle:><CharStyle:Punctuation>;<CharStyle:>
-<ParaStyle:code-css:code/style.css>  <CharStyle:NameLabel>padding<CharStyle:><CharStyle:Punctuation>:<CharStyle:> <CharStyle:LiteralNumber>0.4em<CharStyle:> <CharStyle:LiteralNumber>1em<CharStyle:><CharStyle:Punctuation>;<CharStyle:>
-<ParaStyle:code-css:code/style.css>  <CharStyle:NameLabel>margin<CharStyle:><CharStyle:Punctuation>:<CharStyle:> <CharStyle:LiteralNumber>0<CharStyle:><CharStyle:Punctuation>;<CharStyle:>
-<ParaStyle:code-css:code/style.css><CharStyle:Punctuation>}<CharStyle:>
+<ParaStyle:code-css:code/style.css><CharStyle:CodeNameTag>blockquote<CharStyle:> <CharStyle:CodePunctuation>{<CharStyle:>
+<ParaStyle:code-css:code/style.css>  <CharStyle:CodeNameLabel>display<CharStyle:><CharStyle:CodePunctuation>:<CharStyle:> <CharStyle:CodeNameBuiltin>block<CharStyle:><CharStyle:CodePunctuation>;<CharStyle:>
+<ParaStyle:code-css:code/style.css>  <CharStyle:CodeNameLabel>border<CharStyle:><CharStyle:CodePunctuation>:<CharStyle:> <CharStyle:CodeNameBuiltin>solid<CharStyle:> <CharStyle:CodeLiteralNumber>1px<CharStyle:> <CharStyle:CodeName>var<CharStyle:><CharStyle:CodePunctuation>(<CharStyle:><CharStyle:CodeName>--block-quote<CharStyle:><CharStyle:CodePunctuation>);<CharStyle:>
+<ParaStyle:code-css:code/style.css>  <CharStyle:CodeNameLabel>border-radius<CharStyle:><CharStyle:CodePunctuation>:<CharStyle:> <CharStyle:CodeLiteralNumber>4px<CharStyle:><CharStyle:CodePunctuation>;<CharStyle:>
+<ParaStyle:code-css:code/style.css>  <CharStyle:CodeNameLabel>padding<CharStyle:><CharStyle:CodePunctuation>:<CharStyle:> <CharStyle:CodeLiteralNumber>0.4em<CharStyle:> <CharStyle:CodeLiteralNumber>1em<CharStyle:><CharStyle:CodePunctuation>;<CharStyle:>
+<ParaStyle:code-css:code/style.css>  <CharStyle:CodeNameLabel>margin<CharStyle:><CharStyle:CodePunctuation>:<CharStyle:> <CharStyle:CodeLiteralNumber>0<CharStyle:><CharStyle:CodePunctuation>;<CharStyle:>
+<ParaStyle:code-css:code/style.css><CharStyle:CodePunctuation>}<CharStyle:>
 <ParaStyle:h4>js
-<ParaStyle:code-js:code/script.js><CharStyle:Keyword>import<CharStyle:> <CharStyle:NameOther>file<CharStyle:> <CharStyle:Keyword>from<CharStyle:> <CharStyle:NameOther>fs<CharStyle:>
+<ParaStyle:code-js:code/script.js><CharStyle:CodeKeyword>import<CharStyle:> <CharStyle:CodeNameOther>file<CharStyle:> <CharStyle:CodeKeyword>from<CharStyle:> <CharStyle:CodeNameOther>fs<CharStyle:>
 <ParaStyle:code-js:code/script.js>
-<ParaStyle:code-js:code/script.js><CharStyle:KeywordDeclaration>function<CharStyle:> <CharStyle:NameOther>callback<CharStyle:><CharStyle:Punctuation>(<CharStyle:><CharStyle:NameOther>err<CharStyle:><CharStyle:Punctuation>,<CharStyle:> <CharStyle:NameOther>file<CharStyle:><CharStyle:Punctuation>)<CharStyle:> <CharStyle:Punctuation>{<CharStyle:>
-<ParaStyle:code-js:code/script.js>  <CharStyle:Keyword>if<CharStyle:> <CharStyle:Punctuation>(<CharStyle:><CharStyle:NameOther>err<CharStyle:><CharStyle:Punctuation>)<CharStyle:> <CharStyle:Keyword>return<CharStyle:> <CharStyle:NameOther>console<CharStyle:><CharStyle:Punctuation>.<CharStyle:><CharStyle:NameOther>error<CharStyle:><CharStyle:Punctuation>(<CharStyle:><CharStyle:NameOther>err<CharStyle:><CharStyle:Punctuation>);<CharStyle:>
+<ParaStyle:code-js:code/script.js><CharStyle:CodeKeywordDeclaration>function<CharStyle:> <CharStyle:CodeNameOther>callback<CharStyle:><CharStyle:CodePunctuation>(<CharStyle:><CharStyle:CodeNameOther>err<CharStyle:><CharStyle:CodePunctuation>,<CharStyle:> <CharStyle:CodeNameOther>file<CharStyle:><CharStyle:CodePunctuation>)<CharStyle:> <CharStyle:CodePunctuation>{<CharStyle:>
+<ParaStyle:code-js:code/script.js>  <CharStyle:CodeKeyword>if<CharStyle:> <CharStyle:CodePunctuation>(<CharStyle:><CharStyle:CodeNameOther>err<CharStyle:><CharStyle:CodePunctuation>)<CharStyle:> <CharStyle:CodeKeyword>return<CharStyle:> <CharStyle:CodeNameOther>console<CharStyle:><CharStyle:CodePunctuation>.<CharStyle:><CharStyle:CodeNameOther>error<CharStyle:><CharStyle:CodePunctuation>(<CharStyle:><CharStyle:CodeNameOther>err<CharStyle:><CharStyle:CodePunctuation>);<CharStyle:>
 <ParaStyle:code-js:code/script.js>
-<ParaStyle:code-js:code/script.js>  <CharStyle:CommentMultiline>/* do something */<CharStyle:>
-<ParaStyle:code-js:code/script.js><CharStyle:Punctuation>};<CharStyle:>
+<ParaStyle:code-js:code/script.js>  <CharStyle:CodeCommentMultiline>/* do something */<CharStyle:>
+<ParaStyle:code-js:code/script.js><CharStyle:CodePunctuation>};<CharStyle:>
 <ParaStyle:code-js:code/script.js>
-<ParaStyle:code-js:code/script.js><CharStyle:NameOther>file<CharStyle:><CharStyle:Punctuation>.<CharStyle:><CharStyle:NameOther>open<CharStyle:><CharStyle:Punctuation>(<CharStyle:><CharStyle:NameOther>callback<CharStyle:><CharStyle:Punctuation>);<CharStyle:>
+<ParaStyle:code-js:code/script.js><CharStyle:CodeNameOther>file<CharStyle:><CharStyle:CodePunctuation>.<CharStyle:><CharStyle:CodeNameOther>open<CharStyle:><CharStyle:CodePunctuation>(<CharStyle:><CharStyle:CodeNameOther>callback<CharStyle:><CharStyle:CodePunctuation>);<CharStyle:>
 <ParaStyle:code-js:code/script.js>
-<ParaStyle:code-js:code/script.js><CharStyle:KeywordDeclaration>class<CharStyle:> <CharStyle:NameOther>Test<CharStyle:> <CharStyle:KeywordDeclaration>extends<CharStyle:> <CharStyle:NameOther>EventEmitter<CharStyle:> <CharStyle:Punctuation>{<CharStyle:>
-<ParaStyle:code-js:code/script.js>  <CharStyle:KeywordDeclaration>constructor<CharStyle:><CharStyle:Punctuation>(<CharStyle:><CharStyle:NameOther>data<CharStyle:><CharStyle:Punctuation>)<CharStyle:> <CharStyle:Punctuation>{<CharStyle:>
-<ParaStyle:code-js:code/script.js>    <CharStyle:Keyword>this<CharStyle:><CharStyle:Punctuation>.<CharStyle:><CharStyle:NameOther>data<CharStyle:> <CharStyle:Operator>=<CharStyle:> <CharStyle:NameOther>data<CharStyle:>
-<ParaStyle:code-js:code/script.js>  <CharStyle:Punctuation>}<CharStyle:>
+<ParaStyle:code-js:code/script.js><CharStyle:CodeKeywordDeclaration>class<CharStyle:> <CharStyle:CodeNameOther>Test<CharStyle:> <CharStyle:CodeKeywordDeclaration>extends<CharStyle:> <CharStyle:CodeNameOther>EventEmitter<CharStyle:> <CharStyle:CodePunctuation>{<CharStyle:>
+<ParaStyle:code-js:code/script.js>  <CharStyle:CodeKeywordDeclaration>constructor<CharStyle:><CharStyle:CodePunctuation>(<CharStyle:><CharStyle:CodeNameOther>data<CharStyle:><CharStyle:CodePunctuation>)<CharStyle:> <CharStyle:CodePunctuation>{<CharStyle:>
+<ParaStyle:code-js:code/script.js>    <CharStyle:CodeKeyword>this<CharStyle:><CharStyle:CodePunctuation>.<CharStyle:><CharStyle:CodeNameOther>data<CharStyle:> <CharStyle:CodeOperator>=<CharStyle:> <CharStyle:CodeNameOther>data<CharStyle:>
+<ParaStyle:code-js:code/script.js>  <CharStyle:CodePunctuation>}<CharStyle:>
 <ParaStyle:code-js:code/script.js>
-<ParaStyle:code-js:code/script.js>  <CharStyle:NameOther>jquery<CharStyle:><CharStyle:Punctuation>()<CharStyle:> <CharStyle:Punctuation>{<CharStyle:>
-<ParaStyle:code-js:code/script.js>    <CharStyle:NameOther>$<CharStyle:><CharStyle:Punctuation>(<CharStyle:><CharStyle:LiteralStringDelimiter>'<CharStyle:><CharStyle:LiteralStringSingle>body<CharStyle:><CharStyle:LiteralStringDelimiter>'<CharStyle:><CharStyle:Punctuation>).<CharStyle:><CharStyle:NameOther>innerHTML<CharStyle:> <CharStyle:Operator>=<CharStyle:> <CharStyle:LiteralStringDelimiter>"<CharStyle:><CharStyle:LiteralStringDouble>alert('xss')<CharStyle:><CharStyle:LiteralStringDelimiter>"<CharStyle:>
-<ParaStyle:code-js:code/script.js>  <CharStyle:Punctuation>}<CharStyle:>
+<ParaStyle:code-js:code/script.js>  <CharStyle:CodeNameOther>jquery<CharStyle:><CharStyle:CodePunctuation>()<CharStyle:> <CharStyle:CodePunctuation>{<CharStyle:>
+<ParaStyle:code-js:code/script.js>    <CharStyle:CodeNameOther>$<CharStyle:><CharStyle:CodePunctuation>(<CharStyle:><CharStyle:CodeLiteralStringDelimiter>'<CharStyle:><CharStyle:CodeLiteralStringSingle>body<CharStyle:><CharStyle:CodeLiteralStringDelimiter>'<CharStyle:><CharStyle:CodePunctuation>).<CharStyle:><CharStyle:CodeNameOther>innerHTML<CharStyle:> <CharStyle:CodeOperator>=<CharStyle:> <CharStyle:CodeLiteralStringDelimiter>"<CharStyle:><CharStyle:CodeLiteralStringDouble>alert('xss')<CharStyle:><CharStyle:CodeLiteralStringDelimiter>"<CharStyle:>
+<ParaStyle:code-js:code/script.js>  <CharStyle:CodePunctuation>}<CharStyle:>
 <ParaStyle:code-js:code/script.js>
-<ParaStyle:code-js:code/script.js>  <CharStyle:NameOther>promise<CharStyle:><CharStyle:Punctuation>()<CharStyle:> <CharStyle:Punctuation>{<CharStyle:>
-<ParaStyle:code-js:code/script.js>    <CharStyle:Keyword>return<CharStyle:> <CharStyle:NameBuiltin>Promise<CharStyle:><CharStyle:Punctuation>.<CharStyle:><CharStyle:NameOther>resolve<CharStyle:><CharStyle:Punctuation>(<CharStyle:><CharStyle:LiteralStringDelimiter>'<CharStyle:><CharStyle:LiteralStringSingle>foo<CharStyle:><CharStyle:LiteralStringDelimiter>'<CharStyle:><CharStyle:Punctuation>)<CharStyle:>
-<ParaStyle:code-js:code/script.js>  <CharStyle:Punctuation>}<CharStyle:>
-<ParaStyle:code-js:code/script.js><CharStyle:Punctuation>}<CharStyle:>
+<ParaStyle:code-js:code/script.js>  <CharStyle:CodeNameOther>promise<CharStyle:><CharStyle:CodePunctuation>()<CharStyle:> <CharStyle:CodePunctuation>{<CharStyle:>
+<ParaStyle:code-js:code/script.js>    <CharStyle:CodeKeyword>return<CharStyle:> <CharStyle:CodeNameBuiltin>Promise<CharStyle:><CharStyle:CodePunctuation>.<CharStyle:><CharStyle:CodeNameOther>resolve<CharStyle:><CharStyle:CodePunctuation>(<CharStyle:><CharStyle:CodeLiteralStringDelimiter>'<CharStyle:><CharStyle:CodeLiteralStringSingle>foo<CharStyle:><CharStyle:CodeLiteralStringDelimiter>'<CharStyle:><CharStyle:CodePunctuation>)<CharStyle:>
+<ParaStyle:code-js:code/script.js>  <CharStyle:CodePunctuation>}<CharStyle:>
+<ParaStyle:code-js:code/script.js><CharStyle:CodePunctuation>}<CharStyle:>
 <ParaStyle:code-js:code/script.js>
-<ParaStyle:code-js:code/script.js><CharStyle:KeywordDeclaration>const<CharStyle:> <CharStyle:NameOther>test<CharStyle:> <CharStyle:Operator>=<CharStyle:> <CharStyle:Keyword>new<CharStyle:> <CharStyle:NameOther>Test<CharStyle:><CharStyle:Punctuation>()<CharStyle:>
-<ParaStyle:code-js:code/script.js><CharStyle:NameOther>test<CharStyle:><CharStyle:Punctuation>.<CharStyle:><CharStyle:NameOther>promise<CharStyle:><CharStyle:Punctuation>().<CharStyle:><CharStyle:NameOther>then<CharStyle:><CharStyle:Punctuation>((<CharStyle:><CharStyle:NameOther>e<CharStyle:><CharStyle:Punctuation>)<CharStyle:> <CharStyle:Operator>=\><CharStyle:> <CharStyle:Punctuation>{<CharStyle:>
-<ParaStyle:code-js:code/script.js>  <CharStyle:NameOther>console<CharStyle:><CharStyle:Punctuation>.<CharStyle:><CharStyle:NameOther>log<CharStyle:><CharStyle:Punctuation>(<CharStyle:><CharStyle:NameOther>e<CharStyle:><CharStyle:Punctuation>)<CharStyle:>
-<ParaStyle:code-js:code/script.js><CharStyle:Punctuation>})<CharStyle:>
+<ParaStyle:code-js:code/script.js><CharStyle:CodeKeywordDeclaration>const<CharStyle:> <CharStyle:CodeNameOther>test<CharStyle:> <CharStyle:CodeOperator>=<CharStyle:> <CharStyle:CodeKeyword>new<CharStyle:> <CharStyle:CodeNameOther>Test<CharStyle:><CharStyle:CodePunctuation>()<CharStyle:>
+<ParaStyle:code-js:code/script.js><CharStyle:CodeNameOther>test<CharStyle:><CharStyle:CodePunctuation>.<CharStyle:><CharStyle:CodeNameOther>promise<CharStyle:><CharStyle:CodePunctuation>().<CharStyle:><CharStyle:CodeNameOther>then<CharStyle:><CharStyle:CodePunctuation>((<CharStyle:><CharStyle:CodeNameOther>e<CharStyle:><CharStyle:CodePunctuation>)<CharStyle:> <CharStyle:CodeOperator>=\><CharStyle:> <CharStyle:CodePunctuation>{<CharStyle:>
+<ParaStyle:code-js:code/script.js>  <CharStyle:CodeNameOther>console<CharStyle:><CharStyle:CodePunctuation>.<CharStyle:><CharStyle:CodeNameOther>log<CharStyle:><CharStyle:CodePunctuation>(<CharStyle:><CharStyle:CodeNameOther>e<CharStyle:><CharStyle:CodePunctuation>)<CharStyle:>
+<ParaStyle:code-js:code/script.js><CharStyle:CodePunctuation>})<CharStyle:>
 <ParaStyle:code-js:code/script.js>
-<ParaStyle:code-js:code/script.js><CharStyle:Keyword>export<CharStyle:> <CharStyle:NameOther>module<CharStyle:><CharStyle:Punctuation>;<CharStyle:>
+<ParaStyle:code-js:code/script.js><CharStyle:CodeKeyword>export<CharStyle:> <CharStyle:CodeNameOther>module<CharStyle:><CharStyle:CodePunctuation>;<CharStyle:>
 <ParaStyle:h3>special text
 <ParaStyle:p>' & " \< \> "single quote in 'double' quote" ... --- -- \<\< \>\>
 <ParaStyle:h3>reference charactor

@@ -19,7 +19,7 @@ module MD2Indesign
         when "mono"
           "<CharStyle:#{self.classname(classes)}>#{val}<CharStyle:>"
         when "color"
-          "<CharStyle:#{classes.join}>#{val}<CharStyle:>"
+          "<CharStyle:Code#{classes.join}>#{val}<CharStyle:>"
         end
       end
 
