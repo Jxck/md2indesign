@@ -248,6 +248,10 @@ module MD2Indesign
       def escape(str)
         CGI.escape_html(str)
       end
+
+      def debug(node)
+        pp node.reject{|k,v| k == :parent}
+      end
     end
   end
 end

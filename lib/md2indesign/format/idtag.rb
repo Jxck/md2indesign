@@ -205,6 +205,10 @@ module MD2Indesign
           .gsub('<', '\\<')
           .gsub('>', '\\>')
       end
+
+      def debug(node)
+        pp node.reject{|k,v| k == :parent}
+      end
     end
   end
 end
