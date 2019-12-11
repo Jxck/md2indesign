@@ -50,6 +50,8 @@
 <ParaStyle:p><CharStyle:imgSrc>./sample.png<CharStyle:><CharStyle:imgTitle>this is sample image<CharStyle:><CharStyle:imgAlt>sample image<CharStyle:>
 <ParaStyle:h2>html
 <ParaStyle:p>html prints <strong>as is</strong>.
+<ParaStyle:Comment><!-- block xml_comment -->
+<ParaStyle:p>hello <CharStyle:Comment><!-- inline xml_comment --><CharStyle:> world
 <ParaStyle:h2>hr
 <ParaStyle:hr>
 <ParaStyle:h2>Codeblock

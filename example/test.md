@@ -88,6 +88,10 @@ eve
 
 html prints <strong>as is</strong>.
 
+<!-- block xml_comment -->
+
+hello <!-- inline xml_comment --> world
+
 
 ## hr
 

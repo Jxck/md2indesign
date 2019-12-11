@@ -121,6 +121,17 @@ module MD2Indesign
         "<#{node[:tag]}#{attr}>#{node[:value]}</#{node[:tag]}>"
       end
 
+      def xml_comment(node)
+        category = node[:options][:category]
+        value    = node[:value]
+        case category
+        when :block
+          "<ParaStyle:Comment>#{value}\n"
+        when :span
+          "<CharStyle:Comment>#{value}<CharStyle:>"
+        end
+      end
+
       ### table
       def table(node)
         node[:value]
