@@ -2,7 +2,9 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel=stylesheet type=text/css href=css/<%= highlight %>.css></style>
+    <style>
+      <%= File.read("#{__dir__}/template/css/#{highlight}.css") %>
+    </style>
   </head>
   <body>
     <%= body %>
