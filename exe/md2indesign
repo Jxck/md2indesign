@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require 'md2indesign'
+
+puts "#{::MD2Indesign} v#{::MD2Indesign::VERSION}"
+files = ARGV
+
+pp files
