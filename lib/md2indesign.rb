@@ -17,6 +17,7 @@ module MD2Indesign
   module_function
 
   def encode(path, option={})
+
     ext  = File.extname(path)
     name = File.basename(path, ext)
     dir  = File.dirname(path)
@@ -25,7 +26,9 @@ module MD2Indesign
     format    = option[:format]    || "html"
     highlight = option[:highlight] || "color"
     outfile   = option[:outfile]   || "#{dir}/#{name}.#{highlight}.#{format}"
-    template  = option[:template]  || "./template/#{format}.erb"
+    template  = option[:template]  || "#{__dir__}/../template/#{format}.erb"
+
+    puts "\e[1;34mencode #{path} with #{highlight}.#{format} to #{outfile}\e[0m"
 
     formatter = MD2Indesign::Format::formatter(format).new(highlight: highlight)
     traverser = MD2Indesign::Markdown::Traverser.new(formatter, dir)
