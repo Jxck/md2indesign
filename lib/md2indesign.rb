@@ -1,6 +1,7 @@
 require "kramdown"
 require "kramdown-parser-gfm"
 require "rouge"
+require "ostruct"
 
 require "md2indesign/version"
 
@@ -15,7 +16,7 @@ require "md2indesign/markdown/traverser.rb"
 module MD2Indesign
   module_function
 
-  def encode(path, option)
+  def encode(path, option={})
     ext  = File.extname(path)
     name = File.basename(path, ext)
     dir  = File.dirname(path)
