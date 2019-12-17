@@ -27,6 +27,7 @@ module MD2Indesign
     highlight = option[:highlight] || "color"
     outfile   = option[:outfile]   || "#{dir}/#{name}.#{highlight}.#{format}"
     template  = option[:template]  || "#{__dir__}/../template/#{format}.erb"
+    style     = option[:style]     || "#{__dir__}/../template/css/#{highlight}.css"
 
     puts "\e[1;34mencode #{path} with #{highlight}.#{format} to #{outfile}\e[0m"
 
@@ -35,7 +36,7 @@ module MD2Indesign
     ast       = MD2Indesign::Markdown::AST.new(body).ast
 
     body      = traverser.start(ast)
-    entry     = OpenStruct.new({title: path, highlight: highlight, body: body})
+    entry     = OpenStruct.new({title: path, highlight: highlight, style: style,  body: body})
     encoded   = ERB.new(File.read(template)).result(entry.instance_eval{binding}).strip
 
     File.write(outfile, encoded)
