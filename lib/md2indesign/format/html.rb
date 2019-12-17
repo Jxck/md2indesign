@@ -101,17 +101,15 @@ module MD2Indesign
       end
 
       def code_format(arg)
-        lang = arg[:lang]
-        code = arg[:code]
-
+        lang  = arg[:lang]
+        code  = arg[:code]
+        lexer = Rouge::Lexer.find(lang)
         case @highlight
         when "mono"
-          lexer = Rouge::Lexer.guess(filename: ".#{lang}")
           formatter = MD2Indesign::Highlighter::HTML.new(highlight: "mono")
           formatted = formatter.format(lexer.new.lex(code))
           formatted
         when "color"
-          lexer = Rouge::Lexer.guess(filename: ".#{lang}")
           formatter = MD2Indesign::Highlighter::HTML.new(highlight: "color")
           formatted = formatter.format(lexer.new.lex(code))
           formatted
