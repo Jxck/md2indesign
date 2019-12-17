@@ -10,71 +10,62 @@ class MD2IndesignTest < Minitest::Test
     refute_nil ::MD2Indesign::Format::Idtag
   end
 
-  def test_mono_idtag
-    path = "./example/test.md"
+  def encode(path, option)
+    ext  = File.extname(path)
+    name = File.basename(path, ext)
     dir  = File.dirname(path)
     body = File.read(path)
 
-    format    = MD2Indesign::Format::Idtag.new(highlight: "mono")
-    ast       = MD2Indesign::Markdown::AST.new(body).ast
+    format = case option[:format]
+             when "idtag"
+               MD2Indesign::Format::Idtag.new(highlight: option[:highlight])
+             when "html"
+               MD2Indesign::Format::HTML.new(highlight: option[:highlight])
+             end
+
     traverser = MD2Indesign::Markdown::Traverser.new(format, dir)
-
+    ast       = MD2Indesign::Markdown::AST.new(body).ast
     body      = traverser.start(ast)
-    entry     = OpenStruct.new({body: body})
-    template  = ERB.new(File.read("./template/idtag.erb"))
-    idtag     = template.result(entry.instance_eval{binding}).strip
+    entry     = OpenStruct.new({title: path, highlight: option[:highlight], body: body})
+    template  = ERB.new(File.read("./template/#{option[:format]}.erb"))
+    encoded   = template.result(entry.instance_eval{binding}).strip
 
-    File.write("#{dir}/test.mono.idtag", idtag)
+    File.write("#{dir}/#{name}.#{option[:highlight]}.#{option[:format]}", encoded)
+  end
+
+  def test_mono_idtag
+    path = "./example/test.md"
+    option = {
+      highlight: "mono",
+      format:    "idtag",
+    }
+    encode(path, option)
   end
 
   def test_color_idtag
     path = "./example/test.md"
-    dir  = File.dirname(path)
-    body = File.read(path)
-
-    format    = MD2Indesign::Format::Idtag.new(highlight: "color")
-    ast       = MD2Indesign::Markdown::AST.new(body).ast
-    traverser = MD2Indesign::Markdown::Traverser.new(format, dir)
-
-    body     = traverser.start(ast)
-    entry    = OpenStruct.new({body: body})
-    template = ERB.new(File.read("./template/idtag.erb"))
-    idtag    = template.result(entry.instance_eval{binding}).strip
-
-    File.write("#{dir}/test.color.idtag", idtag)
+    option = {
+      highlight: "color",
+      format:    "idtag",
+    }
+    encode(path, option)
   end
 
   def test_mono_html
     path = "./example/test.md"
-    dir  = File.dirname(path)
-    body = File.read(path)
-
-    format    = MD2Indesign::Format::HTML.new(highlight: "mono")
-    ast       = MD2Indesign::Markdown::AST.new(body).ast
-    traverser = MD2Indesign::Markdown::Traverser.new(format, dir)
-
-    body     = traverser.start(ast)
-    entry    = OpenStruct.new({title: path, body: body, highlight: "mono"})
-    template = ERB.new(File.read("./template/html.erb"))
-    html     = template.result(entry.instance_eval{binding}).strip
-
-    File.write("#{dir}/test.mono.html", html)
+    option = {
+      highlight: "mono",
+      format:    "html",
+    }
+    encode(path, option)
   end
 
   def test_color_html
     path = "./example/test.md"
-    dir  = File.dirname(path)
-    body = File.read(path)
-
-    format    = MD2Indesign::Format::HTML.new(highlight: "color")
-    ast       = MD2Indesign::Markdown::AST.new(body).ast
-    traverser = MD2Indesign::Markdown::Traverser.new(format, dir)
-
-    body     = traverser.start(ast)
-    entry    = OpenStruct.new({title: path, body: body, highlight: "color"})
-    template = ERB.new(File.read("./template/html.erb"))
-    html     = template.result(entry.instance_eval{binding}).strip
-
-    File.write("#{dir}/test.color.html", html)
+    option = {
+      highlight: "color",
+      format:    "html",
+    }
+    encode(path, option)
   end
 end
