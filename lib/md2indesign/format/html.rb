@@ -133,7 +133,7 @@ module MD2Indesign
         # join attributes if exists
         attr = attrs.nil? ? "" : " " + attrs.join(" ")
 
-        "<#{node[:tag]}#{attr}>#{node[:value]}</#{node[:tag]}>"
+        "<#{node[:tag]}#{attr}>#{node[:value]}</#{node[:tag]}>\n"
       end
 
       def xml_comment(node)
