@@ -1,38 +1,44 @@
-lib = File.expand_path("lib", __dir__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "md2indesign/version"
+# -*- encoding: utf-8 -*-
+# stub: md2indesign 0.0.0 ruby lib
 
-Gem::Specification.new do |spec|
-  spec.name          = "md2indesign"
-  spec.version       = MD2Indesign::VERSION
-  spec.authors       = ["Jxck"]
-  spec.email         = ["block.rxckin.beats@gmail.com"]
+Gem::Specification.new do |s|
+  s.name = "md2indesign".freeze
+  s.version = "0.0.0"
 
-  spec.summary       = "markdown to indesign"
-  spec.description   = "convert markdown to indesign tagged text format"
-  spec.homepage      = "https://github.com/jxck/md2indesign"
-  spec.license       = "MIT"
+  s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
+  s.metadata = { "homepage_uri" => "https://github.com/jxck/md2indesign" } if s.respond_to? :metadata=
+  s.require_paths = ["lib".freeze]
+  s.authors = ["Jxck".freeze]
+  s.bindir = "exe".freeze
+  s.date = "2020-05-18"
+  s.description = "convert markdown to indesign tagged text format".freeze
+  s.email = ["block.rxckin.beats@gmail.com".freeze]
+  s.executables = ["md2indesign".freeze]
+  s.files = [".gitignore".freeze, ".travis.yml".freeze, "Gemfile".freeze, "Gemfile.lock".freeze, "README.md".freeze, "Rakefile".freeze, "bin/console".freeze, "bin/setup".freeze, "example/code/Makefile".freeze, "example/code/http".freeze, "example/code/nginx.conf".freeze, "example/code/sample.go".freeze, "example/code/sample.html".freeze, "example/code/sample.java".freeze, "example/code/script.js".freeze, "example/code/style.css".freeze, "example/test.color.html".freeze, "example/test.color.idtag".freeze, "example/test.md".freeze, "example/test.mono.html".freeze, "example/test.mono.idtag".freeze, "exe/md2indesign".freeze, "lib/md2indesign.rb".freeze, "lib/md2indesign/format/formatter.rb".freeze, "lib/md2indesign/format/html.rb".freeze, "lib/md2indesign/format/idtag.rb".freeze, "lib/md2indesign/highlighter/html.rb".freeze, "lib/md2indesign/highlighter/idtag.rb".freeze, "lib/md2indesign/markdown/ast.rb".freeze, "lib/md2indesign/markdown/traverser.rb".freeze, "lib/md2indesign/version.rb".freeze, "md2indesign.gemspec".freeze, "template/css/color.css".freeze, "template/css/mono.css".freeze, "template/html.erb".freeze, "template/idtag.erb".freeze]
+  s.homepage = "https://github.com/jxck/md2indesign".freeze
+  s.licenses = ["MIT".freeze]
+  s.rubygems_version = "3.1.2".freeze
+  s.summary = "markdown to indesign".freeze
 
-  # spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
+  s.installed_by_version = "3.1.2" if s.respond_to? :installed_by_version
 
-  spec.metadata["homepage_uri"] = spec.homepage
-  # spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-  # spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
-
-  # Specify which files should be added to the gem when it is released.
-  # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
-  spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do
-    `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
+  if s.respond_to? :specification_version then
+    s.specification_version = 4
   end
-  spec.bindir        = "exe"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
-  spec.require_paths = ["lib"]
 
-  spec.add_dependency "kramdown", "2.1.0"
-  spec.add_dependency "kramdown-parser-gfm", "1.1.0"
-  spec.add_dependency "rouge", "3.12.0"
-
-  spec.add_development_dependency "bundler", "~> 2.0"
-  spec.add_development_dependency "rake", "~> 13.0"
-  spec.add_development_dependency "minitest", "~> 5.0"
+  if s.respond_to? :add_runtime_dependency then
+    s.add_runtime_dependency(%q<kramdown>.freeze, ["= 2.1.0"])
+    s.add_runtime_dependency(%q<kramdown-parser-gfm>.freeze, ["= 1.1.0"])
+    s.add_runtime_dependency(%q<rouge>.freeze, ["= 3.12.0"])
+    s.add_development_dependency(%q<bundler>.freeze, ["~> 2.0"])
+    s.add_development_dependency(%q<rake>.freeze, ["~> 13.0"])
+    s.add_development_dependency(%q<minitest>.freeze, ["~> 5.0"])
+  else
+    s.add_dependency(%q<kramdown>.freeze, ["= 2.1.0"])
+    s.add_dependency(%q<kramdown-parser-gfm>.freeze, ["= 1.1.0"])
+    s.add_dependency(%q<rouge>.freeze, ["= 3.12.0"])
+    s.add_dependency(%q<bundler>.freeze, ["~> 2.0"])
+    s.add_dependency(%q<rake>.freeze, ["~> 13.0"])
+    s.add_dependency(%q<minitest>.freeze, ["~> 5.0"])
+  end
 end
