@@ -27,14 +27,14 @@ Gem::Specification.new do |s|
   end
 
   if s.respond_to? :add_runtime_dependency then
-    s.add_runtime_dependency(%q<kramdown>.freeze, ["= 2.1.0"])
+    s.add_runtime_dependency(%q<kramdown>.freeze, ["> 2.3.0"])
     s.add_runtime_dependency(%q<kramdown-parser-gfm>.freeze, ["= 1.1.0"])
     s.add_runtime_dependency(%q<rouge>.freeze, ["= 3.12.0"])
     s.add_development_dependency(%q<bundler>.freeze, ["~> 2.0"])
     s.add_development_dependency(%q<rake>.freeze, ["~> 13.0"])
     s.add_development_dependency(%q<minitest>.freeze, ["~> 5.0"])
   else
-    s.add_dependency(%q<kramdown>.freeze, ["= 2.1.0"])
+    s.add_dependency(%q<kramdown>.freeze, ["> 2.3.0"])
     s.add_dependency(%q<kramdown-parser-gfm>.freeze, ["= 1.1.0"])
     s.add_dependency(%q<rouge>.freeze, ["= 3.12.0"])
     s.add_dependency(%q<bundler>.freeze, ["~> 2.0"])
