@@ -3,7 +3,7 @@
 
 Gem::Specification.new do |s|
   s.name = "md2indesign".freeze
-  s.version = "0.0.0"
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.metadata = { "homepage_uri" => "https://github.com/jxck/md2indesign" } if s.respond_to? :metadata=
