@@ -132,6 +132,11 @@ module MD2Indesign
         if node[:type] == :p and node&.[](:children).first&.[](:type) == :img
           node[:close] = true
         end
+
+        # pass @dir to formatter
+        if node[:type] == :img
+          node[:dir] = @dir
+        end
       end
 
       def leave(node)
