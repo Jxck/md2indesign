@@ -110,6 +110,8 @@ module MD2Indesign
             first[:children].reverse.each{|child|
               node[:children].unshift child
             }
+          else
+            node[:children].unshift first
           end
 
           # close <li> as default
