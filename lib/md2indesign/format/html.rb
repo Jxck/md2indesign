@@ -24,10 +24,10 @@ module MD2Indesign
 
       def smart_quote(node)
         {
-          lsquo: "&lsquo;",
-          rsquo: "&rsquo;",
-          ldquo: "&ldquo;",
-          rdquo: "&rdquo;",
+          lsquo: "&apos;", #"&lsquo;",
+          rsquo: "&apos;", #"&rsquo;",
+          ldquo: "&quot;", #"&ldquo;",
+          rdquo: "&quot;", #"&rdquo;",
         }[node[:value]]
       end
 
