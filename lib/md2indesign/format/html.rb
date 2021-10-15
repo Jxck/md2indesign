@@ -253,7 +253,13 @@ module MD2Indesign
 
       private
       def escape(str)
-        CGI.escape_html(str)
+        # CGI.escape_html(str)
+        return str
+          .gsub(/&/, "&amp;")
+          .gsub(/</, "&lt;")
+          .gsub(/>/, "&gt;")
+          .gsub(/"/, "&quot;")
+          .gsub(/'/, "&apos;")
       end
 
       def debug(node)
