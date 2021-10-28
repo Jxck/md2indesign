@@ -93,11 +93,11 @@ module MD2Indesign
 
       def codeblock(node)
         lang = node[:lang]
-        %(<pre#{lang ? %( class=#{lang}) : ''}><code translate="no">#{node[:value]}</code></pre>\n)
+        %(<pre#{lang ? %( class=#{lang}) : ''}><code translate=no>#{node[:value]}</code></pre>\n)
       end
 
       def codespan(node)
-        %(<code translate="no">#{escape(node[:value])}</code>)
+        %(<code translate=no>#{escape(node[:value])}</code>)
       end
 
       def code_format(arg)
